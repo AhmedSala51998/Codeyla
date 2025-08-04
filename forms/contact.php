@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->Subject = 'New Codeyla Message';
 
-        $logoUrl = 'https://raw.githubusercontent.com/AhmedSala51998/Codeyla/master/assets/img/logo.png';
+        $logoUrl = 'https://raw.githubusercontent.com/AhmedSala51998/Codeyla/master/assets/img/logo_email.png';
         
        $body = '
         <div style="
