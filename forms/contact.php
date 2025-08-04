@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             <!-- Logo Section -->
             <div style="text-align: center; padding: 40px 25px 30px;">
-              <img src="' . $logoUrl . '" alt="Codeyla Logo" style="width: 140px; margin-bottom: 25px;">
+              <img src="' . $logoUrl . '" alt="Codeyla Logo" style="width: 180px; margin-bottom: 25px;">
               <h1 style="margin: 0; font-weight: 900; font-size: 30px; color: #f4a835; letter-spacing: 1.5px;">
                 رسالة جديدة من ' . htmlspecialchars($_POST['name']) . '
               </h1>
