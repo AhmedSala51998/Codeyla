@@ -29,83 +29,73 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $logoUrl = 'https://codeyla.com/assets/img/logo_email.png';
   
        $body = '
-        <div style="
-          font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;
-          background-color: #ffffff;
-          color: #121212;
-          padding: 40px 15px;
-          min-height: 100vh;
-        ">
-          <div style="
-            max-width: 600px;
-            margin: auto;
-            background-color: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            overflow: hidden;
-            border: 2px solid #f4a835;
-          ">
-            
-            <!-- Logo Section -->
-            <div style="text-align: center; padding: 40px 25px 30px;">
-              <img src="' . $logoUrl . '" alt="Codeyla Logo" style="width: 180px; margin-bottom: 25px;">
-              <h1 style="margin: 0; font-weight: 900; font-size: 30px; color: #f4a835; letter-spacing: 1.5px;">
-                رسالة جديدة من ' . htmlspecialchars($_POST['name']) . '
-              </h1>
-            </div>
-
-            <!-- Content Section -->
-            <div style="padding: 30px 40px; font-size: 17px; line-height: 1.7; color: #121212;">
-
-              <p style="direction: rtl; text-align: right; font-weight: 700; font-size: 19px; margin-bottom: 15px; color: #f4a835;">
-                الاسم: <span style="font-weight: 600; color: #121212;">' . htmlspecialchars($_POST['name']) . '</span>
-              </p>
-
-              <p style="direction: rtl; text-align: right; font-weight: 700; font-size: 18px; margin-bottom: 15px; color: #f4a835;">
-                البريد الالكتروني: <span style="font-weight: 600; color: #121212;">' . $_POST['email'] . '</span>
-              </p>
-
-              <p style="direction: rtl; text-align: right; font-weight: 700; font-size: 18px; margin-bottom: 15px; color: #f4a835;">
-                الموضوع: <span style="font-weight: 600; color: #121212;">' . htmlspecialchars($_POST['subject'] ?? '-') . '</span>
-              </p>
-
-              <p style="direction: rtl; text-align: right; font-weight: 700; font-size: 19px; margin-top: 30px; margin-bottom: 15px; color: #f4a835;">
-                الرسالة:
-              </p>
-
-              <p style="
-                background-color: #ffffff; 
-                border-radius: 14px; 
-                font-weight: 500; 
-                padding:10px;
-                direction: rtl; 
-                text-align: right;
-                border: 2px solid #f4a835;
-                box-shadow: 0 4px 8px #fffff;
-                color: #5a4630;
-                font-size: 16px;
-              ">
-                ' . nl2br(htmlspecialchars($_POST['message'])) . '
-              </p>
-            </div>
-
-            <!-- Footer Section -->
-            <div style="
-              text-align: center; 
-              background-color: #f4a835; 
-              color: #FFF; 
-              padding: 18px 0; 
-              font-weight: 800;
-              font-size: 15px;
-              letter-spacing: 2px;
-              border-top: 2px solid #e6a635;
-            ">
-              © ' . date('Y') . ' Codeyla. جميع الحقوق محفوظة
-            </div>
-
-          </div>
+        <div style="background-color: #f4f4f7; padding: 40px 0; font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif; direction: rtl; text-align: right;">
+          <table align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.07);">
+        
+            <!-- Header -->
+            <tr>
+              <td style="padding: 40px 40px 10px; text-align: center;">
+                <a href="https://codeyla.com/" target="_blank" style="text-decoration: none;">
+                  <img src="' . $logoUrl . '" alt="Codeyla Logo" style="width: 240px; margin-bottom: 20px;">
+                </a>
+                <h1 style="margin: 0; font-size: 22px; font-weight: 700; color: #333333;">رسالة جديدة من عميل عبر الموقع</h1>
+              </td>
+            </tr>
+        
+            <!-- Greeting -->
+            <tr>
+              <td style="padding: 10px 40px 0;">
+               <p style="font-size: 16px; color: #444;">مرحبًا فريق Codeyla،</p>
+              </td>
+            </tr>
+        
+            <!-- Body Content -->
+            <tr>
+              <td style="padding: 10px 40px 0;">
+                <p style="font-size: 16px; color: #444; line-height: 1.7;">
+                  تلقينا رسالة جديدة من أحد العملاء عبر نموذج التواصل على موقعكم بتاريخ <strong>' . date("Y-m-d") . '</strong>. التفاصيل كما يلي:
+                </p>
+        
+                <p style="font-size: 16px; color: #444; line-height: 1.7; margin-top: 20px;">
+                  <strong>الاسم:</strong> ' . htmlspecialchars($_POST['name']) . '<br>
+                  <strong>البريد الإلكتروني:</strong> 
+                  <a href="mailto:' . htmlspecialchars($_POST['email']) . '" style="color: #f4a835; font-weight: bold;" target="_blank">' . htmlspecialchars($_POST['email']) . '</a><br>
+                  <strong>الموضوع:</strong> ' . htmlspecialchars($_POST['subject']) . '<br>
+                </p>
+        
+                <p style="font-size: 16px; color: #444; line-height: 1.7; margin-top: 10px;">
+                  <strong>نص الرسالة:</strong><br>
+                  <span style="white-space: pre-line;">' . nl2br(htmlspecialchars($_POST['message'])) . '</span>
+                </p>
+        
+                <p style="font-size: 16px; color: #444; line-height: 1.7; margin-top: 20px;">
+                  يُرجى مراجعة الرسالة والتواصل مع العميل لمناقشة التفاصيل وتقديم العرض المناسب.
+                </p>
+        
+                <p style="font-size: 16px; color: #444; line-height: 1.7;">
+                  شكرًا لكم.
+                </p>
+              </td>
+            </tr>
+        
+            <!-- Footer -->
+            <tr>
+              <td style="padding: 30px 40px; text-align: center;">
+                <p style="font-size: 15px; color: #999; line-height: 1.6;">
+                  تم إرسال هذه الرسالة عبر نموذج "تواصل معنا" على موقع Codeyla. نلتزم بسياسات الخصوصية وشروط الاستخدام.
+                </p>
+                <p style="font-size: 14px; color: #aaa;">
+                  <a href="https://codeyla.com/privacy" style="color: #aaa; text-decoration: underline;" target="_blank">سياسة الخصوصية</a>
+                </p>
+                <p style="font-size: 13px; color: #aaa; margin-top: 15px;">
+                  © ' . date('Y') . ' Codeyla. جميع الحقوق محفوظة.
+                </p>
+              </td>
+            </tr>
+        
+          </table>
         </div>
-      ';
+        ';
 
 
         $mail->isHTML(true);
