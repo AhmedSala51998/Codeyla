@@ -26,8 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->Subject = 'New Codeyla Message';
 
-        $logoUrl = 'https://raw.githubusercontent.com/AhmedSala51998/Codeyla/master/assets/img/logo_email.png';
-        
+        $logoUrl = 'https://codeyla.com/assets/img/logo_email.png';
+  
        $body = '
         <div style="
           font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;
