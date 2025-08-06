@@ -61,6 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <strong>البريد الإلكتروني:</strong> 
                   <a href="mailto:' . htmlspecialchars($_POST['email']) . '" style="color: #f4a835; font-weight: bold;" target="_blank">' . htmlspecialchars($_POST['email']) . '</a><br>
                   <strong>الموضوع:</strong> ' . htmlspecialchars($_POST['subject']) . '<br>
+                  <strong>رقم الهاتف:</strong> ' . htmlspecialchars($_POST['phone']) . '<br>
                 </p>
         
                 <p style="font-size: 16px; color: #444; line-height: 1.7; margin-top: 10px;">
