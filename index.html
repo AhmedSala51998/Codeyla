@@ -1607,6 +1607,19 @@
       });
     });
   </script>
+  <script>
+  const path = window.location.pathname.replace(/^\/+|\/+$/g, '');
+  const sections = ['about', 'services', 'portfolio', 'contact'];
+
+  if (sections.includes(path)) {
+    window.addEventListener('DOMContentLoaded', () => {
+      const el = document.getElementById(path);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+</script>
 
 </body>
 
