@@ -1,8 +1,8 @@
 # تفعيل mod_rewrite
 RewriteEngine On
 
-# ✅ توجيه روابط السكشنات (about, services, portfolio, contact) إلى index.html
-RewriteRule ^(about|services|portfolio|contact)/?$ /index.html [L]
+# ✅ توجيه روابط السكشنات (about, services, portfolio, contact, call-to-action) إلى index.html
+RewriteRule ^(about|services|portfolio|contact|call-to-action)/?$ /index.html [L]
 
 # ✅ توجيه طلبات بدون .html لتفتح الملف .html فعليًا
 RewriteCond %{REQUEST_FILENAME}.html -f

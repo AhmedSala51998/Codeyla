@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>codeyla - دورات البرمجة التدريبية</title>
+  <meta name="description" content="منصة دورات برمجية متكاملة: تطوير ويب، تطبيقات موبايل، أنظمة ERP، سطح المكتب، ذكاء اصطناعي، تصميم ومونتاج وتسويق رقمي.">
+  <meta name="keywords" content="كورسات, برمجة, تطوير مواقع, تطبيقات موبايل, ERP, ذكاء اصطناعي, مونتاج, تسويق رقمي">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- SweetAlert2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Noto+Sans+Arabic:wght@100..900&family=Playpen+Sans+Arabic:wght@100..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link id="themeStylesheet" href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page" dir="rtl">
+
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+  </div>
+  <div id="pageContent">
+    <header id="header" class="header fixed-top">
+
+      <div class="topbar d-flex align-items-center dark-background">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:codeylacompany@gmail.com">codeylacompany@gmail.com</a></i>
+            <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">+966557703987</span></i>
+          </div>
+          <div class="social-links d-none d-md-flex align-items-center">
+            <a href="/portfolio" class="browse-link">
+              <i class="bi bi-layers animated-layers"></i>
+              تصفح أعمالنا
+            </a>
+          </div>
+        </div>
+      </div><!-- End Top Bar -->
+
+      <div class="branding d-flex align-items-cente">
+
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          <a href="/" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="Logo">
+          </a>
+
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="/">الرئيسية</a></li>
+              <li><a href="/about">من نحن</a></li>
+              <li><a href="/services">خدماتنا</a></li>
+              <li><a href="/portfolio">أعمالنا</a></li>
+              <li><a href="/blog">مقالاتنا</a></li>
+              <li><a href="/call-to-action" class="active">دورات تدريبية</a></li>
+              <li><a href="/contact">تواصل معنا</a></li>
+              <li class="d-none d-xl-block">
+                <div id="themeToggle" class="theme-switch-icon">
+                  <i class="bi bi-moon-fill"></i>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center gap-3">
+              <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+                <i class="bi bi-moon-fill"></i>
+              </div>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </div>
+
+          </nav>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <!-- Page Title -->
+      <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
+        <div class="container position-relative">
+          <h1>الدورات التدريبية</h1>
+          <p>دورات تدريبية عملية في البرمجة والتقنية تساعدك على تطوير مهاراتك وصقل خبراتك للوصول إلى فرص عمل مميزة في سوق العمل.</p>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="/">الرئيسية</a></li>
+              <li class="current">الدورات التدريبية</li>
+            </ol>
+          </nav>
+        </div>
+      </div><!-- End Page Title -->
+
+    <!-- Courses 2 Section -->
+    <section id="courses-2" class="courses-2 section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="course-filters" data-aos="fade-right" data-aos-delay="100">
+              <h4 class="filter-title">فلتر الدورات</h4>
+
+              <div class="filter-group">
+                <h5>التصنيف</h5>
+                <div class="filter-options">
+                  <label class="filter-checkbox">
+                    <input type="checkbox" checked="">
+                    <span class="checkmark"></span>
+                    كل التصنيفات
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    برمجة
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    تصميم
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    أعمال
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    تسويق
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <h5>المستوى</h5>
+                <div class="filter-options">
+                  <label class="filter-checkbox">
+                    <input type="checkbox" checked="">
+                    <span class="checkmark"></span>
+                    كل المستويات
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    مبتدئ
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    متوسط
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    متقدم
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <h5>المدة</h5>
+                <div class="filter-options">
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    أقل من 5 ساعات
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    5 - 20 ساعة
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    أكثر من 20 ساعة
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <h5>السعر</h5>
+                <div class="filter-options">
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    مجاني
+                  </label>
+                  <label class="filter-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    مدفوع
+                  </label>
+                </div>
+              </div>
+            </div><!-- End Course Filters -->
+          </div>
+
+          <div class="col-lg-9">
+            <div class="courses-header" data-aos="fade-left" data-aos-delay="100">
+              <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="ابحث عن دورة...">
+              </div>
+              <div class="sort-dropdown">
+                <select id="sortSelect">
+                  <option value="popular">ترتيب حسب: الأكثر شيوعاً</option>
+                  <option value="newest">الأحدث أولاً</option>
+                  <option value="price-asc">السعر: من الأقل للأعلى</option>
+                  <option value="price-desc">السعر: من الأعلى للأقل</option>
+                  <option value="duration-asc">المدة: الأقصر للأطول</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="courses-grid" data-aos="fade-up" data-aos-delay="200">
+              <div class="row">
+                <div class="col-lg-6 col-md-6" style="margin-bottom: 20px;">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="assets/img/education/courses-3.webp" alt="دورة" class="img-fluid">
+                      <div class="course-badge">الأكثر مبيعاً</div>
+                      <div style="background-color: #f4a835;" class="course-price"> ريال89</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <span class="category">برمجة</span>
+                        <span class="level">متوسط</span>
+                      </div>
+                      <h3>تطوير جافاسكريبت المتقدم</h3>
+                      <p>دورة عملية لاحتراف JavaScript الحديثة، بناء واجهات تفاعلية وتطبيقات ويب متقدمة مع أمثلة ومشاريع حقيقية.</p>
+                      <div class="course-stats">
+                        <div class="stat">
+                          <i class="bi bi-clock"></i>
+                          <span>15 ساعة</span>
+                        </div>
+                        <div class="stat">
+                          <i class="bi bi-people"></i>
+                          <span>1,245 طالب</span>
+                        </div>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <span>4.8 (89 تقييم)</span>
+                        </div>
+                      </div>
+                      <div class="instructor-info">
+                        <img src="assets/img/person/person-m-3.webp" alt="المدرب" class="instructor-avatar">
+                        <span class="instructor-name">د. ماركوس طومسون</span>
+                      </div>
+                      <a href="course_details_js" class="btn-course">تفاصيل الدورة</a>
+                    </div>
+                  </div><!-- End Course Card -->
+                </div>
+
+                <div class="col-lg-6 col-md-6" style="margin-bottom: 20px;">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="assets/img/education/courses-7.webp" alt="دورة" class="img-fluid">
+                      <div class="course-badge badge-free">مجاني</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <span class="category">تصميم</span>
+                        <span class="level">مبتدئ</span>
+                      </div>
+                      <h3>أساسيات تصميم واجهة وتجربة المستخدم (UI/UX)</h3>
+                      <p>دورة للمبتدئين تشرح مبادئ تصميم واجهات المستخدم وتجربة المستخدم مع أمثلة عملية وتصميم نماذج تفاعلية.</p>
+                      <div class="course-stats">
+                        <div class="stat">
+                          <i class="bi bi-clock"></i>
+                          <span>8 ساعات</span>
+                        </div>
+                        <div class="stat">
+                          <i class="bi bi-people"></i>
+                          <span>2,891 طالب</span>
+                        </div>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                          <span>4.6 (156 تقييم)</span>
+                        </div>
+                      </div>
+                      <div class="instructor-info">
+                        <img src="assets/img/person/person-f-7.webp" alt="المدربة" class="instructor-avatar">
+                        <span class="instructor-name">سارة جونسون</span>
+                      </div>
+                      <a href="course_details_ui" class="btn-course">تفاصيل الدورة</a>
+                    </div>
+                  </div><!-- End Course Card -->
+                </div>
+
+                <div class="col-lg-6 col-md-6" style="margin-bottom: 20px;">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="assets/img/education/courses-12.webp" alt="دورة" class="img-fluid">
+                      <div class="course-badge badge-new">جديد</div>
+                      <div class="course-price">ريال 149</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <span class="category">أعمال</span>
+                        <span class="level">مبتدئ</span>
+                      </div>
+                      <h3>استراتيجيات التسويق الرقمي</h3>
+                      <p>تعلم استراتيجيات تسويق متقدمة لإدارة الحملات الرقمية، تحسين الأداء ورفع العائد على الاستثمار عبر القنوات المختلفة.</p>
+                      <div class="course-stats">
+                        <div class="stat">
+                          <i class="bi bi-clock"></i>
+                          <span>22 ساعة</span>
+                        </div>
+                        <div class="stat">
+                          <i class="bi bi-people"></i>
+                          <span>678 طالب</span>
+                        </div>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <span>5.0 (42 تقييم)</span>
+                        </div>
+                      </div>
+                      <div class="instructor-info">
+                        <img src="assets/img/person/person-m-8.webp" alt="المدرب" class="instructor-avatar">
+                        <span class="instructor-name">ديفيد رودريغيز</span>
+                      </div>
+                      <a href="course_details_digitalmarkting" class="btn-course">تفاصيل الدورة</a>
+                    </div>
+                  </div><!-- End Course Card -->
+                </div>
+
+                <div class="col-lg-6 col-md-6" style="margin-bottom: 20px;">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="assets/img/education/courses-5.webp" alt="دورة" class="img-fluid">
+                      <div class="course-price">ريال 199</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <span class="category">برمجة</span>
+                        <span class="level">متقدم</span>
+                      </div>
+                      <h3>تعلم الآلة باستخدام بايثون</h3>
+                      <p>دورة متقدمة تغطي خوارزميات التعلم الآلي، نمذجة البيانات، وتطبيقات عملية باستخدام مكتبات Python الشهيرة.</p>
+                      <div class="course-stats">
+                        <div class="stat">
+                          <i class="bi bi-clock"></i>
+                          <span>35 ساعة</span>
+                        </div>
+                        <div class="stat">
+                          <i class="bi bi-people"></i>
+                          <span>534 طالب</span>
+                        </div>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <span>4.7 (73 تقييم)</span>
+                        </div>
+                      </div>
+                      <div class="instructor-info">
+                        <img src="assets/img/person/person-f-12.webp" alt="المدربة" class="instructor-avatar">
+                        <span class="instructor-name">بروف. آنا تشن</span>
+                      </div>
+                      <a href="course_details_ai" class="btn-course">تفاصيل الدورة</a>
+                    </div>
+                  </div><!-- End Course Card -->
+                </div>
+
+                <div class="col-lg-6 col-md-6" style="margin-bottom: 20px;">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="assets/img/education/courses-9.webp" alt="دورة" class="img-fluid">
+                      <div class="course-badge">شائع</div>
+                      <div class="course-price">ريال 59</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <span class="category">تسويق</span>
+                        <span class="level">متوسط</span>
+                      </div>
+                      <h3>التسويق عبر وسائل التواصل الاجتماعي</h3>
+                      <p>إدارة الحملات، إنشاء محتوى جذاب، وتحليل الأداء لتحقيق نمو فعّال على منصات التواصل.</p>
+                      <div class="course-stats">
+                        <div class="stat">
+                          <i class="bi bi-clock"></i>
+                          <span>12 ساعة</span>
+                        </div>
+                        <div class="stat">
+                          <i class="bi bi-people"></i>
+                          <span>3,457 طالب</span>
+                        </div>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                          <span>4.5 (234 تقييم)</span>
+                        </div>
+                      </div>
+                      <div class="instructor-info">
+                        <img src="assets/img/person/person-m-5.webp" alt="المدرب" class="instructor-avatar">
+                        <span class="instructor-name">مايكل ديفيس</span>
+                      </div>
+                      <a href="course_details_socialmedialmarketing" class="btn-course">تفاصيل الدورة</a>
+                    </div>
+                  </div><!-- End Course Card -->
+                </div>
+
+                <div class="col-lg-6 col-md-6" style="margin-bottom: 20px;">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="assets/img/education/courses-14.webp" alt="دورة" class="img-fluid">
+                      <div class="course-badge badge-certificate">شهادة</div>
+                      <div class="course-price">ريال 99</div>
+                    </div>
+                    <div class="course-content">
+                      <div class="course-meta">
+                        <span class="category">تصميم</span>
+                        <span class="level">متوسط</span>
+                      </div>
+                      <h3>إتقان التصميم الجرافيكي</h3>
+                      <p>دورة عملية لتعلم أدوات التصميم وابتكار هويات بصرية وحملات إعلانية بصرياً مميزة.</p>
+                      <div class="course-stats">
+                        <div class="stat">
+                          <i class="bi bi-clock"></i>
+                          <span>18 ساعة</span>
+                        </div>
+                        <div class="stat">
+                          <i class="bi bi-people"></i>
+                          <span>1,892 طالب</span>
+                        </div>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <span>4.9 (127 تقييم)</span>
+                        </div>
+                      </div>
+                      <div class="instructor-info">
+                        <img src="assets/img/person/person-f-9.webp" alt="المدربة" class="instructor-avatar">
+                        <span class="instructor-name">ليزا مارتينيز</span>
+                      </div>
+                      <a href="course_details_grahpicdesign" class="btn-course">تفاصيل الدورة</a>
+                    </div>
+                  </div><!-- End Course Card -->
+                </div>
+
+              </div>
+            </div><!-- End Courses Grid -->
+
+            <div class="pagination-wrapper" data-aos="fade-up" data-aos-delay="300">
+              <nav aria-label="Courses pagination">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="/courses" tabindex="-1" aria-disabled="true">
+                      <i class="bi bi-chevron-right"></i>
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="/courses">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="/courses">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="/courses">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="/courses">
+                      <i class="bi bi-chevron-left"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div><!-- End Pagination -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Courses 2 Section -->
+
+
+    </main>
+
+<footer id="footer" class="footer position-relative dark-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="/" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+        <p>نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.</p>
+        <!--<div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>-->
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>روابط مفيدة</h4>
+        <ul>
+          <li><a href="/">الرئيسية</a></li>
+          <li><a href="/about">من نحن</a></li>
+          <li><a href="/services">خدماتنا</a></li>
+          <li><a href="blog">مقالاتنا</a></li>
+          <li><a href="/contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>خدماتنا</h4>
+        <ul>
+          <li><a href="/services">تصميم مواقع</a></li>
+          <li><a href="/services">تطوير مواقع</a></li>
+          <li><a href="/services">تطوير تطبيقات</a></li>
+          <li><a href="/services">أنظمة محاسبه</a></li>
+          <li><a href="/services">ذكاء اصطناعي</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4 style="text-align: right;">تواصل معنا</h4>
+        <p style="text-align: right;">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;">امارة المدينة المنورة</p>
+        <p style="text-align: right;">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4"><strong>هاتف:</strong> <span>966557703987+</span></p>
+        <p style="text-align: right;"><strong>البريد الإلكتروني:</strong> <span>codeylacompany@gmail.com</span></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p><span>جميع الحقوق محفوظة</span> © <span>حقوق النشر 2025</span> </p><strong class="px-1 sitename">Codeyla</strong>
+    
+  </div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filtersContainer = document.querySelector('.course-filters');
+    const searchInput = document.querySelector('.search-box input[type="text"]');
+    const sortSelect = document.querySelector('.sort-dropdown select');
+    if (!filtersContainer || !searchInput || !sortSelect) return;
+
+    const checkboxes = filtersContainer.querySelectorAll('input[type="checkbox"]');
+    const coursesGridRow = document.querySelector('.courses-grid .row');
+    const courses = coursesGridRow.querySelectorAll('.col-lg-6');
+
+    // --- دوال الفلترة ---
+
+    function getSelectedValues(checkboxes) {
+      let allChecked = false;
+      const selected = new Set();
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          const label = cb.parentElement.textContent.trim();
+          if (label.startsWith('كل')) {
+            allChecked = true;
+          } else {
+            selected.add(label);
+          }
+        }
+      });
+      if (allChecked || selected.size === 0) return null;
+      return selected;
+    }
+
+    function applyFiltersAndSort() {
+      // جلب الفلاتر
+      const categoryCheckboxes = filtersContainer.querySelectorAll('.filter-group:nth-child(2) input[type="checkbox"]');
+      const levelCheckboxes = filtersContainer.querySelectorAll('.filter-group:nth-child(3) input[type="checkbox"]');
+      const durationCheckboxes = filtersContainer.querySelectorAll('.filter-group:nth-child(4) input[type="checkbox"]');
+      const priceCheckboxes = filtersContainer.querySelectorAll('.filter-group:nth-child(5) input[type="checkbox"]');
+
+      const selectedCategories = getSelectedValues(categoryCheckboxes);
+      const selectedLevels = getSelectedValues(levelCheckboxes);
+      const selectedDurations = getSelectedValues(durationCheckboxes);
+      const selectedPrices = getSelectedValues(priceCheckboxes);
+
+      const searchText = searchInput.value.trim().toLowerCase();
+
+      // تصفية الدورات بناء على الفلاتر والبحث
+      let visibleCourses = [];
+      courses.forEach(col => {
+        const course = col.querySelector('.course-card');
+        const category = course.querySelector('.course-meta .category')?.textContent.trim();
+        const level = course.querySelector('.course-meta .level')?.textContent.trim();
+        const priceText = course.querySelector('.course-price')?.textContent.trim() || '';
+        const priceBadge = course.querySelector('.course-badge')?.textContent.trim() || '';
+        const title = course.querySelector('.course-content h3')?.textContent.trim().toLowerCase() || '';
+        const description = course.querySelector('.course-content p')?.textContent.trim().toLowerCase() || '';
+        const durationText = course.querySelector('.course-stats .stat i.bi-clock')?.parentElement.textContent.trim() || '';
+
+        let visible = true;
+
+        if (selectedCategories && !selectedCategories.has(category)) visible = false;
+        if (selectedLevels && !selectedLevels.has(level)) visible = false;
+
+        if (selectedPrices) {
+          const isFree = priceBadge === 'مجاني' || priceText.includes('$0');
+          if (selectedPrices.has('مجاني') && !isFree) visible = false;
+          if (selectedPrices.has('مدفوع') && isFree) visible = false;
+        }
+
+        if (selectedDurations) {
+          const hoursMatch = durationText.match(/\d+/);
+          let hours = hoursMatch ? parseInt(hoursMatch[0], 10) : 0;
+          let durationMatch = false;
+          selectedDurations.forEach(dur => {
+            if (dur.includes('أقل من 5') && hours < 5) durationMatch = true;
+            if (dur.includes('5 - 20') && hours >= 5 && hours <= 20) durationMatch = true;
+            if (dur.includes('أكثر من 20') && hours > 20) durationMatch = true;
+          });
+          if (!durationMatch) visible = false;
+        }
+
+        if (searchText) {
+          if (!title.includes(searchText) && !description.includes(searchText)) {
+            visible = false;
+          }
+        }
+
+        col.style.display = visible ? '' : 'none';
+        if (visible) visibleCourses.push(col);
+      });
+
+      // --- فرز الدورات الظاهرة فقط ---
+      const sortBy = sortSelect.value;
+
+      function getCourseData(col) {
+        const course = col.querySelector('.course-card');
+        // السعر
+        const priceElem = course.querySelector('.course-price');
+        let price = 0;
+        if (priceElem) {
+          const priceText = priceElem.textContent.trim();
+          if (priceText.toLowerCase().includes('مجاني')) {
+            price = 0;
+          } else {
+            price = parseFloat(priceText.replace(/[^0-9.]/g, '')) || 0;
+          }
+        }
+
+        // المدة (ساعة)
+        const durationElem = course.querySelector('.course-stats .stat i.bi-clock')?.parentElement;
+        let duration = 0;
+        if (durationElem) {
+          const durationText = durationElem.textContent.trim();
+          const match = durationText.match(/(\d+)\s*ساعة/);
+          duration = match ? parseInt(match[1], 10) : 0;
+        }
+
+        // الأكثر شيوعاً (عدد الطلاب)
+        let popularity = 0;
+        const studentsElem = course.querySelector('.course-stats .stat i.bi-people')?.parentElement;
+        if (studentsElem) {
+          const studentsText = studentsElem.textContent.trim().replace(/,/g, '');
+          popularity = parseInt(studentsText) || 0;
+        }
+
+        return { price, duration, popularity };
+      }
+
+      visibleCourses.sort((a, b) => {
+        const aData = getCourseData(a);
+        const bData = getCourseData(b);
+        switch(sortBy) {
+          case 'price-asc':
+            return aData.price - bData.price;
+          case 'price-desc':
+            return bData.price - aData.price;
+          case 'duration-asc':
+            return aData.duration - bData.duration;
+          case 'newest':
+            // ليس هناك تاريخ، نفترض ترتيب DOM هو ترتيب الأحدث، نعكس الترتيب
+            return visibleCourses.indexOf(b) - visibleCourses.indexOf(a);
+          case 'popular':
+          default:
+            return bData.popularity - aData.popularity;
+        }
+      });
+
+      // إعادة ترتيب في الـ DOM
+      visibleCourses.forEach(col => coursesGridRow.appendChild(col));
+    }
+
+    // حدث تغيير على فلاتر و البحث و الترتيب
+    checkboxes.forEach(cb => cb.addEventListener('change', applyFiltersAndSort));
+    searchInput.addEventListener('input', applyFiltersAndSort);
+    sortSelect.addEventListener('change', applyFiltersAndSort);
+
+    // تنفيذ أولي
+    applyFiltersAndSort();
+  });
+ </script>
+
+
+</body>
+
+</html>
