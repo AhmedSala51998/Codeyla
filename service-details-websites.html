@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Codeyla - خدماتنا</title>
+  <title>Sweepicode - خدماتنا</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -50,283 +50,299 @@
   </div>
   <div id="pageContent">
   <header id="header" class="header fixed-top">
+        <div class="topbar d-flex align-items-center dark-background">
+          <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+              <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:sweepicodecompany@gmail.com">sweepicodecompany@gmail.com</a></i>
+              <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+              <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+                <a href="/portfolio" class="browse-link">
+                  <i class="bi bi-layers animated-layers"></i>
+                  <span data-translate="browse">تصفح أعمالنا</span>
+                </a>
+            </div>
+          </div>
+        </div><!-- End Top Bar -->
+        <!-- End Top Bar -->
 
-    <div class="topbar d-flex align-items-center dark-background">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:codeylacompany@gmail.com">codeylacompany@gmail.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
-        </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
-            <a href="/portfolio" class="browse-link">
-              <i class="bi bi-layers animated-layers"></i>
-              تصفح أعمالنا
+        <div class="branding d-flex align-items-cente">
+          <div class="container position-relative d-flex align-items-center justify-content-between">
+            <a href="/" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="" />
             </a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-cente">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="/" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="">
-          <!--<h1 style="margin-right: 10px;" class="sitename">رؤية جديدة</h1>-->
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="/">الرئيسية</a></li>
-            <li><a href="/about">من نحن</a></li>
-            <li><a href="/services" class="active">خدماتنا</a></li>
-            <li><a href="/portfolio">أعمالنا</a></li>
-            <li><a href="blog">مقالاتنا</a></li>
-            <li><a href="/call-to-action">دورات تدريبية</a></li>
-            <li><a href="/contact">تواصل معنا</a></li>
-            <li class="d-none d-xl-block">
-              <div id="themeToggle" class="theme-switch-icon">
+            <nav id="navmenu" class="navmenu">
+            <ul>
+            <li><a href="/" data-translate="home">الرئيسية</a></li>
+            <li><a href="/about" data-translate="about">من نحن</a></li>
+            <li><a href="/services" data-translate="services" class="active">خدماتنا</a></li>
+            <li><a href="/portfolio" data-translate="portfolio">أعمالنا</a></li>
+            <li><a href="blog" data-translate="blog">مقالاتنا</a></li>
+            <li><a href="/call-to-action" data-translate="courses">دورات تدريبية</a></li>
+            <li><a href="/contact" data-translate="contact">تواصل معنا</a></li>
+            <li class="language-switch d-none d-xl-block">
+                <button class="lang-btn">
+                  <div class="lang-flag">
+                    <img id="current-lang-flag" src="assets/img/languages/ar.png" alt="AR">
+                  </div>
+                  <span id="current-lang-text">عربي</span>
+                  <i class="bi bi-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu horizontal">
+                  <li data-lang="ar">
+                    <img src="assets/img/languages/ar.png" alt="AR">
+                    <span>عربي</span>
+                  </li>
+                  <li data-lang="en">
+                    <img src="assets/img/languages/en.png" alt="EN">
+                    <span>English</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="d-none d-xl-block">
+                <div id="themeToggle" class="theme-switch-icon">
+                  <i class="bi bi-moon-fill"></i>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center gap-2">
+              <button class="mobile-lang-btn d-xl-none">
+                <img id="mobile-lang-flag" src="assets/img/languages/ar.png" alt="Lang">
+              </button>
+              <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
                 <i class="bi bi-moon-fill"></i>
               </div>
-            </li>
-          </ul>
-          <div class="d-flex align-items-center gap-3">
-            <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
-              <i class="bi bi-moon-fill"></i>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </div>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
           </div>
-
-        </nav>
-
-      </div>
-
-    </div>
-
+        </div>
   </header>
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
-      <div class="container position-relative">
-        <h1>تطوير مواقع الويب الاحترافية</h1>
-        <p>نوفّر لك خدمة تصميم وبرمجة مواقع ويب متكاملة تلبي كافة احتياجاتك بأعلى جودة وسهولة استخدام.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="/">الرئيسية</a></li>
-            <li class="current">تطوير مواقع الويب</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+  <!-- Page Title -->
+  <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
+    <div class="container position-relative">
+      <h1><span data-translate="page_title_webdev">تطوير مواقع الويب الاحترافية</span></h1>
+      <p><span data-translate="page_subtitle_webdev">نوفّر لك خدمة تصميم وبرمجة مواقع ويب متكاملة تلبي كافة احتياجاتك بأعلى جودة وسهولة استخدام.</span></p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="/" data-translate="breadcrumb_home">الرئيسية</a></li>
+          <li class="current"><span data-translate="breadcrumb_webdev">تطوير مواقع الويب</span></li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
 
-    <!-- قسم تفاصيل الخدمة -->
-    <section id="service-details" class="service-details section">
-      <div class="container">
-        <div class="row gy-5">
+  <!-- قسم تفاصيل الخدمة -->
+  <section id="service-details" class="service-details section">
+    <div class="container">
+      <div class="row gy-5">
 
-          <!-- المحتوى الرئيسي -->
-          <div class="col-lg-8">
-            <div class="service-hero">
-              <img src="assets/img/services/6.jpg" alt="تصميم مواقع احترافي" class="img-fluid">
-              <div class="service-badge">
-                <span>خدمة مميزة</span>
+        <!-- المحتوى الرئيسي -->
+        <div class="col-lg-8">
+          <div class="service-hero">
+            <img src="assets/img/services/6.png" alt="تصميم مواقع احترافي" class="img-fluid">
+            <div class="service-badge">
+              <span data-translate="badge_featured">خدمة مميزة</span>
+            </div>
+          </div>
+
+          <div class="service-content">
+            <div class="service-header">
+              <h2 data-translate="service_title_webdev">تطوير مواقع ويب احترافية</h2>
+              <p class="service-intro" data-translate="service_intro_webdev">
+                نقدم لك خدمة برمجة وتصميم مواقع الويب بأعلى معايير الجودة والاحترافية، لنساعدك على تحويل أفكارك إلى موقع ديناميكي متكامل سهل الاستخدام ويعبر عن هوية عملك.
+              </p>
+            </div>
+
+            <div class="service-features">
+              <h4 data-translate="features_title">ماذا ستحصل عليه؟</h4>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-layout-text-window"></i>
+                    </div>
+                    <div style="margin-right: 5px;" class="feature-content">
+                      <h5 data-translate="feature_design">تصميم عصري متجاوب</h5>
+                      <p data-translate="feature_design_desc">متوافق مع جميع الأجهزة والشاشات لضمان أفضل تجربة للمستخدم.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-speedometer2"></i>
+                    </div>
+                    <div style="margin-right: 5px;" class="feature-content">
+                      <h5 data-translate="feature_performance">أداء عالي وسرعة تحميل ممتازة</h5>
+                      <p data-translate="feature_performance_desc">تحسين الكود لضمان سرعة وسلاسة التصفح.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <div style="margin-right: 5px;" class="feature-content">
+                      <h5 data-translate="feature_security">أمان وحماية</h5>
+                      <p data-translate="feature_security_desc">اعتماد أفضل ممارسات الأمان لحماية بياناتك ومستخدمي موقعك.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-gear"></i>
+                    </div>
+                    <div style="margin-right: 5px;" class="feature-content">
+                      <h5 data-translate="feature_scalability">قابلية التوسع والتخصيص</h5>
+                      <p data-translate="feature_scalability_desc">برمجة مرنة قابلة للتطوير حسب احتياجاتك المستقبلية.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="service-content">
-              <div class="service-header">
-                <h2>تطوير مواقع ويب احترافية</h2>
-                <p class="service-intro">
-                  نقدم لك خدمة برمجة وتصميم مواقع الويب بأعلى معايير الجودة والاحترافية، لنساعدك على تحويل أفكارك إلى موقع ديناميكي متكامل سهل الاستخدام ويعبر عن هوية عملك.
-                </p>
-              </div>
-
-              <div class="service-features">
-                <h4>ماذا ستحصل عليه؟</h4>
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <div class="feature-item">
-                      <div class="feature-icon">
-                        <i class="bi bi-layout-text-window"></i>
-                      </div>
-                      <div style="margin-right: 5px;" class="feature-content">
-                        <h5>تصميم عصري متجاوب</h5>
-                        <p>متوافق مع جميع الأجهزة والشاشات لضمان أفضل تجربة للمستخدم.</p>
-                      </div>
-                    </div>
+            <div class="service-process">
+              <h4 data-translate="process_title">آلية العمل</h4>
+              <div class="process-steps">
+                <div class="process-step">
+                  <div style="margin-left: 5px;" class="step-number">01</div>
+                  <div class="step-content">
+                    <h5 data-translate="process_step1">تحليل الاحتياجات</h5>
+                    <p data-translate="process_step1_desc">نجتمع معك لفهم رؤيتك ومتطلباتك بشكل دقيق.</p>
                   </div>
-                  <div class="col-md-6">
-                    <div class="feature-item">
-                      <div class="feature-icon">
-                        <i class="bi bi-speedometer2"></i>
-                      </div>
-                      <div style="margin-right: 5px;" class="feature-content">
-                        <h5>أداء عالي وسرعة تحميل ممتازة</h5>
-                        <p>تحسين الكود لضمان سرعة وسلاسة التصفح.</p>
-                      </div>
-                    </div>
+                </div>
+                <div class="process-step">
+                  <div style="margin-left: 5px;" class="step-number">02</div>
+                  <div class="step-content">
+                    <h5 data-translate="process_step2">تصميم تجربة المستخدم</h5>
+                    <p data-translate="process_step2_desc">تصميم واجهات استخدام سهلة وجذابة وفق معايير عالمية.</p>
                   </div>
-                  <div class="col-md-6">
-                    <div class="feature-item">
-                      <div class="feature-icon">
-                        <i class="bi bi-shield-lock"></i>
-                      </div>
-                      <div style="margin-right: 5px;" class="feature-content">
-                        <h5>أمان وحماية</h5>
-                        <p>اعتماد أفضل ممارسات الأمان لحماية بياناتك ومستخدمي موقعك.</p>
-                      </div>
-                    </div>
+                </div>
+                <div class="process-step">
+                  <div style="margin-left: 5px;" class="step-number">03</div>
+                  <div class="step-content">
+                    <h5 data-translate="process_step3">تطوير الموقع</h5>
+                    <p data-translate="process_step3_desc">تنفيذ البرمجة والتكامل مع الأنظمة المطلوبة بجودة عالية.</p>
                   </div>
-                  <div class="col-md-6">
-                    <div class="feature-item">
-                      <div class="feature-icon">
-                        <i class="bi bi-gear"></i>
-                      </div>
-                      <div style="margin-right: 5px;" class="feature-content">
-                        <h5>قابلية التوسع والتخصيص</h5>
-                        <p>برمجة مرنة قابلة للتطوير حسب احتياجاتك المستقبلية.</p>
-                      </div>
-                    </div>
+                </div>
+                <div class="process-step">
+                  <div style="margin-left: 5px;" class="step-number">04</div>
+                  <div class="step-content">
+                    <h5 data-translate="process_step4">الاختبار والتسليم</h5>
+                    <p data-translate="process_step4_desc">اختبار شامل لضمان خلو الموقع من الأخطاء قبل التسليم النهائي.</p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="service-process">
-                <h4>آلية العمل</h4>
-                <div class="process-steps">
-                  <div class="process-step">
-                    <div style="margin-left: 5px;" class="step-number">01</div>
-                    <div class="step-content">
-                      <h5>تحليل الاحتياجات</h5>
-                      <p>نجتمع معك لفهم رؤيتك ومتطلباتك بشكل دقيق.</p>
-                    </div>
-                  </div>
-                  <div class="process-step">
-                    <div style="margin-left: 5px;" class="step-number">02</div>
-                    <div class="step-content">
-                      <h5>تصميم تجربة المستخدم</h5>
-                      <p>تصميم واجهات استخدام سهلة وجذابة وفق معايير عالمية.</p>
-                    </div>
-                  </div>
-                  <div class="process-step">
-                    <div style="margin-left: 5px;" class="step-number">03</div>
-                    <div class="step-content">
-                      <h5>تطوير الموقع</h5>
-                      <p>تنفيذ البرمجة والتكامل مع الأنظمة المطلوبة بجودة عالية.</p>
-                    </div>
-                  </div>
-                  <div class="process-step">
-                    <div style="margin-left: 5px;" class="step-number">04</div>
-                    <div class="step-content">
-                      <h5>الاختبار والتسليم</h5>
-                      <p>اختبار شامل لضمان خلو الموقع من الأخطاء قبل التسليم النهائي.</p>
-                    </div>
-                  </div>
+            <div class="service-gallery">
+              <h4 data-translate="gallery_title">نماذج من أعمالنا</h4>
+              <div class="row gy-3">
+                <div class="col-md-4">
+                  <img src="assets/img/portfolio/5.png" alt="معرض المواقع" class="img-fluid rounded">
                 </div>
-              </div>
-
-              <div class="service-gallery">
-                <h4>نماذج من أعمالنا</h4>
-                <div class="row gy-3">
-                  <div class="col-md-4">
-                    <img src="assets/img/portfolio/5.jpg" alt="معرض المواقع" class="img-fluid rounded">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="assets/img/portfolio/3.jpg" alt="نماذج سابقة" class="img-fluid rounded">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="assets/img/portfolio/6.jpg" alt="مشاريعنا" class="img-fluid rounded">
-                  </div>
+                <div class="col-md-4">
+                  <img src="assets/img/portfolio/3.png" alt="نماذج سابقة" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/img/portfolio/6.png" alt="مشاريعنا" class="img-fluid rounded">
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- الشريط الجانبي -->
-          <div class="col-lg-4">
-            <div class="service-sidebar">
-
-              <div class="service-menu">
-                <h4>خدماتنا</h4>
-                <div class="menu-list">
-                  <a href="/services" class="menu-item active">
-                    <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                    <span>برمجة مواقع الويب</span>
-                  </a>
-                  <a href="/services" class="menu-item">
-                    <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                    <span>استشارات البرمجة</span>
-                  </a>
-                  <a href="/services" class="menu-item">
-                    <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                    <span>تصميم الهويات البصرية</span>
-                  </a>
-                  <a href="/services" class="menu-item">
-                    <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                    <span>إنشاء المحتوى</span>
-                  </a>
-                  <a href="/services" class="menu-item">
-                    <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                    <span>تحسين محركات البحث</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="service-info">
-                <h4>تفاصيل الخدمة</h4>
-                <div class="info-list">
-                  <div class="info-item">
-                    <span class="info-label">مدة التنفيذ:</span>
-                    <span class="info-value">من 4 إلى 8 أسابيع</span>
-                  </div>
-                  <div class="info-item">
-                    <span class="info-label">حجم الفريق:</span>
-                    <span class="info-value">من 3 إلى 5 مطورين</span>
-                  </div>
-                  <div class="info-item">
-                    <span class="info-label">التقارير:</span>
-                    <span class="info-value">تقرير أسبوعي شامل</span>
-                  </div>
-                  <div class="info-item">
-                    <span class="info-label">الدعم:</span>
-                    <span class="info-value">متاح 24/7</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="contact-card">
-                <div class="contact-content">
-                  <h4>تحتاج مساعدة؟</h4>
-                  <p>يسعدنا الإجابة على كافة استفساراتك وتقديم الدعم المناسب لك في أي وقت.</p>
-                  <div class="contact-info">
-                    <div class="contact-item">
-                      <i style="margin-left: 5px;" class="bi bi-telephone"></i>
-                      <span>00966557703987</span>
-                    </div>
-                    <div class="contact-item">
-                      <i style="margin-left: 5px;" class="bi bi-envelope"></i>
-                      <span>codeylacompany@gmail.com</span>
-                    </div>
-                  </div>
-                  <a href="/contact" class="btn btn-primary">تواصل معنا الان مستني ايه ؟؟!</a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
         </div>
+
+        <!-- الشريط الجانبي -->
+        <div class="col-lg-4">
+          <div class="service-sidebar">
+
+            <div class="service-menu">
+              <h4 data-translate="sidebar_services_title">خدماتنا</h4>
+              <div class="menu-list">
+                <a href="/services" class="menu-item active">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_webdev">برمجة مواقع الويب</span>
+                </a>
+                <a href="/services" class="menu-item">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_consulting">استشارات البرمجة</span>
+                </a>
+                <a href="/services" class="menu-item">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_design">تصميم الهويات البصرية</span>
+                </a>
+                <a href="/services" class="menu-item">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_content">إنشاء المحتوى</span>
+                </a>
+                <a href="/services" class="menu-item">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_seo">تحسين محركات البحث</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="service-info">
+              <h4 data-translate="service_info_title">تفاصيل الخدمة</h4>
+              <div class="info-list">
+                <div class="info-item">
+                  <span class="info-label" data-translate="service_info_duration">مدة التنفيذ:</span>
+                  <span class="info-value" data-translate="service_info_duration_value">من 4 إلى 8 أسابيع</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label" data-translate="service_info_team">حجم الفريق:</span>
+                  <span class="info-value" data-translate="service_info_team_value">من 3 إلى 5 مطورين</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label" data-translate="service_info_reports">التقارير:</span>
+                  <span class="info-value" data-translate="service_info_reports_value">تقرير أسبوعي شامل</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label" data-translate="service_info_support">الدعم:</span>
+                  <span class="info-value" data-translate="service_info_support_value">متاح 24/7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-content">
+                <h4 data-translate="contact_title">تحتاج مساعدة؟</h4>
+                <p data-translate="contact_desc">يسعدنا الإجابة على كافة استفساراتك وتقديم الدعم المناسب لك في أي وقت.</p>
+                <div class="contact-info">
+                  <div class="contact-item">
+                    <i style="margin-left: 5px;" class="bi bi-telephone"></i>
+                    <span>00966557703987</span>
+                  </div>
+                  <div class="contact-item">
+                    <i style="margin-left: 5px;" class="bi bi-envelope"></i>
+                    <span>sweepicodecompany@gmail.com</span>
+                  </div>
+                </div>
+                <a href="/contact" class="btn btn-primary" data-translate="contact_cta">تواصل معنا الان مستني ايه ؟؟!</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-    </section>
-    <!-- /قسم تفاصيل الخدمة -->
+    </div>
+  </section>
+  <!-- /قسم تفاصيل الخدمة -->
 
   </main>
+
 
   <footer id="footer" class="footer position-relative dark-background">
 
@@ -336,52 +352,56 @@
         <a href="/" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="">
         </a>
-        <p>نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.</p>
-        <!--<div class="social-links d-flex mt-4">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>-->
+        <p data-translate="footer_about">
+          نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
+        </p>
       </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>روابط مفيدة</h4>
-            <ul>
-              <li><a href="/">الرئيسية</a></li>
-              <li><a href="/about">من نحن</a></li>
-              <li><a href="/services">خدماتنا</a></li>
-              <li><a href="blog">مقالاتنا</a></li>
-              <li><a href="/contact">تواصل معنا</a></li>
-            </ul>
-          </div>
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="useful_links">روابط مفيدة</h4>
+        <ul>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about_us">من نحن</a></li>
+          <li><a href="/services" data-translate="our_services">خدماتنا</a></li>
+          <li><a href="blog" data-translate="our_blog">مقالاتنا</a></li>
+          <li><a href="/contact" data-translate="contact_us">تواصل معنا</a></li>
+        </ul>
+      </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>خدماتنا</h4>
-            <ul>
-              <li><a href="/services">تصميم مواقع</a></li>
-              <li><a href="/services">تطوير مواقع</a></li>
-              <li><a href="/services">تطوير تطبيقات</a></li>
-              <li><a href="/services">أنظمة محاسبة</a></li>
-              <li><a href="/services">ذكاء اصطناعي</a></li>
-            </ul>
-          </div>
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="services">خدماتنا</h4>
+        <ul>
+          <li><a href="/services" data-translate="web_design">تصميم مواقع</a></li>
+          <li><a href="/services" data-translate="web_development">تطوير مواقع</a></li>
+          <li><a href="/services" data-translate="app_development">تطوير تطبيقات</a></li>
+          <li><a href="/services" data-translate="accounting_systems">أنظمة محاسبه</a></li>
+          <li><a href="/services" data-translate="artificial_intelligence">ذكاء اصطناعي</a></li>
+        </ul>
+      </div>
 
       <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-        <h4 style="text-align: right;">تواصل معنا</h4>
-        <p style="text-align: right;">حي السميري - مدينة ينبع</p>
-        <p style="text-align: right;">امارة المدينة المنورة</p>
-        <p style="text-align: right;">المملكة العربية السعودية</p>
-        <p style="text-align: right;" class="mt-4"><strong>هاتف:</strong> <span>966557703987+</span></p>
-        <p style="text-align: right;"><strong>البريد الإلكتروني:</strong> <span>codeylacompany@gmail.com</span></p>
+        <h4 style="text-align: right;" data-translate="contact_us">تواصل معنا</h4>
+        <p style="text-align: right;" data-translate="address_line1">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;" data-translate="address_line2">امارة المدينة المنورة</p>
+        <p style="text-align: right;" data-translate="address_line3">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4">
+          <strong data-translate="phone_label">هاتف:</strong> 
+          <span>966557703987+</span>
+        </p>
+        <p style="text-align: right;">
+          <strong data-translate="email_label">البريد الإلكتروني:</strong> 
+          <span>sweepicodecompany@gmail.com</span>
+        </p>
       </div>
-
     </div>
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p><span>جميع الحقوق محفوظة</span> © <span>حقوق النشر 2025</span> </p><strong class="px-1 sitename">Codeyla</strong>
-    
+    <p>
+      <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span> © 
+      <span data-translate="copyright_year">حقوق النشر 2025</span>
+    </p>
+    <strong class="px-1 sitename">Sweepicode</strong>
   </div>
 
 </footer>

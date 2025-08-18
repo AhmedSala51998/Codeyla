@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Codeyla - مقالاتنا</title>
+  <title>Sweepicode - مقالاتنا</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -50,338 +50,355 @@
   </div>
   <div id="pageContent">
     <header id="header" class="header fixed-top">
-
       <div class="topbar d-flex align-items-center dark-background">
         <div class="container d-flex justify-content-center justify-content-md-between">
           <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:codeylacompany@gmail.com">codeylacompany@gmail.com</a></i>
+            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:sweepicodecompany@gmail.com">sweepicodecompany@gmail.com</a></i>
             <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
           </div>
           <div class="social-links d-none d-md-flex align-items-center">
             <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
-            <a href="/portfolio" class="browse-link">
-              <i class="bi bi-layers animated-layers"></i>
-              تصفح أعمالنا
-            </a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+              <a href="/portfolio" class="browse-link">
+                <i class="bi bi-layers animated-layers"></i>
+                <span data-translate="browse">تصفح أعمالنا</span>
+              </a>
           </div>
         </div>
       </div><!-- End Top Bar -->
+      <!-- End Top Bar -->
 
       <div class="branding d-flex align-items-cente">
-
         <div class="container position-relative d-flex align-items-center justify-content-between">
           <a href="/" class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="assets/img/logo.png" alt="">
-            <!--<h1 style="margin-right: 10px;" class="sitename">رؤية جديدة</h1>-->
+            <img src="assets/img/logo.png" alt="" />
           </a>
 
           <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="/">الرئيسية</a></li>
-              <li><a href="/about">من نحن</a></li>
-              <li><a href="/services">خدماتنا</a></li>
-              <li><a href="/portfolio">أعمالنا</a></li>
-              <li><a href="blog" class="active">مقالاتنا</a></li>
-              <li><a href="/call-to-action">دورات تدريبية</a></li>
-              <li><a href="/contact">تواصل معنا</a></li>
-              <li class="d-none d-xl-block">
-                <div id="themeToggle" class="theme-switch-icon">
-                  <i class="bi bi-moon-fill"></i>
+          <ul>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about">من نحن</a></li>
+          <li><a href="/services" data-translate="services">خدماتنا</a></li>
+          <li><a href="/portfolio" data-translate="portfolio">أعمالنا</a></li>
+          <li><a href="blog" data-translate="blog" class="active">مقالاتنا</a></li>
+          <li><a href="/call-to-action" data-translate="courses">دورات تدريبية</a></li>
+          <li><a href="/contact" data-translate="contact">تواصل معنا</a></li>
+          <li class="language-switch d-none d-xl-block">
+              <button class="lang-btn">
+                <div class="lang-flag">
+                  <img id="current-lang-flag" src="assets/img/languages/ar.png" alt="AR">
                 </div>
-              </li>
-            </ul>
-            <div class="d-flex align-items-center gap-3">
-              <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+                <span id="current-lang-text">عربي</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu horizontal">
+                <li data-lang="ar">
+                  <img src="assets/img/languages/ar.png" alt="AR">
+                  <span>عربي</span>
+                </li>
+                <li data-lang="en">
+                  <img src="assets/img/languages/en.png" alt="EN">
+                  <span>English</span>
+                </li>
+              </ul>
+            </li>
+            <li class="d-none d-xl-block">
+              <div id="themeToggle" class="theme-switch-icon">
                 <i class="bi bi-moon-fill"></i>
               </div>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <button class="mobile-lang-btn d-xl-none">
+              <img id="mobile-lang-flag" src="assets/img/languages/ar.png" alt="Lang">
+            </button>
+            <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+              <i class="bi bi-moon-fill"></i>
             </div>
-
-          </nav>
-
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </div>
+        </nav>
         </div>
-
       </div>
-
     </header>
 
-    <main class="main">
+<main class="main">
 
+  <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
+    <div class="container position-relative">
+      <h1 data-translate="mobile_apps_title">تطبيقات الجوال</h1>
+      <p data-translate="mobile_apps_subtitle">تطور تطبيقات الهواتف الذكية من أدوات بسيطة إلى منصات متكاملة تقدم تجارب مستخدم مميزة ومبتكرة.</p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="/" data-translate="breadcrumb_home">الرئيسية</a></li>
+          <li class="current" data-translate="breadcrumb_mobile_apps">تطبيقات الجوال</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
 
-      <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
-        <div class="container position-relative">
-          <h1>تطبيقات الجوال</h1>
-          <p>تطور تطبيقات الهواتف الذكية من أدوات بسيطة إلى منصات متكاملة تقدم تجارب مستخدم مميزة ومبتكرة.</p>
-          <nav class="breadcrumbs">
-            <ol>
-              <li><a href="/">الرئيسية</a></li>
-              <li class="current">تطبيقات الجوال</li>
-            </ol>
-          </nav>
+  <!-- تفاصيل المقال -->
+  <section id="blog-details" class="blog-details section">
+    <div class="container" data-aos="fade-up">
+
+      <article class="article">
+        <div class="article-header">
+          <div class="meta-categories" data-aos="fade-up">
+            <a href="#" class="category" data-translate="category_technology">تكنولوجيا</a>
+            <a href="#" class="category" data-translate="category_apps">تطبيقات</a>
+          </div>
+
+          <h1 class="title" data-aos="fade-up" data-aos-delay="100" data-translate="article_title_app">عالم تطبيقات الجوال: من أدوات بسيطة إلى منصات متطورة</h1>
+
+          <div class="article-meta" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-info">
+              <span><i class="bi bi-calendar4-week"></i> <span data-translate="article_date">3 أغسطس 2025</span></span>
+            </div>
+          </div>
         </div>
+
+        <div class="article-featured-image" data-aos="zoom-in">
+          <img src="assets/img/blog/blog4.jpg" alt="Mobile Apps Evolution" class="img-fluid">
+        </div>
+
+        <div class="article-wrapper">
+          <aside class="table-of-contents" data-aos="fade-left">
+            <h3 data-translate="toc_title">فهرس المحتويات</h3>
+            <nav>
+              <ul>
+                <li><a href="#introduction" class="active" data-translate="toc_intro">مقدمة</a></li>
+                <li><a href="#early-apps" data-translate="toc_early_apps">التطبيقات المبكرة</a></li>
+                <li><a href="#smartphone-era" data-translate="toc_smartphone_era">عصر الهواتف الذكية</a></li>
+                <li><a href="#cross-platform" data-translate="toc_cross_platform">التطوير متعدد المنصات</a></li>
+                <li><a href="#modern-tools" data-translate="toc_modern_tools">أدوات حديثة</a></li>
+                <li><a href="#future" data-translate="toc_future">مستقبل تطبيقات الجوال</a></li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="article-content">
+            <div class="content-section" id="introduction" data-aos="fade-up">
+              <p class="lead" data-translate="intro_text1_app">
+                شهد عالم تطبيقات الهواتف الذكية تطورًا هائلًا، حيث انتقل من أدوات محدودة الوظائف إلى منصات متكاملة تقدم خدمات متنوعة وتجارب مستخدم غنية.
+              </p>
+              <p data-translate="intro_text2_app">
+                لم يعد التطبيق مجرد أداة مساعدة، بل أصبح جزءًا لا يتجزأ من الحياة اليومية للمستخدمين حول العالم، مما دفع المطورين إلى الابتكار باستمرار.
+              </p>
+              <div class="highlight-quote">
+                <blockquote>
+                  <p data-translate="intro_quote_app">التطبيق الناجح هو الذي يقدم قيمة حقيقية ويُسهل حياة المستخدم.</p>
+                  <cite data-translate="intro_quote_author_app">خبير تطوير تطبيقات الجوال</cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="content-section" id="early-apps" data-aos="fade-up">
+              <h2 data-translate="early_apps_title">التطبيقات المبكرة</h2>
+              <div class="image-with-caption right">
+                <img src="assets/img/blog/blog2.jpg" alt="Early Mobile Apps" class="img-fluid" loading="lazy">
+                <figcaption data-translate="early_apps_caption">تطبيقات الجوال في بداية العقد الأول من الألفية</figcaption>
+              </div>
+              <p data-translate="early_apps_text">
+                كانت التطبيقات الأولى محدودة جدًا، تقتصر على وظائف بسيطة مثل الملاحظات، التقويم، وبعض الألعاب البسيطة على أجهزة مثل نوكيا وبلاك بيري.
+              </p>
+              <div class="feature-points">
+                <div class="point">
+                  <i class="bi bi-phone"></i>
+                  <div>
+                    <h4 data-translate="basic_functions_title">وظائف أساسية</h4>
+                    <p data-translate="basic_functions_text">أدوات محدودة تركز على الوظائف الأساسية.</p>
+                  </div>
+                </div>
+                <div class="point">
+                  <i class="bi bi-clock-history"></i>
+                  <div>
+                    <h4 data-translate="limited_performance_title">أداء محدود</h4>
+                    <p data-translate="limited_performance_text">تعتمد على قدرات الأجهزة المحدودة في ذلك الوقت.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="smartphone-era" data-aos="fade-up">
+              <h2 data-translate="smartphone_era_title">عصر الهواتف الذكية</h2>
+              <p data-translate="smartphone_era_text">
+                مع دخول الأيفون والأندرويد، تغير المشهد بالكامل، وظهرت متاجر التطبيقات التي سهّلت الوصول وتحميل التطبيقات المتنوعة.
+              </p>
+              <div class="comparison-grid">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="comparison-card">
+                      <div class="icon"><i class="bi bi-check-circle"></i></div>
+                      <h4 data-translate="features_title">الميزات</h4>
+                      <ul>
+                        <li data-translate="feature_rich_ui">تجارب مستخدم غنية وتفاعلية</li>
+                        <li data-translate="feature_integration">تكامل مع خدمات الهاتف</li>
+                        <li data-translate="feature_updates">تحديثات منتظمة وسريعة</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="comparison-card">
+                      <div class="icon"><i class="bi bi-exclamation-circle"></i></div>
+                      <h4 data-translate="challenges_title">التحديات</h4>
+                      <ul>
+                        <li data-translate="challenge_performance">متطلبات عالية للأداء والأمان</li>
+                        <li data-translate="challenge_compatibility">التوافق مع أجهزة وأنظمة متعددة</li>
+                        <li data-translate="challenge_competition">التنافس الشديد في المتاجر</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="cross-platform" data-aos="fade-up">
+              <h2 data-translate="cross_platform_title">التطوير متعدد المنصات</h2>
+              <p data-translate="cross_platform_text">
+                ظهرت تقنيات مثل Flutter، React Native، وXamarin التي تسمح ببرمجة تطبيق واحد يعمل على عدة أنظمة مع الحفاظ على جودة الأداء.
+              </p>
+              <div class="key-principles">
+                <div class="principle">
+                  <span class="number">01</span>
+                  <h4 data-translate="principle_time_effort">توفير الوقت والجهد</h4>
+                  <p data-translate="principle_time_effort_text">برمجة واحدة للعديد من الأنظمة.</p>
+                </div>
+                <div class="principle">
+                  <span class="number">02</span>
+                  <h4 data-translate="principle_unified_ui">تجربة مستخدم موحدة</h4>
+                  <p data-translate="principle_unified_ui_text">تقديم واجهات متشابهة على مختلف الأجهزة.</p>
+                </div>
+                <div class="principle">
+                  <span class="number">03</span>
+                  <h4 data-translate="principle_support">دعم مستمر</h4>
+                  <p data-translate="principle_support_text">أدوات ومجتمعات نشطة حول هذه التقنيات.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="modern-tools" data-aos="fade-up">
+              <h2 data-translate="modern_tools_title">أدوات حديثة في تطوير التطبيقات</h2>
+              <p data-translate="modern_tools_text">
+                يعتمد المطورون الآن على أدوات مثل Firebase، AWS Amplify، وGraphQL لتسريع تطوير التطبيقات وتوفير حلول متكاملة.
+              </p>
+              <div class="info-box">
+                <div class="icon"><i class="bi bi-phone-fill"></i></div>
+                <div class="content">
+                  <h4 data-translate="top_tools_title">أبرز الأدوات</h4>
+                  <p data-translate="top_tools_text">تساعد هذه الأدوات في إدارة البيانات، التحليلات، والإشعارات بشكل سلس وفعال.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section" id="future" data-aos="fade-up">
+              <h2 data-translate="future_title">نظرة إلى المستقبل</h2>
+              <p data-translate="future_text">
+                مستقبل تطبيقات الجوال يشير إلى توسع استخدام الذكاء الاصطناعي، الواقع المعزز، وتقنيات الاتصال السريع لتقديم تجارب أكثر تفاعلية وشخصية.
+              </p>
+              <div class="future-trends">
+                <div class="trend">
+                  <i class="bi bi-robot"></i>
+                  <h4 data-translate="future_ai_title">الذكاء الاصطناعي</h4>
+                  <p data-translate="future_ai_text">توفير مساعدات ذكية وتجارب مخصصة للمستخدمين.</p>
+                </div>
+                <div class="trend">
+                  <i class="bi bi-arrows-expand"></i>
+                  <h4 data-translate="future_ar_title">الواقع المعزز</h4>
+                  <p data-translate="future_ar_text">دمج العالم الرقمي مع الواقع الحقيقي لتجارب جديدة.</p>
+                </div>
+                <div class="trend">
+                  <i class="bi bi-wifi"></i>
+                  <h4 data-translate="future_tech_title">تقنيات اتصال متقدمة</h4>
+                  <p data-translate="future_tech_text">سرعات أعلى لاتصالات أكثر سلاسة وتفاعلية.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-footer" data-aos="fade-up">
+          <div class="article-tags">
+            <h4 data-translate="related_topics">مواضيع ذات صلة</h4>
+            <div class="tags">
+              <a href="#" class="tag" data-translate="tag_mobile_apps">تطبيقات الجوال</a>
+              <a href="#" class="tag" data-translate="tag_user_experience">تجربة المستخدم</a>
+              <a href="#" class="tag" data-translate="tag_technology">تكنولوجيا</a>
+              <a href="#" class="tag" data-translate="tag_app_dev">تطوير التطبيقات</a>
+              <a href="#" class="tag" data-translate="tag_modern_tools">أدوات حديثة</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+
+     <footer id="footer" class="footer position-relative dark-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="/" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+        <p data-translate="footer_about">
+          نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
+        </p>
       </div>
 
-      <!-- تفاصيل المقال -->
-      <section id="blog-details" class="blog-details section">
-        <div class="container" data-aos="fade-up">
-
-          <article class="article">
-            <div class="article-header">
-              <div class="meta-categories" data-aos="fade-up">
-                <a href="#" class="category">تكنولوجيا</a>
-                <a href="#" class="category">تطبيقات</a>
-              </div>
-
-              <h1 class="title" data-aos="fade-up" data-aos-delay="100">عالم تطبيقات الجوال: من أدوات بسيطة إلى منصات متطورة</h1>
-
-              <div class="article-meta" data-aos="fade-up" data-aos-delay="200">
-                <div class="post-info">
-                  <span><i class="bi bi-calendar4-week"></i> 3 أغسطس 2025</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="article-featured-image" data-aos="zoom-in">
-              <img src="assets/img/blog/blog4.jpg" alt="Mobile Apps Evolution" class="img-fluid">
-            </div>
-
-            <div class="article-wrapper">
-              <aside class="table-of-contents" data-aos="fade-left">
-                <h3>فهرس المحتويات</h3>
-                <nav>
-                  <ul>
-                    <li><a href="#introduction" class="active">مقدمة</a></li>
-                    <li><a href="#early-apps">التطبيقات المبكرة</a></li>
-                    <li><a href="#smartphone-era">عصر الهواتف الذكية</a></li>
-                    <li><a href="#cross-platform">التطوير متعدد المنصات</a></li>
-                    <li><a href="#modern-tools">أدوات حديثة</a></li>
-                    <li><a href="#future">مستقبل تطبيقات الجوال</a></li>
-                  </ul>
-                </nav>
-              </aside>
-
-              <div class="article-content">
-                <div class="content-section" id="introduction" data-aos="fade-up">
-                  <p class="lead">
-                    شهد عالم تطبيقات الهواتف الذكية تطورًا هائلًا، حيث انتقل من أدوات محدودة الوظائف إلى منصات متكاملة تقدم خدمات متنوعة وتجارب مستخدم غنية.
-                  </p>
-                  <p>
-                    لم يعد التطبيق مجرد أداة مساعدة، بل أصبح جزءًا لا يتجزأ من الحياة اليومية للمستخدمين حول العالم، مما دفع المطورين إلى الابتكار باستمرار.
-                  </p>
-                  <div class="highlight-quote">
-                    <blockquote>
-                      <p>التطبيق الناجح هو الذي يقدم قيمة حقيقية ويُسهل حياة المستخدم.</p>
-                      <cite>خبير تطوير تطبيقات الجوال</cite>
-                    </blockquote>
-                  </div>
-                </div>
-
-                <div class="content-section" id="early-apps" data-aos="fade-up">
-                  <h2>التطبيقات المبكرة</h2>
-                  <div class="image-with-caption right">
-                    <img src="assets/img/blog/blog2.jpg" alt="Early Mobile Apps" class="img-fluid" loading="lazy">
-                    <figcaption>تطبيقات الجوال في بداية العقد الأول من الألفية</figcaption>
-                  </div>
-                  <p>
-                    كانت التطبيقات الأولى محدودة جدًا، تقتصر على وظائف بسيطة مثل الملاحظات، التقويم، وبعض الألعاب البسيطة على أجهزة مثل نوكيا وبلاك بيري.
-                  </p>
-                  <div class="feature-points">
-                    <div class="point">
-                      <i class="bi bi-phone"></i>
-                      <div>
-                        <h4>وظائف أساسية</h4>
-                        <p>أدوات محدودة تركز على الوظائف الأساسية.</p>
-                      </div>
-                    </div>
-                    <div class="point">
-                      <i class="bi bi-clock-history"></i>
-                      <div>
-                        <h4>أداء محدود</h4>
-                        <p>تعتمد على قدرات الأجهزة المحدودة في ذلك الوقت.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="content-section" id="smartphone-era" data-aos="fade-up">
-                  <h2>عصر الهواتف الذكية</h2>
-                  <p>
-                    مع دخول الأيفون والأندرويد، تغير المشهد بالكامل، وظهرت متاجر التطبيقات التي سهّلت الوصول وتحميل التطبيقات المتنوعة.
-                  </p>
-                  <div class="comparison-grid">
-                    <div class="row g-4">
-                      <div class="col-md-6">
-                        <div class="comparison-card">
-                          <div class="icon"><i class="bi bi-check-circle"></i></div>
-                          <h4>الميزات</h4>
-                          <ul>
-                            <li>تجارب مستخدم غنية وتفاعلية</li>
-                            <li>تكامل مع خدمات الهاتف</li>
-                            <li>تحديثات منتظمة وسريعة</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="comparison-card">
-                          <div class="icon"><i class="bi bi-exclamation-circle"></i></div>
-                          <h4>التحديات</h4>
-                          <ul>
-                            <li>متطلبات عالية للأداء والأمان</li>
-                            <li>التوافق مع أجهزة وأنظمة متعددة</li>
-                            <li>التنافس الشديد في المتاجر</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="content-section" id="cross-platform" data-aos="fade-up">
-                  <h2>التطوير متعدد المنصات</h2>
-                  <p>
-                    ظهرت تقنيات مثل Flutter، React Native، وXamarin التي تسمح ببرمجة تطبيق واحد يعمل على عدة أنظمة مع الحفاظ على جودة الأداء.
-                  </p>
-                  <div class="key-principles">
-                    <div class="principle">
-                      <span class="number">01</span>
-                      <h4>توفير الوقت والجهد</h4>
-                      <p>برمجة واحدة للعديد من الأنظمة.</p>
-                    </div>
-                    <div class="principle">
-                      <span class="number">02</span>
-                      <h4>تجربة مستخدم موحدة</h4>
-                      <p>تقديم واجهات متشابهة على مختلف الأجهزة.</p>
-                    </div>
-                    <div class="principle">
-                      <span class="number">03</span>
-                      <h4>دعم مستمر</h4>
-                      <p>أدوات ومجتمعات نشطة حول هذه التقنيات.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="content-section" id="modern-tools" data-aos="fade-up">
-                  <h2>أدوات حديثة في تطوير التطبيقات</h2>
-                  <p>
-                    يعتمد المطورون الآن على أدوات مثل Firebase، AWS Amplify، وGraphQL لتسريع تطوير التطبيقات وتوفير حلول متكاملة.
-                  </p>
-                  <div class="info-box">
-                    <div class="icon"><i class="bi bi-phone-fill"></i></div>
-                    <div class="content">
-                      <h4>أبرز الأدوات</h4>
-                      <p>تساعد هذه الأدوات في إدارة البيانات، التحليلات، والإشعارات بشكل سلس وفعال.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="content-section" id="future" data-aos="fade-up">
-                  <h2>نظرة إلى المستقبل</h2>
-                  <p>
-                    مستقبل تطبيقات الجوال يشير إلى توسع استخدام الذكاء الاصطناعي، الواقع المعزز، وتقنيات الاتصال السريع لتقديم تجارب أكثر تفاعلية وشخصية.
-                  </p>
-                  <div class="future-trends">
-                    <div class="trend">
-                      <i class="bi bi-robot"></i>
-                      <h4>الذكاء الاصطناعي</h4>
-                      <p>توفير مساعدات ذكية وتجارب مخصصة للمستخدمين.</p>
-                    </div>
-                    <div class="trend">
-                      <i class="bi bi-arrows-expand"></i>
-                      <h4>الواقع المعزز</h4>
-                      <p>دمج العالم الرقمي مع الواقع الحقيقي لتجارب جديدة.</p>
-                    </div>
-                    <div class="trend">
-                      <i class="bi bi-wifi"></i>
-                      <h4>تقنيات اتصال متقدمة</h4>
-                      <p>سرعات أعلى لاتصالات أكثر سلاسة وتفاعلية.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="article-footer" data-aos="fade-up">
-
-              <div class="article-tags">
-                <h4>مواضيع ذات صلة</h4>
-                <div class="tags">
-                  <a href="#" class="tag">تطبيقات الجوال</a>
-                  <a href="#" class="tag">تجربة المستخدم</a>
-                  <a href="#" class="tag">تكنولوجيا</a>
-                  <a href="#" class="tag">تطوير التطبيقات</a>
-                  <a href="#" class="tag">أدوات حديثة</a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-
-    </main>
-
-    <footer id="footer" class="footer position-relative dark-background">
-
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="/" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-            </a>
-            <p>نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.</p>
-            <!--<div class="social-links d-flex mt-4">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>-->
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>روابط مفيدة</h4>
-            <ul>
-              <li><a href="/">الرئيسية</a></li>
-              <li><a href="/about">من نحن</a></li>
-              <li><a href="/services">خدماتنا</a></li>
-              <li><a href="blog">مقالاتنا</a></li>
-              <li><a href="/contact">تواصل معنا</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>خدماتنا</h4>
-            <ul>
-              <li><a href="/services">تصميم مواقع</a></li>
-              <li><a href="/services">تطوير مواقع</a></li>
-              <li><a href="/services">تطوير تطبيقات</a></li>
-              <li><a href="/services">أنظمة محاسبه</a></li>
-              <li><a href="/services">ذكاء اصطناعي</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4 style="text-align: right;">تواصل معنا</h4>
-            <p style="text-align: right;">حي السميري - مدينة ينبع</p>
-            <p style="text-align: right;">امارة المدينة المنورة</p>
-            <p style="text-align: right;">المملكة العربية السعودية</p>
-            <p style="text-align: right;" class="mt-4"><strong>هاتف:</strong> <span>966557703987+</span></p>
-            <p style="text-align: right;"><strong>البريد الإلكتروني:</strong> <span>codeylacompany@gmail.com</span></p>
-          </div>
-
-        </div>
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="useful_links">روابط مفيدة</h4>
+        <ul>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about_us">من نحن</a></li>
+          <li><a href="/services" data-translate="our_services">خدماتنا</a></li>
+          <li><a href="blog" data-translate="our_blog">مقالاتنا</a></li>
+          <li><a href="/contact" data-translate="contact_us">تواصل معنا</a></li>
+        </ul>
       </div>
 
-      <div class="container copyright text-center mt-4">
-        <p><span>جميع الحقوق محفوظة</span> © <span>حقوق النشر 2025</span> </p><strong class="px-1 sitename">Codeyla</strong>
-
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="services">خدماتنا</h4>
+        <ul>
+          <li><a href="/services" data-translate="web_design">تصميم مواقع</a></li>
+          <li><a href="/services" data-translate="web_development">تطوير مواقع</a></li>
+          <li><a href="/services" data-translate="app_development">تطوير تطبيقات</a></li>
+          <li><a href="/services" data-translate="accounting_systems">أنظمة محاسبه</a></li>
+          <li><a href="/services" data-translate="artificial_intelligence">ذكاء اصطناعي</a></li>
+        </ul>
       </div>
 
-    </footer>
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4 style="text-align: right;" data-translate="contact_us">تواصل معنا</h4>
+        <p style="text-align: right;" data-translate="address_line1">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;" data-translate="address_line2">امارة المدينة المنورة</p>
+        <p style="text-align: right;" data-translate="address_line3">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4">
+          <strong data-translate="phone_label">هاتف:</strong> 
+          <span>966557703987+</span>
+        </p>
+        <p style="text-align: right;">
+          <strong data-translate="email_label">البريد الإلكتروني:</strong> 
+          <span>sweepicodecompany@gmail.com</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>
+      <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span> © 
+      <span data-translate="copyright_year">حقوق النشر 2025</span>
+    </p>
+    <strong class="px-1 sitename">Sweepicode</strong>
+  </div>
+
+</footer>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

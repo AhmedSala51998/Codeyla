@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Codeyla - خدماتنا</title>
+  <title>Sweepicode - خدماتنا</title>
   <meta name="description" content="نقدم خدمات سحابية متقدمة تتيح لك تخزين البيانات، إدارة الموارد، وتوفير حلول تقنية مرنة وآمنة." />
   <meta name="keywords" content="خدمات سحابية, Cloud Services, تخزين سحابي, حوسبة سحابية, حلول تقنية" />
 
@@ -45,19 +45,21 @@
       <div class="topbar d-flex align-items-center dark-background">
         <div class="container d-flex justify-content-center justify-content-md-between">
           <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-envelope d-flex align-items-center"
-              ><a style="margin-right: 10px;" href="mailto:codeylacompany@gmail.com">codeylacompany@gmail.com</a></i
-            >
+            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:sweepicodecompany@gmail.com">sweepicodecompany@gmail.com</a></i>
             <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
           </div>
           <div class="social-links d-none d-md-flex align-items-center">
-            <a href="/portfolio" class="browse-link">
-              <i class="bi bi-layers animated-layers"></i>
-              تصفح أعمالنا
-            </a>
+            <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+              <a href="/portfolio" class="browse-link">
+                <i class="bi bi-layers animated-layers"></i>
+                <span data-translate="browse">تصفح أعمالنا</span>
+              </a>
           </div>
         </div>
-      </div>
+      </div><!-- End Top Bar -->
       <!-- End Top Bar -->
 
       <div class="branding d-flex align-items-cente">
@@ -67,300 +69,315 @@
           </a>
 
           <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="/">الرئيسية</a></li>
-              <li><a href="/about">من نحن</a></li>
-              <li><a href="/services" class="active">خدماتنا</a></li>
-              <li><a href="/portfolio">أعمالنا</a></li>
-              <li><a href="blog">مقالاتنا</a></li>
-              <li><a href="/call-to-action">دورات تدريبية</a></li>
-              <li><a href="/contact">تواصل معنا</a></li>
-              <li class="d-none d-xl-block">
-                <div id="themeToggle" class="theme-switch-icon">
-                  <i class="bi bi-moon-fill"></i>
+          <ul>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about">من نحن</a></li>
+          <li><a href="/services" data-translate="services" class="active">خدماتنا</a></li>
+          <li><a href="/portfolio" data-translate="portfolio">أعمالنا</a></li>
+          <li><a href="blog" data-translate="blog">مقالاتنا</a></li>
+          <li><a href="/call-to-action" data-translate="courses">دورات تدريبية</a></li>
+          <li><a href="/contact" data-translate="contact">تواصل معنا</a></li>
+          <li class="language-switch d-none d-xl-block">
+              <button class="lang-btn">
+                <div class="lang-flag">
+                  <img id="current-lang-flag" src="assets/img/languages/ar.png" alt="AR">
                 </div>
-              </li>
-            </ul>
-            <div class="d-flex align-items-center gap-3">
-              <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+                <span id="current-lang-text">عربي</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu horizontal">
+                <li data-lang="ar">
+                  <img src="assets/img/languages/ar.png" alt="AR">
+                  <span>عربي</span>
+                </li>
+                <li data-lang="en">
+                  <img src="assets/img/languages/en.png" alt="EN">
+                  <span>English</span>
+                </li>
+              </ul>
+            </li>
+            <li class="d-none d-xl-block">
+              <div id="themeToggle" class="theme-switch-icon">
                 <i class="bi bi-moon-fill"></i>
               </div>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <button class="mobile-lang-btn d-xl-none">
+              <img id="mobile-lang-flag" src="assets/img/languages/ar.png" alt="Lang">
+            </button>
+            <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+              <i class="bi bi-moon-fill"></i>
             </div>
-
-          </nav>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </div>
+        </nav>
         </div>
       </div>
     </header>
 
-    <main class="main">
-      <!-- Page Title -->
-      <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
-        <div class="container position-relative">
-          <h1>خدمات السحابة</h1>
-          <p>نوفر حلول سحابية مبتكرة تضمن لك تخزين آمن، إدارة مرنة، وتوسعة سهلة لموارد أعمالك التقنية.</p>
-          <nav class="breadcrumbs">
-            <ol>
-              <li><a href="/">الرئيسية</a></li>
-              <li class="current">خدمات السحابة</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-      <!-- End Page Title -->
+   <main class="main">
+  <!-- Page Title -->
+  <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
+    <div class="container position-relative">
+      <h1><span data-translate="cloud_services_title">خدمات السحابة</span></h1>
+      <p><span data-translate="cloud_services_subtitle">نوفر حلول سحابية مبتكرة تضمن لك تخزين آمن، إدارة مرنة، وتوسعة سهلة لموارد أعمالك التقنية.</span></p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="/" data-translate="breadcrumb_home">الرئيسية</a></li>
+          <li class="current"><span data-translate="breadcrumb_cloud_services">خدمات السحابة</span></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- End Page Title -->
 
-      <!-- قسم تفاصيل الخدمة -->
-      <section id="service-details" class="service-details section">
-        <div class="container">
-          <div class="row gy-5">
-            <!-- المحتوى الرئيسي -->
-            <div class="col-lg-8">
-              <div class="service-hero">
-                <img src="assets/img/services/7.jpg" alt="خدمات السحابة" class="img-fluid" />
-                <div class="service-badge">
-                  <span>خدمة مميزة</span>
-                </div>
-              </div>
+  <!-- قسم تفاصيل الخدمة -->
+  <section id="service-details" class="service-details section">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- المحتوى الرئيسي -->
+        <div class="col-lg-8">
+          <div class="service-hero">
+            <img src="assets/img/services/7.png" alt="خدمات السحابة" class="img-fluid" />
+            <div class="service-badge">
+              <span data-translate="cloud_services_badge">خدمة مميزة</span>
+            </div>
+          </div>
 
-              <div class="service-content">
-                <div class="service-header">
-                  <h2>حلول خدمات السحابة الشاملة</h2>
-                  <p class="service-intro">
-                    نقدم خدمات الحوسبة السحابية التي تشمل التخزين السحابي، استضافة التطبيقات، إدارة الموارد، والأمان السحابي لضمان عمل مستقر وفعال.
-                  </p>
-                </div>
+          <div class="service-content">
+            <div class="service-header">
+              <h2><span data-translate="cloud_services_header">حلول خدمات السحابة الشاملة</span></h2>
+              <p class="service-intro" data-translate="cloud_services_intro">
+                نقدم خدمات الحوسبة السحابية التي تشمل التخزين السحابي، استضافة التطبيقات، إدارة الموارد، والأمان السحابي لضمان عمل مستقر وفعال.
+              </p>
+            </div>
 
-                <div class="service-features">
-                  <h4>مميزات خدمتنا</h4>
-                  <div class="row gy-3">
-                    <div class="col-md-6">
-                      <div class="feature-item">
-                        <div class="feature-icon">
-                          <i class="bi bi-cloud-upload"></i>
-                        </div>
-                        <div style="margin-right: 5px;" class="feature-content">
-                          <h5>تخزين آمن وموثوق</h5>
-                          <p>تخزين بياناتك بأعلى معايير الأمان مع إمكانية الوصول السريع.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="feature-item">
-                        <div class="feature-icon">
-                          <i class="bi bi-speedometer2"></i>
-                        </div>
-                        <div style="margin-right: 5px;" class="feature-content">
-                          <h5>أداء عالي ومرونة</h5>
-                          <p>موارد قابلة للتوسع حسب الحاجة دون تأثير على أداء الخدمة.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="feature-item">
-                        <div class="feature-icon">
-                          <i class="bi bi-shield-lock"></i>
-                        </div>
-                        <div style="margin-right: 5px;" class="feature-content">
-                          <h5>أمان وحماية متقدمة</h5>
-                          <p>تطبيق أفضل تقنيات الحماية لضمان سرية وخصوصية بياناتك.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="feature-item">
-                        <div class="feature-icon">
-                          <i class="bi bi-cloud-arrow-up"></i>
-                        </div>
-                        <div style="margin-right: 5px;" class="feature-content">
-                          <h5>دعم وصيانة مستمرة</h5>
-                          <p>فريق دعم تقني متوفر 24/7 مع تحديثات منتظمة للخدمات.</p>
-                        </div>
-                      </div>
+            <div class="service-features">
+              <h4 data-translate="cloud_services_features_title">مميزات خدمتنا</h4>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="feature-icon"><i class="bi bi-cloud-upload"></i></div>
+                    <div style="margin-right: 5px;" class="feature-content">
+                      <h5 data-translate="feature_secure_storage_title">تخزين آمن وموثوق</h5>
+                      <p data-translate="feature_secure_storage_desc">تخزين بياناتك بأعلى معايير الأمان مع إمكانية الوصول السريع.</p>
                     </div>
                   </div>
                 </div>
-
-                <div class="service-process">
-                  <h4>آلية العمل</h4>
-                  <div class="process-steps">
-                    <div class="process-step">
-                      <div style="margin-left: 5px;" class="step-number">01</div>
-                      <div class="step-content">
-                        <h5>تحليل متطلبات العميل</h5>
-                        <p>فهم احتياجاتك السحابية لتقديم الحل الأمثل.</p>
-                      </div>
-                    </div>
-                    <div class="process-step">
-                      <div style="margin-left: 5px;" class="step-number">02</div>
-                      <div class="step-content">
-                        <h5>تصميم وتنفيذ الحل السحابي</h5>
-                        <p>بناء بيئة سحابية آمنة وفعالة تناسب أعمالك.</p>
-                      </div>
-                    </div>
-                    <div class="process-step">
-                      <div style="margin-left: 5px;" class="step-number">03</div>
-                      <div class="step-content">
-                        <h5>اختبار ومراجعة الأداء</h5>
-                        <p>ضمان استقرار وكفاءة النظام قبل الإطلاق.</p>
-                      </div>
-                    </div>
-                    <div class="process-step">
-                      <div style="margin-left: 5px;" class="step-number">04</div>
-                      <div class="step-content">
-                        <h5>التسليم والدعم المستمر</h5>
-                        <p>توفير دعم فني وتحديثات دورية لضمان رضا العميل.</p>
-                      </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="feature-icon"><i class="bi bi-speedometer2"></i></div>
+                    <div style="margin-right: 5px;" class="feature-content">
+                      <h5 data-translate="feature_performance_title">أداء عالي ومرونة</h5>
+                      <p data-translate="feature_performance_desc">موارد قابلة للتوسع حسب الحاجة دون تأثير على أداء الخدمة.</p>
                     </div>
                   </div>
                 </div>
-
-                <div class="service-gallery">
-                  <h4>نماذج من أعمالنا</h4>
-                  <div class="row gy-3">
-                    <div class="col-md-4">
-                      <img src="assets/img/portfolio/1.jpg" alt="خدمة سحابية 1" class="img-fluid rounded" />
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="feature-icon"><i class="bi bi-shield-lock"></i></div>
+                    <div style="margin-right: 5px;" class="feature-content">
+                      <h5 data-translate="feature_security_title">أمان وحماية متقدمة</h5>
+                      <p data-translate="feature_security_desc">تطبيق أفضل تقنيات الحماية لضمان سرية وخصوصية بياناتك.</p>
                     </div>
-                    <div class="col-md-4">
-                      <img src="assets/img/portfolio/2.jpg" alt="خدمة سحابية 2" class="img-fluid rounded" />
-                    </div>
-                    <div class="col-md-4">
-                      <img src="assets/img/portfolio/4.jpg" alt="خدمة سحابية 3" class="img-fluid rounded" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="feature-icon"><i class="bi bi-cloud-arrow-up"></i></div>
+                    <div style="margin-right: 5px;" class="feature-content">
+                      <h5 data-translate="feature_support_title">دعم وصيانة مستمرة</h5>
+                      <p data-translate="feature_support_desc">فريق دعم تقني متوفر 24/7 مع تحديثات منتظمة للخدمات.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- الشريط الجانبي -->
-            <div class="col-lg-4">
-              <div class="service-sidebar">
-                <div class="service-menu">
-                  <h4>خدماتنا</h4>
-                  <div class="menu-list">
-                    <a href="/services" class="menu-item">
-                      <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                      <span>برمجة مواقع الويب</span>
-                    </a>
-                    <a href="/services" class="menu-item">
-                      <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                      <span>تطوير تطبيقات الجوال</span>
-                    </a>
-                    <a href="/services" class="menu-item">
-                      <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                      <span>تطوير تطبيقات سطح المكتب</span>
-                    </a>
-                    <a href="/services" class="menu-item active">
-                      <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                      <span>خدمات السحابة</span>
-                    </a>
-                    <a href="/services" class="menu-item">
-                      <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-                      <span>خدمات التسويق الإلكتروني</span>
-                    </a>
+            <div class="service-process">
+              <h4 data-translate="process_title">آلية العمل</h4>
+              <div class="process-steps">
+                <div class="process-step">
+                  <div style="margin-left: 5px;" class="step-number">01</div>
+                  <div class="step-content">
+                    <h5 data-translate="process_step1_title">تحليل متطلبات العميل</h5>
+                    <p data-translate="process_step1_desc">فهم احتياجاتك السحابية لتقديم الحل الأمثل.</p>
                   </div>
                 </div>
-
-                <div class="service-info">
-                  <h4>تفاصيل الخدمة</h4>
-                  <div class="info-list">
-                    <div class="info-item">
-                      <span class="info-label">مدة التنفيذ:</span>
-                      <span class="info-value">من 2 إلى 5 أسابيع</span>
-                    </div>
-                    <div class="info-item">
-                      <span class="info-label">حجم الفريق:</span>
-                      <span class="info-value">من 2 إلى 4 محترفين</span>
-                    </div>
-                    <div class="info-item">
-                      <span class="info-label">التقارير:</span>
-                      <span class="info-value">تقارير دورية مع تحديثات مستمرة</span>
-                    </div>
-                    <div class="info-item">
-                      <span class="info-label">الدعم:</span>
-                      <span class="info-value">دعم فني متواصل 24/7</span>
-                    </div>
+                <div class="process-step">
+                  <div style="margin-left: 5px;" class="step-number">02</div>
+                  <div class="step-content">
+                    <h5 data-translate="process_step2_title">تصميم وتنفيذ الحل السحابي</h5>
+                    <p data-translate="process_step2_desc">بناء بيئة سحابية آمنة وفعالة تناسب أعمالك.</p>
                   </div>
                 </div>
-
-                <div class="contact-card">
-                  <div class="contact-content">
-                    <h4>تحتاج مساعدة؟</h4>
-                    <p>يسعدنا الإجابة على كافة استفساراتك وتقديم الدعم المناسب لك في أي وقت.</p>
-                    <div class="contact-info">
-                      <div class="contact-item">
-                        <i style="margin-left: 5px;" class="bi bi-telephone"></i>
-                        <span>00966557703987</span>
-                      </div>
-                      <div class="contact-item">
-                        <i style="margin-left: 5px;" class="bi bi-envelope"></i>
-                        <span>codeylacompany@gmail.com</span>
-                      </div>
-                    </div>
-                    <a href="/contact" class="btn btn-primary">تواصل معنا الان مستني ايه ؟؟!</a>
+                <div class="process-step">
+                  <div style="margin-left: 5px;" class="step-number">03</div>
+                  <div class="step-content">
+                    <h5 data-translate="process_step3_title">اختبار ومراجعة الأداء</h5>
+                    <p data-translate="process_step3_desc">ضمان استقرار وكفاءة النظام قبل الإطلاق.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <div style="margin-left: 5px;" class="step-number">04</div>
+                  <div class="step-content">
+                    <h5 data-translate="process_step4_title">التسليم والدعم المستمر</h5>
+                    <p data-translate="process_step4_desc">توفير دعم فني وتحديثات دورية لضمان رضا العميل.</p>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="service-gallery">
+              <h4 data-translate="gallery_title">نماذج من أعمالنا</h4>
+              <div class="row gy-3">
+                <div class="col-md-4"><img src="assets/img/portfolio/1.png" alt="خدمة سحابية 1" class="img-fluid rounded" /></div>
+                <div class="col-md-4"><img src="assets/img/portfolio/2.png" alt="خدمة سحابية 2" class="img-fluid rounded" /></div>
+                <div class="col-md-4"><img src="assets/img/portfolio/4.png" alt="خدمة سحابية 3" class="img-fluid rounded" /></div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- /قسم تفاصيل الخدمة -->
-    </main>
 
-    <footer id="footer" class="footer position-relative dark-background">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="/" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="" />
-            </a>
-            <p>
-              نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية
-              المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة
-              تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
-            </p>
-          </div>
+        <!-- الشريط الجانبي -->
+        <div class="col-lg-4">
+          <div class="service-sidebar">
+            <div class="service-menu">
+              <h4 data-translate="sidebar_services_title">خدماتنا</h4>
+              <div class="menu-list">
+                <a href="/services" class="menu-item">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_web">برمجة مواقع الويب</span>
+                </a>
+                <a href="/services" class="menu-item">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_mobile">تطوير تطبيقات الجوال</span>
+                </a>
+                <a href="/services" class="menu-item">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_desktop">تطوير تطبيقات سطح المكتب</span>
+                </a>
+                <a href="/services" class="menu-item active">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_cloud">خدمات السحابة</span>
+                </a>
+                <a href="/services" class="menu-item">
+                  <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+                  <span data-translate="sidebar_service_marketing">خدمات التسويق الإلكتروني</span>
+                </a>
+              </div>
+            </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>روابط مفيدة</h4>
-            <ul>
-              <li><a href="/">الرئيسية</a></li>
-              <li><a href="/about">من نحن</a></li>
-              <li><a href="/services">خدماتنا</a></li>
-              <li><a href="blog">مقالاتنا</a></li>
-              <li><a href="/contact">تواصل معنا</a></li>
-            </ul>
-          </div>
+            <div class="service-info">
+              <h4 data-translate="service_info_title">تفاصيل الخدمة</h4>
+              <div class="info-list">
+                <div class="info-item">
+                  <span class="info-label" data-translate="info_duration_label">مدة التنفيذ:</span>
+                  <span class="info-value" data-translate="info_duration_value">من 2 إلى 5 أسابيع</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label" data-translate="info_team_label">حجم الفريق:</span>
+                  <span class="info-value" data-translate="info_team_value">من 2 إلى 4 محترفين</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label" data-translate="info_reports_label">التقارير:</span>
+                  <span class="info-value" data-translate="info_reports_value">تقارير دورية مع تحديثات مستمرة</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label" data-translate="info_support_label">الدعم:</span>
+                  <span class="info-value" data-translate="info_support_value">دعم فني متواصل 24/7</span>
+                </div>
+              </div>
+            </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>خدماتنا</h4>
-            <ul>
-              <li><a href="/services">تصميم مواقع</a></li>
-              <li><a href="/services">تطوير مواقع</a></li>
-              <li><a href="/services">تطوير تطبيقات</a></li>
-              <li><a href="/services">أنظمة محاسبة</a></li>
-              <li><a href="/services">ذكاء اصطناعي</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4 style="text-align: right;">تواصل معنا</h4>
-            <p style="text-align: right;">حي السميري - مدينة ينبع</p>
-            <p style="text-align: right;">امارة المدينة المنورة</p>
-            <p style="text-align: right;">المملكة العربية السعودية</p>
-            <p style="text-align: right;" class="mt-4"><strong>هاتف:</strong> <span>966557703987+</span></p>
-            <p style="text-align: right;"><strong>البريد الإلكتروني:</strong> <span>codeylacompany@gmail.com</span></p>
+            <div class="contact-card">
+              <div class="contact-content">
+                <h4 data-translate="contact_help_title">تحتاج مساعدة؟</h4>
+                <p data-translate="contact_help_desc">يسعدنا الإجابة على كافة استفساراتك وتقديم الدعم المناسب لك في أي وقت.</p>
+                <div class="contact-info">
+                  <div class="contact-item">
+                    <i style="margin-left: 5px;" class="bi bi-telephone"></i>
+                    <span>00966557703987</span>
+                  </div>
+                  <div class="contact-item">
+                    <i style="margin-left: 5px;" class="bi bi-envelope"></i>
+                    <span>sweepicodecompany@gmail.com</span>
+                  </div>
+                </div>
+                <a href="/contact" class="btn btn-primary" data-translate="contact_button">تواصل معنا الان مستني ايه ؟؟!</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- /قسم تفاصيل الخدمة -->
+   </main>
 
-      <div class="container copyright text-center mt-4">
-        <p>
-          <span>جميع الحقوق محفوظة</span> © <span>حقوق النشر 2025</span>
+
+<footer id="footer" class="footer position-relative dark-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="/" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+        <p data-translate="footer_about">
+          نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
         </p>
-        <strong class="px-1 sitename">Codeyla</strong>
       </div>
-    </footer>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="useful_links">روابط مفيدة</h4>
+        <ul>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about_us">من نحن</a></li>
+          <li><a href="/services" data-translate="our_services">خدماتنا</a></li>
+          <li><a href="blog" data-translate="our_blog">مقالاتنا</a></li>
+          <li><a href="/contact" data-translate="contact_us">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="services">خدماتنا</h4>
+        <ul>
+          <li><a href="/services" data-translate="web_design">تصميم مواقع</a></li>
+          <li><a href="/services" data-translate="web_development">تطوير مواقع</a></li>
+          <li><a href="/services" data-translate="app_development">تطوير تطبيقات</a></li>
+          <li><a href="/services" data-translate="accounting_systems">أنظمة محاسبه</a></li>
+          <li><a href="/services" data-translate="artificial_intelligence">ذكاء اصطناعي</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4 style="text-align: right;" data-translate="contact_us">تواصل معنا</h4>
+        <p style="text-align: right;" data-translate="address_line1">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;" data-translate="address_line2">امارة المدينة المنورة</p>
+        <p style="text-align: right;" data-translate="address_line3">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4">
+          <strong data-translate="phone_label">هاتف:</strong> 
+          <span>966557703987+</span>
+        </p>
+        <p style="text-align: right;">
+          <strong data-translate="email_label">البريد الإلكتروني:</strong> 
+          <span>sweepicodecompany@gmail.com</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>
+      <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span> © 
+      <span data-translate="copyright_year">حقوق النشر 2025</span>
+    </p>
+    <strong class="px-1 sitename">Sweepicode</strong>
+  </div>
+
+</footer>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"

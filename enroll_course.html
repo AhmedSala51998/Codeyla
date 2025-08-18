@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>codeyla - دورات البرمجة التدريبية</title>
+  <title>Sweepicode - دورات البرمجة التدريبية</title>
   <meta name="description" content="منصة دورات برمجية متكاملة: تطوير ويب، تطبيقات موبايل، أنظمة ERP، سطح المكتب، ذكاء اصطناعي، تصميم ومونتاج وتسويق رقمي.">
   <meta name="keywords" content="كورسات, برمجة, تطوير مواقع, تطبيقات موبايل, ERP, ذكاء اصطناعي, مونتاج, تسويق رقمي">
 
@@ -38,371 +38,382 @@
     <div id="loader"></div>
   </div>
   <div id="pageContent">
-    <header id="header" class="header fixed-top">
-
+     <header id="header" class="header fixed-top">
       <div class="topbar d-flex align-items-center dark-background">
         <div class="container d-flex justify-content-center justify-content-md-between">
           <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:codeylacompany@gmail.com">codeylacompany@gmail.com</a></i>
-            <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">+966557703987</span></i>
+            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:sweepicodecompany@gmail.com">sweepicodecompany@gmail.com</a></i>
+            <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
           </div>
           <div class="social-links d-none d-md-flex align-items-center">
-            <a href="/portfolio" class="browse-link">
-              <i class="bi bi-layers animated-layers"></i>
-              تصفح أعمالنا
-            </a>
+            <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+              <a href="/portfolio" class="browse-link">
+                <i class="bi bi-layers animated-layers"></i>
+                <span data-translate="browse">تصفح أعمالنا</span>
+              </a>
           </div>
         </div>
       </div><!-- End Top Bar -->
+      <!-- End Top Bar -->
 
       <div class="branding d-flex align-items-cente">
-
         <div class="container position-relative d-flex align-items-center justify-content-between">
           <a href="/" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="Logo">
+            <img src="assets/img/logo.png" alt="" />
           </a>
 
           <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="/">الرئيسية</a></li>
-              <li><a href="/about">من نحن</a></li>
-              <li><a href="/services">خدماتنا</a></li>
-              <li><a href="/portfolio">أعمالنا</a></li>
-              <li><a href="/blog">مقالاتنا</a></li>
-              <li><a href="/call-to-action" class="active">دورات تدريبية</a></li>
-              <li><a href="/contact">تواصل معنا</a></li>
-              <li class="d-none d-xl-block">
-                <div id="themeToggle" class="theme-switch-icon">
-                  <i class="bi bi-moon-fill"></i>
+          <ul>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about">من نحن</a></li>
+          <li><a href="/services" data-translate="services">خدماتنا</a></li>
+          <li><a href="/portfolio" data-translate="portfolio">أعمالنا</a></li>
+          <li><a href="blog" data-translate="blog">مقالاتنا</a></li>
+          <li><a href="/call-to-action" data-translate="courses" class="active">دورات تدريبية</a></li>
+          <li><a href="/contact" data-translate="contact">تواصل معنا</a></li>
+          <li class="language-switch d-none d-xl-block">
+              <button class="lang-btn">
+                <div class="lang-flag">
+                  <img id="current-lang-flag" src="assets/img/languages/ar.png" alt="AR">
                 </div>
-              </li>
-            </ul>
-            <div class="d-flex align-items-center gap-3">
-              <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+                <span id="current-lang-text">عربي</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu horizontal">
+                <li data-lang="ar">
+                  <img src="assets/img/languages/ar.png" alt="AR">
+                  <span>عربي</span>
+                </li>
+                <li data-lang="en">
+                  <img src="assets/img/languages/en.png" alt="EN">
+                  <span>English</span>
+                </li>
+              </ul>
+            </li>
+            <li class="d-none d-xl-block">
+              <div id="themeToggle" class="theme-switch-icon">
                 <i class="bi bi-moon-fill"></i>
               </div>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <button class="mobile-lang-btn d-xl-none">
+              <img id="mobile-lang-flag" src="assets/img/languages/ar.png" alt="Lang">
+            </button>
+            <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+              <i class="bi bi-moon-fill"></i>
+            </div>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </div>
+        </nav>
+        </div>
+      </div>
+    </header>
+
+   <main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
+    <div class="container position-relative">
+      <h1 data-translate="enroll_page_title">التسجيل في الدورة</h1>
+      <p data-translate="enroll_page_desc">ابدأ رحلتك التعليمية الآن وسجل في الدورة التدريبية التي تناسبك. قم بتعبئة نموذج التسجيل للحصول على مقعدك وضمان فرصة تطوير مهاراتك والوصول إلى فرص عمل مميزة في مجال البرمجة والتقنية.</p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="/" data-translate="breadcrumb_home">الرئيسية</a></li>
+          <li class="current" data-translate="breadcrumb_enroll">التسجيل في الدورة</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- قسم التسجيل -->
+  <section id="enroll" class="enroll section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="enrollment-form-wrapper">
+
+            <div class="enrollment-header text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+              <h2 data-translate="enroll_header_title">سجّل في دورتك التعليمية المفضلة</h2>
+              <p data-translate="enroll_header_desc">اتخذ الخطوة التالية في مسيرتك التعليمية. أكمل النموذج أدناه لضمان مكانك في برنامجنا الشامل للتعلم عبر الإنترنت.</p>
             </div>
 
-          </nav>
+            <form class="enrollment-form" method="post" data-aos="fade-up" data-aos-delay="300">
 
-        </div>
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="firstName" class="form-label" data-translate="form_first_name_label">الاسم الأول *</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" required autocomplete="given-name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lastName" class="form-label" data-translate="form_last_name_label">اسم العائلة *</label>
+                    <input type="text" id="lastName" name="lastName" class="form-control" required autocomplete="family-name">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email" class="form-label" data-translate="form_email_label">البريد الإلكتروني *</label>
+                    <input type="email" id="email" name="email" class="form-control" required autocomplete="email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone" class="form-label" data-translate="form_phone_label">رقم الهاتف</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" autocomplete="tel">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="course" class="form-label" data-translate="form_course_label">اختر الدورة *</label>
+                    <select id="course" name="course" class="form-select" required>
+                      <option value="" data-translate="form_course_placeholder">اختر دورة...</option>
+                      <option value="web-development" data-translate="course_web_development">تطوير الويب الكامل</option>
+                      <option value="data-science" data-translate="course_data_science">علوم البيانات والتحليلات</option>
+                      <option value="digital-marketing" data-translate="course_digital_marketing">إتقان التسويق الرقمي</option>
+                      <option value="ui-ux-design" data-translate="course_ui_ux">أساسيات تصميم UI/UX</option>
+                      <option value="cybersecurity" data-translate="course_cybersecurity">أساسيات الأمن السيبراني</option>
+                      <option value="mobile-development" data-translate="course_mobile_development">تطوير تطبيقات الموبايل</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="education" class="form-label" data-translate="form_education_label">المستوى التعليمي</label>
+                    <select id="education" name="education" class="form-select">
+                      <option value="" data-translate="form_education_placeholder">اختر مستواك التعليمي...</option>
+                      <option value="high-school" data-translate="education_high_school">المرحلة الثانوية</option>
+                      <option value="associate" data-translate="education_associate">دبلوم</option>
+                      <option value="bachelor" data-translate="education_bachelor">بكالوريوس</option>
+                      <option value="master" data-translate="education_master">ماجستير</option>
+                      <option value="doctorate" data-translate="education_doctorate">دكتوراه</option>
+                      <option value="other" data-translate="education_other">آخر</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="experience" class="form-label" data-translate="form_experience_label">مستوى الخبرة</label>
+                    <select id="experience" name="experience" class="form-select">
+                      <option value="" data-translate="form_experience_placeholder">اختر مستوى خبرتك...</option>
+                      <option value="beginner" data-translate="experience_beginner">مبتدئ</option>
+                      <option value="intermediate" data-translate="experience_intermediate">متوسط</option>
+                      <option value="advanced" data-translate="experience_advanced">متقدم</option>
+                      <option value="expert" data-translate="experience_expert">خبير</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="motivation" class="form-label" data-translate="form_motivation_label">ما الذي يحفزك على التسجيل في هذه الدورة؟</label>
+                    <textarea id="motivation" name="motivation" class="form-control" rows="4" placeholder="شارك أهدافك وما تأمل في تحقيقه..." data-translate="form_motivation_placeholder"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="form-label" data-translate="form_schedule_label">جدول التعلم المفضل</label>
+                    <div class="schedule-options">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="schedule" id="weekdays" value="weekdays">
+                        <label class="form-check-label" for="weekdays" data-translate="schedule_weekdays">أيام الأسبوع (الإثنين - الجمعة)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="schedule" id="weekends" value="weekends">
+                        <label class="form-check-label" for="weekends" data-translate="schedule_weekends">عطلة نهاية الأسبوع (السبت - الأحد)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="schedule" id="flexible" value="flexible" checked>
+                        <label class="form-check-label" for="flexible" data-translate="schedule_flexible">مرن (حسب وتيرتك الخاصة)</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="agreement-section">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                        <label class="form-check-label" for="terms"><span  data-translate="form_terms">أوافق على </span> <a  data-translate="service_terms" href="#">شروط الخدمة</a> , <a  data-translate="service_privacy" href="#">سياسة الخصوصية</a> *</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                        <label class="form-check-label" for="newsletter" data-translate="form_newsletter">أرغب في استقبال تحديثات الدورة والمحتوى التعليمي عبر البريد الإلكتروني</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-enroll">
+                    <i class="bi bi-check-circle me-2"></i>
+                    <span data-translate="btn_submit_enroll">سجّل الآن</span>
+                  </button>
+                  <p class="enrollment-note mt-3">
+                    <i class="bi bi-shield-check"></i>
+                    <span data-translate="enroll_data_safe">معلوماتك آمنة ولن تتم مشاركتها مع أي طرف ثالث</span>
+                  </p>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div><!-- نهاية عمود النموذج -->
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="enrollment-benefits" data-aos="fade-left" data-aos-delay="400">
+            <h3 data-translate="benefits_title">لماذا تختار دوراتنا؟</h3>
+            <div class="benefit-item">
+              <div style="margin-left: 10px;" class="benefit-icon">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <div class="benefit-content">
+                <h4 data-translate="benefit_expert_trainers">مدربون خبراء</h4>
+                <p data-translate="benefit_expert_trainers_desc">تعلم من محترفين في المجال يمتلكون سنوات من الخبرة العملية</p>
+              </div>
+            </div><!-- نهاية عنصر الفائدة -->
+
+            <div class="benefit-item">
+              <div style="margin-left: 10px;" class="benefit-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div class="benefit-content">
+                <h4 data-translate="benefit_flexible_learning">تعلم مرن</h4>
+                <p data-translate="benefit_flexible_learning_desc">ادرس حسب وتيرتك الخاصة مع وصول 24/7 لمواد الدورة</p>
+              </div>
+            </div><!-- نهاية عنصر الفائدة -->
+
+            <div class="benefit-item">
+              <div style="margin-left: 10px;" class="benefit-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <div class="benefit-content">
+                <h4 data-translate="benefit_certificates">شهادات معتمدة</h4>
+                <p data-translate="benefit_certificates_desc">احصل على شهادات معترف بها بمجال الصناعة عند إتمام الدورة</p>
+              </div>
+            </div><!-- نهاية عنصر الفائدة -->
+
+            <div class="benefit-item">
+              <div style="margin-left: 10px;" class="benefit-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <div class="benefit-content">
+                <h4 data-translate="benefit_community_support">دعم المجتمع</h4>
+                <p data-translate="benefit_community_support_desc">تواصل مع زملائك الطلاب واحصل على الدعم متى ما احتجت</p>
+              </div>
+            </div><!-- نهاية عنصر الفائدة -->
+
+            <div class="enrollment-stats mt-4">
+              <div class="stat-item">
+                <span class="stat-number" data-translate="stats_students_number">15,000+</span>
+                <span class="stat-label" data-translate="stats_students_label">عدد الطلاب المسجلين</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-translate="stats_completion_rate">98%</span>
+                <span class="stat-label" data-translate="stats_completion_label">نسبة إتمام الدورة</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-translate="stats_rating_value">4.9/5</span>
+                <span class="stat-label" data-translate="stats_rating_label">متوسط التقييم</span>
+              </div>
+            </div><!-- نهاية الإحصائيات -->
+
+          </div>
+        </div><!-- نهاية عمود الفوائد -->
 
       </div>
 
-    </header>
-
-    <main class="main">
-
-     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
-    <div class="container position-relative">
-        <h1>التسجيل في الدورة</h1>
-        <p>ابدأ رحلتك التعليمية الآن وسجل في الدورة التدريبية التي تناسبك. قم بتعبئة نموذج التسجيل للحصول على مقعدك وضمان فرصة تطوير مهاراتك والوصول إلى فرص عمل مميزة في مجال البرمجة والتقنية.</p>
-        <nav class="breadcrumbs">
-        <ol>
-            <li><a href="/">الرئيسية</a></li>
-            <li class="current">التسجيل في الدورة</li>
-        </ol>
-        </nav>
-    </div>
-    </div><!-- End Page Title -->
-
-
-     <!-- قسم التسجيل -->
-<section id="enroll" class="enroll section">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <div class="enrollment-form-wrapper">
-
-          <div class="enrollment-header text-center mb-5" data-aos="fade-up" data-aos-delay="200">
-            <h2>سجّل في دورتك التعليمية المفضلة</h2>
-            <p>اتخذ الخطوة التالية في مسيرتك التعليمية. أكمل النموذج أدناه لضمان مكانك في برنامجنا الشامل للتعلم عبر الإنترنت.</p>
-          </div>
-
-          <form class="enrollment-form" method="post" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="row mb-4">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="firstName" class="form-label">الاسم الأول *</label>
-                  <input type="text" id="firstName" name="firstName" class="form-control" required="" autocomplete="given-name">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="lastName" class="form-label">اسم العائلة *</label>
-                  <input type="text" id="lastName" name="lastName" class="form-control" required="" autocomplete="family-name">
-                </div>
-              </div>
-            </div>
-
-            <div class="row mb-4">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="email" class="form-label">البريد الإلكتروني *</label>
-                  <input type="email" id="email" name="email" class="form-control" required="" autocomplete="email">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="phone" class="form-label">رقم الهاتف</label>
-                  <input type="tel" id="phone" name="phone" class="form-control" autocomplete="tel">
-                </div>
-              </div>
-            </div>
-
-            <div class="row mb-4">
-              <div class="col-12">
-                <div class="form-group">
-                  <label for="course" class="form-label">اختر الدورة *</label>
-                  <select id="course" name="course" class="form-select" required="">
-                    <option value="">اختر دورة...</option>
-                    <option value="web-development">تطوير الويب الكامل</option>
-                    <option value="data-science">علوم البيانات والتحليلات</option>
-                    <option value="digital-marketing">إتقان التسويق الرقمي</option>
-                    <option value="ui-ux-design">أساسيات تصميم UI/UX</option>
-                    <option value="cybersecurity">أساسيات الأمن السيبراني</option>
-                    <option value="mobile-development">تطوير تطبيقات الموبايل</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mb-4">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="education" class="form-label">المستوى التعليمي</label>
-                  <select id="education" name="education" class="form-select">
-                    <option value="">اختر مستواك التعليمي...</option>
-                    <option value="high-school">المرحلة الثانوية</option>
-                    <option value="associate">دبلوم</option>
-                    <option value="bachelor">بكالوريوس</option>
-                    <option value="master">ماجستير</option>
-                    <option value="doctorate">دكتوراه</option>
-                    <option value="other">آخر</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="experience" class="form-label">مستوى الخبرة</label>
-                  <select id="experience" name="experience" class="form-select">
-                    <option value="">اختر مستوى خبرتك...</option>
-                    <option value="beginner">مبتدئ</option>
-                    <option value="intermediate">متوسط</option>
-                    <option value="advanced">متقدم</option>
-                    <option value="expert">خبير</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mb-4">
-              <div class="col-12">
-                <div class="form-group">
-                  <label for="motivation" class="form-label">ما الذي يحفزك على التسجيل في هذه الدورة؟</label>
-                  <textarea id="motivation" name="motivation" class="form-control" rows="4" placeholder="شارك أهدافك وما تأمل في تحقيقه..."></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mb-4">
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="form-label">جدول التعلم المفضل</label>
-                  <div class="schedule-options">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="schedule" id="weekdays" value="weekdays">
-                      <label class="form-check-label" for="weekdays">
-                        أيام الأسبوع (الإثنين - الجمعة)
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="schedule" id="weekends" value="weekends">
-                      <label class="form-check-label" for="weekends">
-                        عطلة نهاية الأسبوع (السبت - الأحد)
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="schedule" id="flexible" value="flexible" checked="">
-                      <label class="form-check-label" for="flexible">
-                        مرن (حسب وتيرتك الخاصة)
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mb-4">
-              <div class="col-12">
-                <div class="form-group">
-                  <div class="agreement-section">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="terms" name="terms" required="">
-                      <label class="form-check-label" for="terms">
-                        أوافق على <a href="#">شروط الخدمة</a> و <a href="#">سياسة الخصوصية</a> *
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
-                      <label class="form-check-label" for="newsletter">
-                        أرغب في استقبال تحديثات الدورة والمحتوى التعليمي عبر البريد الإلكتروني
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 text-center">
-                <button type="submit" class="btn btn-enroll">
-                  <i class="bi bi-check-circle me-2"></i>
-                  سجّل الآن
-                </button>
-                <p class="enrollment-note mt-3">
-                  <i class="bi bi-shield-check"></i>
-                  معلوماتك آمنة ولن تتم مشاركتها مع أي طرف ثالث
-                </p>
-              </div>
-            </div>
-
-          </form>
-
-        </div>
-      </div><!-- نهاية عمود النموذج -->
-
-      <div class="col-lg-4 d-none d-lg-block">
-        <div class="enrollment-benefits" data-aos="fade-left" data-aos-delay="400">
-          <h3>لماذا تختار دوراتنا؟</h3>
-          <div class="benefit-item">
-            <div style="margin-left: 10px;" class="benefit-icon">
-              <i class="bi bi-trophy"></i>
-            </div>
-            <div class="benefit-content">
-              <h4>مدربون خبراء</h4>
-              <p>تعلم من محترفين في المجال يمتلكون سنوات من الخبرة العملية</p>
-            </div>
-          </div><!-- نهاية عنصر الفائدة -->
-
-          <div class="benefit-item">
-            <div style="margin-left: 10px;" class="benefit-icon">
-              <i class="bi bi-clock"></i>
-            </div>
-            <div class="benefit-content">
-              <h4>تعلم مرن</h4>
-              <p>ادرس حسب وتيرتك الخاصة مع وصول 24/7 لمواد الدورة</p>
-            </div>
-          </div><!-- نهاية عنصر الفائدة -->
-
-          <div class="benefit-item">
-            <div style="margin-left: 10px;" class="benefit-icon">
-              <i class="bi bi-award"></i>
-            </div>
-            <div class="benefit-content">
-              <h4>شهادات معتمدة</h4>
-              <p>احصل على شهادات معترف بها بمجال الصناعة عند إتمام الدورة</p>
-            </div>
-          </div><!-- نهاية عنصر الفائدة -->
-
-          <div class="benefit-item">
-            <div style="margin-left: 10px;" class="benefit-icon">
-              <i class="bi bi-people"></i>
-            </div>
-            <div class="benefit-content">
-              <h4>دعم المجتمع</h4>
-              <p>تواصل مع زملائك الطلاب واحصل على الدعم متى ما احتجت</p>
-            </div>
-          </div><!-- نهاية عنصر الفائدة -->
-
-          <div class="enrollment-stats mt-4">
-            <div class="stat-item">
-              <span class="stat-number">15,000+</span>
-              <span class="stat-label">عدد الطلاب المسجلين</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">98%</span>
-              <span class="stat-label">نسبة إتمام الدورة</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">4.9/5</span>
-              <span class="stat-label">متوسط التقييم</span>
-            </div>
-          </div><!-- نهاية الإحصائيات -->
-
-        </div>
-      </div><!-- نهاية عمود الفوائد -->
-
     </div>
 
-  </div>
+  </section>
+  <!-- /قسم التسجيل -->
 
-</section>
-<!-- /قسم التسجيل -->
+   </main>
 
 
-
-    </main>
 
 <footer id="footer" class="footer position-relative dark-background">
-
   <div class="container footer-top">
     <div class="row gy-4">
       <div class="col-lg-5 col-md-12 footer-about">
         <a href="/" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="">
         </a>
-        <p>نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.</p>
-        <!--<div class="social-links d-flex mt-4">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>-->
+        <p data-translate="footer_about">
+          نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
+        </p>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>روابط مفيدة</h4>
+        <h4 data-translate="useful_links">روابط مفيدة</h4>
         <ul>
-          <li><a href="/">الرئيسية</a></li>
-          <li><a href="/about">من نحن</a></li>
-          <li><a href="/services">خدماتنا</a></li>
-          <li><a href="blog">مقالاتنا</a></li>
-          <li><a href="/contact">تواصل معنا</a></li>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about_us">من نحن</a></li>
+          <li><a href="/services" data-translate="our_services">خدماتنا</a></li>
+          <li><a href="blog" data-translate="our_blog">مقالاتنا</a></li>
+          <li><a href="/contact" data-translate="contact_us">تواصل معنا</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>خدماتنا</h4>
+        <h4 data-translate="services">خدماتنا</h4>
         <ul>
-          <li><a href="/services">تصميم مواقع</a></li>
-          <li><a href="/services">تطوير مواقع</a></li>
-          <li><a href="/services">تطوير تطبيقات</a></li>
-          <li><a href="/services">أنظمة محاسبه</a></li>
-          <li><a href="/services">ذكاء اصطناعي</a></li>
+          <li><a href="/services" data-translate="web_design">تصميم مواقع</a></li>
+          <li><a href="/services" data-translate="web_development">تطوير مواقع</a></li>
+          <li><a href="/services" data-translate="app_development">تطوير تطبيقات</a></li>
+          <li><a href="/services" data-translate="accounting_systems">أنظمة محاسبه</a></li>
+          <li><a href="/services" data-translate="artificial_intelligence">ذكاء اصطناعي</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-        <h4 style="text-align: right;">تواصل معنا</h4>
-        <p style="text-align: right;">حي السميري - مدينة ينبع</p>
-        <p style="text-align: right;">امارة المدينة المنورة</p>
-        <p style="text-align: right;">المملكة العربية السعودية</p>
-        <p style="text-align: right;" class="mt-4"><strong>هاتف:</strong> <span>966557703987+</span></p>
-        <p style="text-align: right;"><strong>البريد الإلكتروني:</strong> <span>codeylacompany@gmail.com</span></p>
+        <h4 style="text-align: right;" data-translate="contact_us">تواصل معنا</h4>
+        <p style="text-align: right;" data-translate="address_line1">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;" data-translate="address_line2">امارة المدينة المنورة</p>
+        <p style="text-align: right;" data-translate="address_line3">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4">
+          <strong data-translate="phone_label">هاتف:</strong> 
+          <span>966557703987+</span>
+        </p>
+        <p style="text-align: right;">
+          <strong data-translate="email_label">البريد الإلكتروني:</strong> 
+          <span>sweepicodecompany@gmail.com</span>
+        </p>
       </div>
-
     </div>
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p><span>جميع الحقوق محفوظة</span> © <span>حقوق النشر 2025</span> </p><strong class="px-1 sitename">Codeyla</strong>
-    
+    <p>
+      <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span> © 
+      <span data-translate="copyright_year">حقوق النشر 2025</span>
+    </p>
+    <strong class="px-1 sitename">Sweepicode</strong>
   </div>
 
 </footer>

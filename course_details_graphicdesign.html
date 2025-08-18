@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sweepicode - دورات البرمجة التدريبية</title>
+  <meta name="description" content="منصة دورات برمجية متكاملة: تطوير ويب، تطبيقات موبايل، أنظمة ERP، سطح المكتب، ذكاء اصطناعي، تصميم ومونتاج وتسويق رقمي.">
+  <meta name="keywords" content="كورسات, برمجة, تطوير مواقع, تطبيقات موبايل, ERP, ذكاء اصطناعي, مونتاج, تسويق رقمي">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- SweetAlert2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Noto+Sans+Arabic:wght@100..900&family=Playpen+Sans+Arabic:wght@100..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link id="themeStylesheet" href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page" dir="rtl">
+
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+  </div>
+  <div id="pageContent">
+    <header id="header" class="header fixed-top">
+      <div class="topbar d-flex align-items-center dark-background">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:sweepicodecompany@gmail.com">sweepicodecompany@gmail.com</a></i>
+            <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
+          </div>
+          <div class="social-links d-none d-md-flex align-items-center">
+            <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+              <a href="/portfolio" class="browse-link">
+                <i class="bi bi-layers animated-layers"></i>
+                <span data-translate="browse">تصفح أعمالنا</span>
+              </a>
+          </div>
+        </div>
+      </div><!-- End Top Bar -->
+      <!-- End Top Bar -->
+
+      <div class="branding d-flex align-items-cente">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          <a href="/" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
+
+          <nav id="navmenu" class="navmenu">
+          <ul>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about">من نحن</a></li>
+          <li><a href="/services" data-translate="services">خدماتنا</a></li>
+          <li><a href="/portfolio" data-translate="portfolio">أعمالنا</a></li>
+          <li><a href="blog" data-translate="blog">مقالاتنا</a></li>
+          <li><a href="/call-to-action" data-translate="courses" class="active">دورات تدريبية</a></li>
+          <li><a href="/contact" data-translate="contact">تواصل معنا</a></li>
+          <li class="language-switch d-none d-xl-block">
+              <button class="lang-btn">
+                <div class="lang-flag">
+                  <img id="current-lang-flag" src="assets/img/languages/ar.png" alt="AR">
+                </div>
+                <span id="current-lang-text">عربي</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu horizontal">
+                <li data-lang="ar">
+                  <img src="assets/img/languages/ar.png" alt="AR">
+                  <span>عربي</span>
+                </li>
+                <li data-lang="en">
+                  <img src="assets/img/languages/en.png" alt="EN">
+                  <span>English</span>
+                </li>
+              </ul>
+            </li>
+            <li class="d-none d-xl-block">
+              <div id="themeToggle" class="theme-switch-icon">
+                <i class="bi bi-moon-fill"></i>
+              </div>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <button class="mobile-lang-btn d-xl-none">
+              <img id="mobile-lang-flag" src="assets/img/languages/ar.png" alt="Lang">
+            </button>
+            <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+              <i class="bi bi-moon-fill"></i>
+            </div>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </div>
+        </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
+      <div class="container position-relative">
+        <h1 data-translate="course_hero_title2">دورة إتقان التصميم الجرافيكي</h1>
+        <p data-translate="course_hero_subtitle2">دورة تدريبية شاملة تعلمك أساسيات وتقنيات التصميم الجرافيكي من الصفر حتى الاحتراف، مع التركيز على تطبيقات عملية وأدوات حديثة تساعدك على ابتكار تصاميم جذابة ومتنوعة.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/" data-translate="breadcrumb_home">الرئيسية</a></li>
+            <li class="current" data-translate="breadcrumb_course_details">تفاصيل الدورة</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- قسم تفاصيل الدورة -->
+    <section id="course-details" class="course-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-8">
+
+            <!-- مقدمة الدورة -->
+            <div class="course-hero" data-aos="fade-up" data-aos-delay="200">
+              <div class="hero-content">
+                <div class="course-badge">
+                  <span class="category" data-translate="course_category2">التصميم الجرافيكي</span>
+                  <span class="level" data-translate="course_level2">مبتدئ - متقدم</span>
+                </div>
+                <h1 data-translate="course_hero_fulltitle">إتقان التصميم الجرافيكي باستخدام الأدوات والتقنيات الحديثة</h1>
+                <p class="course-subtitle" data-translate="course_hero_desc">دورة عملية تعلمك التصميم الجرافيكي من مبادئ الألوان، الخطوط، التكوين، إلى احتراف برامج مثل Adobe Photoshop وIllustrator لإنشاء تصاميم احترافية.</p>
+
+                <div class="instructor-card">
+                  <img src="assets/img/person/person-f-9.webp" alt="المدربة" class="instructor-image">
+                  <div class="instructor-details">
+                    <h5 data-translate="instructor_name2">الأستاذة ريم السالم</h5>
+                    <span data-translate="instructor_title2">مصممة جرافيك محترفة ومدربة معتمدة</span>
+                    <div class="instructor-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <span data-translate="instructor_rating2">4.8 (1020 تقييم)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-image">
+                <img src="assets/img/education/courses-14.webp" alt="معاينة الدورة" class="img-fluid">
+                <div class="play-overlay">
+                  <button class="play-btn">
+                    <i class="bi bi-play-fill"></i>
+                  </button>
+                  <span data-translate="course_preview">مشاهدة المعاينة</span>
+                </div>
+              </div>
+            </div>
+            <!-- نهاية مقدمة الدورة -->
+
+            <!-- تبويبات الدورة -->
+            <div class="course-nav-tabs" data-aos="fade-up" data-aos-delay="300">
+              <ul class="nav nav-tabs" id="course-detailsCourseTab" role="tablist">
+                <li class="nav-item">
+                  <button class="nav-link active" id="course-detailsoverview-tab" data-bs-toggle="tab" data-bs-target="#course-detailsoverview" type="button" role="tab">
+                    <i class="bi bi-layout-text-window-reverse"></i>
+                    <span data-translate="tab_overview">نظرة عامة</span>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" id="course-detailscurriculum-tab" data-bs-toggle="tab" data-bs-target="#course-detailscurriculum" type="button" role="tab">
+                    <i class="bi bi-list-ul"></i>
+                    <span data-translate="tab_curriculum">المنهج الدراسي</span>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" id="course-detailsreviews-tab" data-bs-toggle="tab" data-bs-target="#course-detailsreviews" type="button" role="tab">
+                    <i class="bi bi-star"></i>
+                    <span data-translate="tab_reviews">التقييمات</span>
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="course-detailsCourseTabContent">
+
+                <!-- تبويب النظرة العامة -->
+                <div class="tab-pane fade show active" id="course-detailsoverview" role="tabpanel">
+
+                  <div class="overview-section">
+                    <h3 data-translate="overview_title">وصف الدورة</h3>
+                    <p data-translate="overview_desc13">في هذه الدورة ستتعلم أساسيات التصميم الجرافيكي، مفاهيم الألوان، الخطوط، التكوين، والهوية البصرية، بالإضافة إلى تعلم التعامل مع أشهر برامج التصميم مثل Adobe Photoshop وIllustrator.</p>
+                    <p data-translate="overview_desc23">الدورة تركز على الجانب العملي وتمكنك من إنتاج تصاميم مميزة تناسب التسويق، الإعلانات، والهويات التجارية.</p>
+                  </div>
+
+                  <div class="skills-grid">
+                    <h3 data-translate="skills_title">المهارات التي ستكتسبها</h3>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="skill-item">
+                          <div class="skill-icon">
+                            <i class="bi bi-palette"></i>
+                          </div>
+                          <div class="skill-content">
+                            <h5 data-translate="skill_color_theory">نظرية الألوان</h5>
+                            <p data-translate="skill_color_theory_desc">فهم كيفية استخدام الألوان وتأثيرها في التصميم</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="skill-item">
+                          <div class="skill-icon">
+                            <i class="bi bi-fonts"></i>
+                          </div>
+                          <div class="skill-content">
+                            <h5 data-translate="skill_typography">الخطوط والطباعة</h5>
+                            <p data-translate="skill_typography_desc">اختيار الخطوط المناسبة وتنسيق النصوص بشكل جذاب</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="skill-item">
+                          <div class="skill-icon">
+                            <i class="bi bi-vector-pen"></i>
+                          </div>
+                          <div class="skill-content">
+                            <h5 data-translate="skill_design_tools">التعامل مع برامج التصميم</h5>
+                            <p data-translate="skill_design_tools_desc">Adobe Photoshop، Illustrator لإنشاء تصاميم احترافية</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="skill-item">
+                          <div class="skill-icon">
+                            <i class="bi bi-image"></i>
+                          </div>
+                          <div class="skill-content">
+                            <h5 data-translate="skill_branding">تصميم الشعارات والهويات</h5>
+                            <p data-translate="skill_branding_desc">إنشاء علامات تجارية مميزة وهوية بصرية متكاملة</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="requirements-section">
+                    <h3 data-translate="requirements_title">المتطلبات</h3>
+                    <ul class="requirements-list">
+                      <li><i class="bi bi-check2"></i> <span data-translate="req_pc">حاسوب مناسب لتشغيل برامج التصميم</span></li>
+                      <li><i class="bi bi-check2"></i> <span data-translate="req_internet">اتصال إنترنت لتحميل الأدوات والمواد التعليمية</span></li>
+                      <li><i class="bi bi-check2"></i> <span data-translate="req_passion">شغف بالرسم والإبداع</span></li>
+                      <li><i class="bi bi-check2"></i> <span data-translate="req_no_exp">لا حاجة لخبرة سابقة في التصميم</span></li>
+                    </ul>
+                  </div>
+
+                </div>
+                <!-- نهاية تبويب النظرة العامة -->
+                            <!-- تبويب المنهج الدراسي -->
+                <div class="tab-pane fade" id="course-detailscurriculum" role="tabpanel">
+
+                  <div class="curriculum-overview">
+                    <div class="curriculum-stats">
+                      <div class="stat">
+                        <i class="bi bi-collection-play"></i>
+                        <span data-translate="curriculum_sections">12 أقسام</span>
+                      </div>
+                      <div class="stat">
+                        <i class="bi bi-play-circle"></i>
+                        <span data-translate="curriculum_lectures">70 محاضرة</span>
+                      </div>
+                      <div class="stat">
+                        <i class="bi bi-clock"></i>
+                        <span data-translate="curriculum_duration">35 ساعة و20 دقيقة</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion" id="curriculumAccordion">
+
+                    <div class="accordion-item curriculum-module">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#module1">
+                          <div class="module-info">
+                            <span class="module-title" data-translate="module1_title">مبادئ التصميم الجرافيكي</span>
+                            <span class="module-meta" data-translate="module1_meta">7 دروس • 3 ساعات</span>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="module1" class="accordion-collapse collapse show" data-bs-parent="#curriculumAccordion">
+                        <div class="accordion-body">
+                          <div class="lessons-list">
+                            <div class="lesson">
+                              <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
+                              <span class="lesson-title" data-translate="lesson1_title">مقدمة في التصميم الجرافيكي</span>
+                              <span class="lesson-time" data-translate="lesson1_time">30 دقيقة</span>
+                            </div>
+                            <div class="lesson">
+                              <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
+                              <span class="lesson-title" data-translate="lesson2_title">نظرية الألوان وتطبيقها</span>
+                              <span class="lesson-time" data-translate="lesson2_time">40 دقيقة</span>
+                            </div>
+                            <div class="lesson">
+                              <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
+                              <span class="lesson-title" data-translate="lesson3_title">الخطوط والطباعة</span>
+                              <span class="lesson-time" data-translate="lesson3_time">35 دقيقة</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item curriculum-module">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module2">
+                          <div class="module-info">
+                            <span class="module-title" data-translate="module2_title">التعامل مع برامج التصميم</span>
+                            <span class="module-meta" data-translate="module2_meta">8 دروس • 4 ساعات و15 دقيقة</span>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="module2" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                        <div class="accordion-body">
+                          <div class="lessons-list">
+                            <div class="lesson">
+                              <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
+                              <span class="lesson-title" data-translate="lesson4_title">تعلم Adobe Photoshop</span>
+                              <span class="lesson-time" data-translate="lesson4_time">55 دقيقة</span>
+                            </div>
+                            <div class="lesson">
+                              <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
+                              <span class="lesson-title" data-translate="lesson5_title">تعلم Adobe Illustrator</span>
+                              <span class="lesson-time" data-translate="lesson5_time">50 دقيقة</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!-- نهاية تبويب المنهج الدراسي -->
+
+                <!-- تبويب التقييمات -->
+                <div class="tab-pane fade" id="course-detailsreviews" role="tabpanel">
+
+                  <div class="reviews-summary">
+                    <div class="rating-overview">
+                      <div class="overall-rating">
+                        <div class="rating-number" data-translate="reviews_rating_number">4.8</div>
+                        <div class="rating-stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="rating-text" data-translate="reviews_count">1020 تقييم</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-list">
+                    <div class="review-item">
+                      <div class="reviewer-info">
+                        <img src="assets/img/person/person-f-9.webp" alt="المراجعة" class="reviewer-avatar">
+                        <div class="reviewer-details">
+                          <h6 data-translate="reviewer1_name">هند العلي</h6>
+                          <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <span class="review-date" data-translate="reviewer1_date">منذ أسبوعين</span>
+                      </div>
+                      <p class="review-text" data-translate="reviewer1_text">الدورة رائعة وغطت كل التفاصيل التي احتاجها لأتقن التصميم الجرافيكي.</p>
+                    </div>
+
+                    <div class="review-item">
+                      <div class="reviewer-info">
+                        <img src="assets/img/person/person-m-2.webp" alt="المراجع" class="reviewer-avatar">
+                        <div class="reviewer-details">
+                          <h6 data-translate="reviewer2_name">ماجد الخالد</h6>
+                          <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                          </div>
+                        </div>
+                        <span class="review-date" data-translate="reviewer2_date">منذ شهر</span>
+                      </div>
+                      <p class="review-text" data-translate="reviewer2_text">تعلمت الكثير عن التصميم العملي واستخدام الأدوات بشكل احترافي.</p>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!-- نهاية تبويب التقييمات -->
+
+              </div>
+            </div>
+            <!-- نهاية تبويبات الدورة -->
+
+          </div>
+
+          <div class="col-lg-4">
+
+            <!-- بطاقة التسجيل -->
+            <div class="enrollment-card" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="card-header">
+                <div class="price-display">
+                  <span class="current-price" data-translate="price_current">ريال 299</span>
+                  <span class="original-price" data-translate="price_original">ريال 499</span>
+                  <span class="discount" data-translate="price_discount">خصم 40%</span>
+                </div>
+                <div class="enrollment-count">
+                  <i class="bi bi-people"></i>
+                  <span data-translate="enrollment_count">3,100 طالب مسجل</span>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="course-highlights">
+                  <div class="highlight-item">
+                    <i class="bi bi-patch-check"></i>
+                    <span data-translate="highlight_certified">شهادة معتمدة</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="bi bi-clock-history"></i>
+                    <span data-translate="highlight_hours">35 ساعة محتوى</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="bi bi-download"></i>
+                    <span data-translate="highlight_downloadable">مواد قابلة للتحميل</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="bi bi-infinity"></i>
+                    <span data-translate="highlight_lifetime">وصول مدى الحياة</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="bi bi-phone"></i>
+                    <span data-translate="highlight_mobile">وصول عبر الهاتف</span>
+                  </div>
+                </div>
+
+                <div class="action-buttons">
+                  <a class="btn-primary-course" style="color: #FFF;" href="enroll_course" data-translate="btn_enroll">سجل الآن</a>
+                </div>
+
+                <div class="guarantee">
+                  <i class="bi bi-shield-check"></i>
+                  <span data-translate="guarantee_text">ضمان استرداد الأموال خلال 30 يوم</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- نهاية بطاقة التسجيل -->
+
+            <!-- تفاصيل الدورة -->
+            <div class="course-details-card" data-aos="fade-up" data-aos-delay="300">
+              <h4 data-translate="course_details_title">تفاصيل الدورة</h4>
+
+              <div class="detail-grid">
+                <div class="detail-row">
+                  <span class="detail-label" data-translate="detail_duration_label">المدة</span>
+                  <span class="detail-value" data-translate="detail_duration_value">14 أسبوع</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label" data-translate="detail_level_label">المستوى</span>
+                  <span class="detail-value" data-translate="detail_level_value">مبتدئ - متقدم</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label" data-translate="detail_language_label">اللغة</span>
+                  <span class="detail-value" data-translate="detail_language_value">العربية</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label" data-translate="detail_lectures_label">عدد المحاضرات</span>
+                  <span class="detail-value" data-translate="detail_lectures_value">70</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label" data-translate="detail_projects_label">المشاريع</span>
+                  <span class="detail-value" data-translate="detail_projects_value">8 مشاريع</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label" data-translate="detail_updated_label">آخر تحديث</span>
+                  <span class="detail-value" data-translate="detail_updated_value">أغسطس 2025</span>
+                </div>
+              </div>
+            </div>
+            <!-- نهاية تفاصيل الدورة -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /قسم تفاصيل الدورة -->
+
+    </main>
+
+
+
+     <footer id="footer" class="footer position-relative dark-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="/" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+        <p data-translate="footer_about">
+          نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
+        </p>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="useful_links">روابط مفيدة</h4>
+        <ul>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about_us">من نحن</a></li>
+          <li><a href="/services" data-translate="our_services">خدماتنا</a></li>
+          <li><a href="blog" data-translate="our_blog">مقالاتنا</a></li>
+          <li><a href="/contact" data-translate="contact_us">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="services">خدماتنا</h4>
+        <ul>
+          <li><a href="/services" data-translate="web_design">تصميم مواقع</a></li>
+          <li><a href="/services" data-translate="web_development">تطوير مواقع</a></li>
+          <li><a href="/services" data-translate="app_development">تطوير تطبيقات</a></li>
+          <li><a href="/services" data-translate="accounting_systems">أنظمة محاسبه</a></li>
+          <li><a href="/services" data-translate="artificial_intelligence">ذكاء اصطناعي</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4 style="text-align: right;" data-translate="contact_us">تواصل معنا</h4>
+        <p style="text-align: right;" data-translate="address_line1">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;" data-translate="address_line2">امارة المدينة المنورة</p>
+        <p style="text-align: right;" data-translate="address_line3">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4">
+          <strong data-translate="phone_label">هاتف:</strong> 
+          <span>966557703987+</span>
+        </p>
+        <p style="text-align: right;">
+          <strong data-translate="email_label">البريد الإلكتروني:</strong> 
+          <span>sweepicodecompany@gmail.com</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>
+      <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span> © 
+      <span data-translate="copyright_year">حقوق النشر 2025</span>
+    </p>
+    <strong class="px-1 sitename">Sweepicode</strong>
+  </div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

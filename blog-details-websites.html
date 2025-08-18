@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Codeyla - مقالاتنا</title>
+  <title>Sweepicode - مقالاتنا</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -49,283 +49,296 @@
     <div id="loader"></div>
   </div>
   <div id="pageContent">
-  <header id="header" class="header fixed-top">
-
-    <div class="topbar d-flex align-items-center dark-background">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:codeylacompany@gmail.com">codeylacompany@gmail.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
+      <header id="header" class="header fixed-top">
+      <div class="topbar d-flex align-items-center dark-background">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:sweepicodecompany@gmail.com">sweepicodecompany@gmail.com</a></i>
+            <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
+          </div>
+          <div class="social-links d-none d-md-flex align-items-center">
+            <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+              <a href="/portfolio" class="browse-link">
+                <i class="bi bi-layers animated-layers"></i>
+                <span data-translate="browse">تصفح أعمالنا</span>
+              </a>
+          </div>
         </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
-            <a href="/portfolio" class="browse-link">
-              <i class="bi bi-layers animated-layers"></i>
-              تصفح أعمالنا
-            </a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
+      </div><!-- End Top Bar -->
+      <!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-cente">
+      <div class="branding d-flex align-items-cente">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          <a href="/" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
 
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="/" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="">
-          <!--<h1 style="margin-right: 10px;" class="sitename">رؤية جديدة</h1>-->
-        </a>
-
-        <nav id="navmenu" class="navmenu">
+          <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/">الرئيسية</a></li>
-            <li><a href="/about">من نحن</a></li>
-            <li><a href="/services">خدماتنا</a></li>
-            <li><a href="/portfolio">أعمالنا</a></li>
-            <li><a href="blog" class="active">مقالاتنا</a></li>
-            <li><a href="/call-to-action">دورات تدريبية</a></li>
-            <li><a href="/contact">تواصل معنا</a></li>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about">من نحن</a></li>
+          <li><a href="/services" data-translate="services">خدماتنا</a></li>
+          <li><a href="/portfolio" data-translate="portfolio">أعمالنا</a></li>
+          <li><a href="blog" data-translate="blog" class="active">مقالاتنا</a></li>
+          <li><a href="/call-to-action" data-translate="courses">دورات تدريبية</a></li>
+          <li><a href="/contact" data-translate="contact">تواصل معنا</a></li>
+          <li class="language-switch d-none d-xl-block">
+              <button class="lang-btn">
+                <div class="lang-flag">
+                  <img id="current-lang-flag" src="assets/img/languages/ar.png" alt="AR">
+                </div>
+                <span id="current-lang-text">عربي</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu horizontal">
+                <li data-lang="ar">
+                  <img src="assets/img/languages/ar.png" alt="AR">
+                  <span>عربي</span>
+                </li>
+                <li data-lang="en">
+                  <img src="assets/img/languages/en.png" alt="EN">
+                  <span>English</span>
+                </li>
+              </ul>
+            </li>
             <li class="d-none d-xl-block">
               <div id="themeToggle" class="theme-switch-icon">
                 <i class="bi bi-moon-fill"></i>
               </div>
             </li>
           </ul>
-          <div class="d-flex align-items-center gap-3">
+          <div class="d-flex align-items-center gap-2">
+            <button class="mobile-lang-btn d-xl-none">
+              <img id="mobile-lang-flag" src="assets/img/languages/ar.png" alt="Lang">
+            </button>
             <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
               <i class="bi bi-moon-fill"></i>
             </div>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </div>
-
         </nav>
-
+        </div>
       </div>
+    </header>
 
-    </div>
 
-  </header>
-
-  <main class="main">
-
+<main class="main">
 
   <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
     <div class="container position-relative">
-      <h1>مواقع الويب</h1>
-      <p>رحلة تطور المواقع الإلكترونية من صفحات ثابتة إلى تجارب تفاعلية مذهلة تلبي مختلف احتياجات المستخدمين حول العالم.</p>
+      <h1 data-translate="web_title">مواقع الويب</h1>
+      <p data-translate="web_subtitle">رحلة تطور المواقع الإلكترونية من صفحات ثابتة إلى تجارب تفاعلية مذهلة تلبي مختلف احتياجات المستخدمين حول العالم.</p>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="/">الرئيسية</a></li>
-          <li class="current">مواقع الويب</li>
+          <li><a href="/" data-translate="breadcrumb_home">الرئيسية</a></li>
+          <li class="current" data-translate="breadcrumb_web">مواقع الويب</li>
         </ol>
       </nav>
     </div>
   </div>
 
-    <!-- تفاصيل المقال -->
-<section id="blog-details" class="blog-details section">
-  <div class="container" data-aos="fade-up">
+  <section id="blog-details" class="blog-details section">
+    <div class="container" data-aos="fade-up">
 
-    <article class="article">
-      <div class="article-header">
-        <div class="meta-categories" data-aos="fade-up">
-          <a href="#" class="category">تكنولوجيا</a>
-          <a href="#" class="category">ويب</a>
+      <article class="article">
+        <div class="article-header">
+          <div class="meta-categories" data-aos="fade-up">
+            <a href="#" class="category" data-translate="category_technology">تكنولوجيا</a>
+            <a href="#" class="category" data-translate="category_web">ويب</a>
+          </div>
+
+          <h1 class="title" data-aos="fade-up" data-aos-delay="100" data-translate="article_title">عالم مواقع الويب: من صفحات بسيطة إلى منصات متقدمة</h1>
+
+          <div class="article-meta" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-info">
+              <span><i class="bi bi-calendar4-week"></i> <span data-translate="article_date">3 أغسطس 2025</span></span>
+            </div>
+          </div>
         </div>
 
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">عالم مواقع الويب: من صفحات بسيطة إلى منصات متقدمة</h1>
-
-        <div class="article-meta" data-aos="fade-up" data-aos-delay="200">
-          <div class="post-info">
-            <span><i class="bi bi-calendar4-week"></i> 3 أغسطس 2025</span>
-          </div>
+        <div class="article-featured-image" data-aos="zoom-in">
+          <img src="assets/img/blog/blog6.jpg" alt="Web Development Evolution" class="img-fluid">
         </div>
-      </div>
 
-      <div class="article-featured-image" data-aos="zoom-in">
-        <img src="assets/img/blog/blog6.jpg" alt="Web Development Evolution" class="img-fluid">
-      </div>
+        <div class="article-wrapper">
+          <aside class="table-of-contents" data-aos="fade-left">
+            <h3 data-translate="toc_title">فهرس المحتويات</h3>
+            <nav>
+              <ul>
+                <li><a href="#introduction" class="active" data-translate="toc_intro">مقدمة</a></li>
+                <li><a href="#static-web" data-translate="toc_static_web">الصفحات الثابتة</a></li>
+                <li><a href="#dynamic-web" data-translate="toc_dynamic_web">الويب الديناميكي</a></li>
+                <li><a href="#responsive" data-translate="toc_responsive">الويب المتجاوب</a></li>
+                <li><a href="#modern-tools" data-translate="toc_modern_tools">أدوات حديثة</a></li>
+                <li><a href="#future" data-translate="toc_future">مستقبل الويب</a></li>
+              </ul>
+            </nav>
+          </aside>
 
-      <div class="article-wrapper">
-        <aside class="table-of-contents" data-aos="fade-left">
-          <h3>فهرس المحتويات</h3>
-          <nav>
-            <ul>
-              <li><a href="#introduction" class="active">مقدمة</a></li>
-              <li><a href="#static-web">الصفحات الثابتة</a></li>
-              <li><a href="#dynamic-web">الويب الديناميكي</a></li>
-              <li><a href="#responsive">الويب المتجاوب</a></li>
-              <li><a href="#modern-tools">أدوات حديثة</a></li>
-              <li><a href="#future">مستقبل الويب</a></li>
-            </ul>
-          </nav>
-        </aside>
-
-        <div class="article-content">
-          <div class="content-section" id="introduction" data-aos="fade-up">
-            <p class="lead">
-              شهد عالم تطوير المواقع تحولًا جذريًا خلال العقود الأخيرة، بدءًا من صفحات بسيطة تعرض نصوصًا جامدة إلى تطبيقات ويب معقدة تعتمد على الذكاء الاصطناعي وتجربة المستخدم.
-            </p>
-            <p>
-              هذا التطور لم يكن تقنيًا فقط، بل عكس احتياجات المستخدمين المتزايدة، وسلوكهم المتغيّر، وأثر التكنولوجيا في تقديم تجارب أكثر سلاسة وتفاعلية.
-            </p>
-            <div class="highlight-quote">
-              <blockquote>
-                <p>الموقع الناجح ليس مجرد تصميم جذاب، بل هو تجربة كاملة تبدأ من أول نقرة.</p>
-                <cite>مطور ويب محترف</cite>
-              </blockquote>
-            </div>
-          </div>
-
-          <div class="content-section" id="static-web" data-aos="fade-up">
-            <h2>الصفحات الثابتة</h2>
-            <div class="image-with-caption right">
-              <img src="assets/img/blog/blog3.jpg" alt="Static Web Example" class="img-fluid" loading="lazy">
-              <figcaption>مواقع التسعينات المبنية على HTML فقط</figcaption>
-            </div>
-            <p>
-              في البداية، كانت معظم مواقع الإنترنت عبارة عن صفحات HTML بسيطة تحتوي على نصوص وصور فقط، بدون أي تفاعل مع المستخدم أو تحديث للمحتوى.
-            </p>
-            <div class="feature-points">
-              <div class="point">
-                <i class="bi bi-file-earmark-code"></i>
-                <div>
-                  <h4>سهولة الإنشاء</h4>
-                  <p>لم تتطلب سوى معرفة بـ HTML وCSS.</p>
-                </div>
-              </div>
-              <div class="point">
-                <i class="bi bi-emoji-neutral"></i>
-                <div>
-                  <h4>محدودية التفاعل</h4>
-                  <p>لا تحتوي على ديناميكية أو قاعدة بيانات.</p>
-                </div>
+          <div class="article-content">
+            <div class="content-section" id="introduction" data-aos="fade-up">
+              <p class="lead" data-translate="intro_text1">
+                شهد عالم تطوير المواقع تحولًا جذريًا خلال العقود الأخيرة، بدءًا من صفحات بسيطة تعرض نصوصًا جامدة إلى تطبيقات ويب معقدة تعتمد على الذكاء الاصطناعي وتجربة المستخدم.
+              </p>
+              <p data-translate="intro_text2">
+                هذا التطور لم يكن تقنيًا فقط، بل عكس احتياجات المستخدمين المتزايدة، وسلوكهم المتغيّر، وأثر التكنولوجيا في تقديم تجارب أكثر سلاسة وتفاعلية.
+              </p>
+              <div class="highlight-quote">
+                <blockquote>
+                  <p data-translate="intro_quote">الموقع الناجح ليس مجرد تصميم جذاب، بل هو تجربة كاملة تبدأ من أول نقرة.</p>
+                  <cite data-translate="intro_quote_author">مطور ويب محترف</cite>
+                </blockquote>
               </div>
             </div>
-          </div>
 
-          <div class="content-section" id="dynamic-web" data-aos="fade-up">
-            <h2>ظهور الويب الديناميكي</h2>
-            <p>
-              مع تطور لغات البرمجة مثل PHP وJavaScript، بدأت المواقع تعتمد على قواعد البيانات والتفاعل مع المستخدمين في الوقت الحقيقي.
-            </p>
-            <div class="comparison-grid">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="comparison-card">
-                    <div class="icon"><i class="bi bi-check-circle"></i></div>
-                    <h4>الميزات</h4>
-                    <ul>
-                      <li>إدارة محتوى ديناميكي</li>
-                      <li>تفاعل المستخدم المباشر</li>
-                      <li>ربط مع قواعد بيانات</li>
-                    </ul>
+            <div class="content-section" id="static-web" data-aos="fade-up">
+              <h2 data-translate="static_web_title">الصفحات الثابتة</h2>
+              <div class="image-with-caption right">
+                <img src="assets/img/blog/blog3.jpg" alt="Static Web Example" class="img-fluid" loading="lazy">
+                <figcaption data-translate="static_web_caption">مواقع التسعينات المبنية على HTML فقط</figcaption>
+              </div>
+              <p data-translate="static_web_text">
+                في البداية، كانت معظم مواقع الإنترنت عبارة عن صفحات HTML بسيطة تحتوي على نصوص وصور فقط، بدون أي تفاعل مع المستخدم أو تحديث للمحتوى.
+              </p>
+              <div class="feature-points">
+                <div class="point">
+                  <i class="bi bi-file-earmark-code"></i>
+                  <div>
+                    <h4 data-translate="easy_creation_title">سهولة الإنشاء</h4>
+                    <p data-translate="easy_creation_text">لم تتطلب سوى معرفة بـ HTML وCSS.</p>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="comparison-card">
-                    <div class="icon"><i class="bi bi-exclamation-circle"></i></div>
-                    <h4>التحديات</h4>
-                    <ul>
-                      <li>أمان المعلومات</li>
-                      <li>أداء السيرفر</li>
-                      <li>تحديثات مستمرة</li>
-                    </ul>
+                <div class="point">
+                  <i class="bi bi-emoji-neutral"></i>
+                  <div>
+                    <h4 data-translate="limited_interaction_title">محدودية التفاعل</h4>
+                    <p data-translate="limited_interaction_text">لا تحتوي على ديناميكية أو قاعدة بيانات.</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="content-section" id="responsive" data-aos="fade-up">
-            <h2>الويب المتجاوب</h2>
-            <p>
-              بعد انتشار الهواتف الذكية، أصبح من الضروري تصميم مواقع تتكيف مع مختلف الشاشات، وهنا ظهر مفهوم التصميم المتجاوب (Responsive Design).
-            </p>
-            <div class="key-principles">
-              <div class="principle">
-                <span class="number">01</span>
-                <h4>مرونة التصميم</h4>
-                <p>المحتوى يتكيف تلقائيًا مع حجم الشاشة</p>
-              </div>
-              <div class="principle">
-                <span class="number">02</span>
-                <h4>تجربة مستخدم موحدة</h4>
-                <p>على الهاتف والتابلت والحاسوب</p>
-              </div>
-              <div class="principle">
-                <span class="number">03</span>
-                <h4>اعتماد واسع</h4>
-                <p>أصبح معيارًا أساسيًا في بناء المواقع الحديثة</p>
+            <div class="content-section" id="dynamic-web" data-aos="fade-up">
+              <h2 data-translate="dynamic_web_title">ظهور الويب الديناميكي</h2>
+              <p data-translate="dynamic_web_text">
+                مع تطور لغات البرمجة مثل PHP وJavaScript، بدأت المواقع تعتمد على قواعد البيانات والتفاعل مع المستخدمين في الوقت الحقيقي.
+              </p>
+              <div class="comparison-grid">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="comparison-card">
+                      <div class="icon"><i class="bi bi-check-circle"></i></div>
+                      <h4 data-translate="features_title">الميزات</h4>
+                      <ul>
+                        <li data-translate="feature_dynamic_content">إدارة محتوى ديناميكي</li>
+                        <li data-translate="feature_user_interaction">تفاعل المستخدم المباشر</li>
+                        <li data-translate="feature_database_connection">ربط مع قواعد بيانات</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="comparison-card">
+                      <div class="icon"><i class="bi bi-exclamation-circle"></i></div>
+                      <h4 data-translate="challenges_title">التحديات</h4>
+                      <ul>
+                        <li data-translate="challenge_security">أمان المعلومات</li>
+                        <li data-translate="challenge_server_performance">أداء السيرفر</li>
+                        <li data-translate="challenge_updates">تحديثات مستمرة</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="content-section" id="modern-tools" data-aos="fade-up">
-            <h2>أدوات حديثة في تطوير المواقع</h2>
-            <p>
-              ظهرت أدوات وإطارات عمل متقدمة مثل React، Vue، وNext.js، مما جعل تطوير المواقع أكثر مرونة وكفاءة وسرعة.
-            </p>
-            <div class="info-box">
-              <div class="icon"><i class="bi bi-code-slash"></i></div>
-              <div class="content">
-                <h4>أبرز الأدوات</h4>
-                <p>تتيح هذه الأدوات بناء واجهات تفاعلية عالية الأداء مع تحسين تجربة المستخدم.</p>
+            <div class="content-section" id="responsive" data-aos="fade-up">
+              <h2 data-translate="responsive_web_title">الويب المتجاوب</h2>
+              <p data-translate="responsive_web_text">
+                بعد انتشار الهواتف الذكية، أصبح من الضروري تصميم مواقع تتكيف مع مختلف الشاشات، وهنا ظهر مفهوم التصميم المتجاوب (Responsive Design).
+              </p>
+              <div class="key-principles">
+                <div class="principle">
+                  <span class="number">01</span>
+                  <h4 data-translate="design_flexibility_title">مرونة التصميم</h4>
+                  <p data-translate="design_flexibility_text">المحتوى يتكيف تلقائيًا مع حجم الشاشة</p>
+                </div>
+                <div class="principle">
+                  <span class="number">02</span>
+                  <h4 data-translate="unified_user_experience_title">تجربة مستخدم موحدة</h4>
+                  <p data-translate="unified_user_experience_text">على الهاتف والتابلت والحاسوب</p>
+                </div>
+                <div class="principle">
+                  <span class="number">03</span>
+                  <h4 data-translate="wide_adoption_title">اعتماد واسع</h4>
+                  <p data-translate="wide_adoption_text">أصبح معيارًا أساسيًا في بناء المواقع الحديثة</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="content-section" id="future" data-aos="fade-up">
-            <h2>نظرة إلى المستقبل</h2>
-            <p>
-              مستقبل تطوير الويب يشير إلى مزيد من الاعتماد على الذكاء الاصطناعي، وتجارب أكثر تخصيصًا باستخدام تقنيات مثل PWA، والويب ثلاثي الأبعاد.
-            </p>
-            <div class="future-trends">
-              <div class="trend">
-                <i class="bi bi-cpu"></i>
-                <h4>الذكاء الاصطناعي</h4>
-                <p>تحسين المحتوى والتفاعل بناءً على سلوك المستخدم</p>
+            <div class="content-section" id="modern-tools" data-aos="fade-up">
+              <h2 data-translate="modern_tools_title">أدوات حديثة في تطوير المواقع</h2>
+              <p data-translate="modern_tools_text">
+                ظهرت أدوات وإطارات عمل متقدمة مثل React، Vue، وNext.js، مما جعل تطوير المواقع أكثر مرونة وكفاءة وسرعة.
+              </p>
+              <div class="info-box">
+                <div class="icon"><i class="bi bi-code-slash"></i></div>
+                <div class="content">
+                  <h4 data-translate="top_tools_title">أبرز الأدوات</h4>
+                  <p data-translate="top_tools_text">تتيح هذه الأدوات بناء واجهات تفاعلية عالية الأداء مع تحسين تجربة المستخدم.</p>
+                </div>
               </div>
-              <div class="trend">
-                <i class="bi bi-browser-chrome"></i>
-                <h4>تطبيقات الويب التقدمية</h4>
-                <p>تجربة تشبه التطبيقات الأصلية على المتصفح</p>
-              </div>
-              <div class="trend">
-                <i class="bi bi-box"></i>
-                <h4>الويب ثلاثي الأبعاد</h4>
-                <p>عناصر تفاعلية وتجارب بصرية جديدة</p>
+            </div>
+
+            <div class="content-section" id="future" data-aos="fade-up">
+              <h2 data-translate="future_title">نظرة إلى المستقبل</h2>
+              <p data-translate="future_text">
+                مستقبل تطوير الويب يشير إلى مزيد من الاعتماد على الذكاء الاصطناعي، وتجارب أكثر تخصيصًا باستخدام تقنيات مثل PWA، والويب ثلاثي الأبعاد.
+              </p>
+              <div class="future-trends">
+                <div class="trend">
+                  <i class="bi bi-cpu"></i>
+                  <h4 data-translate="future_ai_title">الذكاء الاصطناعي</h4>
+                  <p data-translate="future_ai_text">تحسين المحتوى والتفاعل بناءً على سلوك المستخدم</p>
+                </div>
+                <div class="trend">
+                  <i class="bi bi-browser-chrome"></i>
+                  <h4 data-translate="future_pwa_title">تطبيقات الويب التقدمية</h4>
+                  <p data-translate="future_pwa_text">تجربة تشبه التطبيقات الأصلية على المتصفح</p>
+                </div>
+                <div class="trend">
+                  <i class="bi bi-box"></i>
+                  <h4 data-translate="future_3d_title">الويب ثلاثي الأبعاد</h4>
+                  <p data-translate="future_3d_text">عناصر تفاعلية وتجارب بصرية جديدة</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="article-footer" data-aos="fade-up">
-
-        <div class="article-tags">
-          <h4>مواضيع ذات صلة</h4>
-          <div class="tags">
-            <a href="#" class="tag">مواقع الويب</a>
-            <a href="#" class="tag">تجربة المستخدم</a>
-            <a href="#" class="tag">تكنولوجيا</a>
-            <a href="#" class="tag">أدوات حديثة</a>
-            <a href="#" class="tag">تطوير الويب</a>
+        <div class="article-footer" data-aos="fade-up">
+          <div class="article-tags">
+            <h4 data-translate="related_topics">مواضيع ذات صلة</h4>
+            <div class="tags">
+              <a href="#" class="tag" data-translate="tag_websites">مواقع الويب</a>
+              <a href="#" class="tag" data-translate="tag_user_experience">تجربة المستخدم</a>
+              <a href="#" class="tag" data-translate="tag_technology">تكنولوجيا</a>
+              <a href="#" class="tag" data-translate="tag_modern_tools">أدوات حديثة</a>
+              <a href="#" class="tag" data-translate="tag_web_dev">تطوير الويب</a>
+            </div>
           </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-  </div>
-</section>
+    </div>
+  </section>
+
+</main>
 
 
-  </main>
-
-  <footer id="footer" class="footer position-relative dark-background">
+     <footer id="footer" class="footer position-relative dark-background">
 
   <div class="container footer-top">
     <div class="row gy-4">
@@ -333,52 +346,56 @@
         <a href="/" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="">
         </a>
-        <p>نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.</p>
-        <!--<div class="social-links d-flex mt-4">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>-->
+        <p data-translate="footer_about">
+          نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
+        </p>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>روابط مفيدة</h4>
+        <h4 data-translate="useful_links">روابط مفيدة</h4>
         <ul>
-          <li><a href="/">الرئيسية</a></li>
-          <li><a href="/about">من نحن</a></li>
-          <li><a href="/services">خدماتنا</a></li>
-          <li><a href="blog">مقالاتنا</a></li>
-          <li><a href="/contact">تواصل معنا</a></li>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about_us">من نحن</a></li>
+          <li><a href="/services" data-translate="our_services">خدماتنا</a></li>
+          <li><a href="blog" data-translate="our_blog">مقالاتنا</a></li>
+          <li><a href="/contact" data-translate="contact_us">تواصل معنا</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>خدماتنا</h4>
+        <h4 data-translate="services">خدماتنا</h4>
         <ul>
-          <li><a href="/services">تصميم مواقع</a></li>
-          <li><a href="/services">تطوير مواقع</a></li>
-          <li><a href="/services">تطوير تطبيقات</a></li>
-          <li><a href="/services">أنظمة محاسبه</a></li>
-          <li><a href="/services">ذكاء اصطناعي</a></li>
+          <li><a href="/services" data-translate="web_design">تصميم مواقع</a></li>
+          <li><a href="/services" data-translate="web_development">تطوير مواقع</a></li>
+          <li><a href="/services" data-translate="app_development">تطوير تطبيقات</a></li>
+          <li><a href="/services" data-translate="accounting_systems">أنظمة محاسبه</a></li>
+          <li><a href="/services" data-translate="artificial_intelligence">ذكاء اصطناعي</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-        <h4 style="text-align: right;">تواصل معنا</h4>
-        <p style="text-align: right;">حي السميري - مدينة ينبع</p>
-        <p style="text-align: right;">امارة المدينة المنورة</p>
-        <p style="text-align: right;">المملكة العربية السعودية</p>
-        <p style="text-align: right;" class="mt-4"><strong>هاتف:</strong> <span>966557703987+</span></p>
-        <p style="text-align: right;"><strong>البريد الإلكتروني:</strong> <span>codeylacompany@gmail.com</span></p>
+        <h4 style="text-align: right;" data-translate="contact_us">تواصل معنا</h4>
+        <p style="text-align: right;" data-translate="address_line1">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;" data-translate="address_line2">امارة المدينة المنورة</p>
+        <p style="text-align: right;" data-translate="address_line3">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4">
+          <strong data-translate="phone_label">هاتف:</strong> 
+          <span>966557703987+</span>
+        </p>
+        <p style="text-align: right;">
+          <strong data-translate="email_label">البريد الإلكتروني:</strong> 
+          <span>sweepicodecompany@gmail.com</span>
+        </p>
       </div>
-
     </div>
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p><span>جميع الحقوق محفوظة</span> © <span>حقوق النشر 2025</span> </p><strong class="px-1 sitename">Codeyla</strong>
-    
+    <p>
+      <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span> © 
+      <span data-translate="copyright_year">حقوق النشر 2025</span>
+    </p>
+    <strong class="px-1 sitename">Sweepicode</strong>
   </div>
 
 </footer>

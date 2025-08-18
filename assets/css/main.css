@@ -33,7 +33,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #14201c; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #0a3223; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #f4a835; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #f36c24; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -41,11 +41,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #f4a835; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #f36c24; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #14201c; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #f4a835; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #f36c24; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -8718,4 +8718,212 @@ body.mobile-nav-active #themeToggleMobile {
 }
 @keyframes spin {
   100% { transform: rotate(360deg); }
+}
+
+/******************Languages***************/
+/* ====== الأساسي ====== */
+.language-switch {
+  position: relative;
+  font-family: 'Cairo', sans-serif;
+}
+
+.lang-btn {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 6px 14px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.lang-flag img {
+  width: 22px;
+  height: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.lang-btn:hover .lang-flag img {
+  transform: rotate(8deg) scale(1.1);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 12px;
+  list-style: none;
+  padding: 6px 0;
+  z-index: 10;
+  min-width: 150px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  animation: dropdownFade 0.3s ease forwards;
+}
+
+.dropdown-menu li {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #000;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-menu li:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+}
+
+.dropdown-menu img {
+  width: 20px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+@keyframes dropdownFade {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== ريسبونسيف ====== */
+@media (max-width: 992px) {
+  .lang-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    gap: 6px;
+  }
+  .lang-flag img {
+    width: 20px;
+    height: 13px;
+  }
+  .dropdown-menu {
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* نخليها أيقونة دائرية على الموبايل */
+  .lang-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    padding: 0;
+  }
+  .lang-btn span, .lang-btn i {
+    display: none; /* نخفي النص والسهم */
+  }
+  .dropdown-menu {
+    top: 45px;
+    min-width: 140px;
+    padding: 8px 0;
+  }
+  .dropdown-menu li {
+    padding: 10px 16px;
+  }
+}
+/****************/
+/* زر اللغة للموبايل */
+.mobile-lang-btn {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.mobile-lang-btn img {
+  width: 22px;
+  height: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.mobile-lang-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.05);
+}
+
+/* إخفاء زر اللغة للموبايل على الشاشات الكبيرة */
+@media (min-width: 1200px) {
+  .mobile-lang-btn {
+    display: none;
+  }
+}
+body.mobile-nav-active .mobile-lang-btn {
+  display: none !important;
+}
+
+/* تنسيق القائمة الأساسية */
+
+.lang-btn i {
+  transition: transform 0.3s ease;
+}
+
+.lang-btn.rotate i {
+  transform: rotate(180deg);
+}
+
+/* Dropdown أفقي */
+.dropdown-menu.horizontal {
+  display: flex;
+  gap: 14px; /* مسافة أكبر شوية بين اللغتين */
+  align-items: center;
+  padding: 6px 16px; /* تصغير الارتفاع */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  width: max-content; /* عرض على قد المحتوى */
+  box-sizing: border-box; /* يضمن أن البادينج محسوب مع العرض */
+}
+
+.dropdown-menu.horizontal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu.horizontal li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #000;
+  white-space: nowrap; /* يمنع الكسر للسطر */
+}
+
+.dropdown-menu.horizontal li img {
+  height: 16px;
+  border-radius: 3px;
 }

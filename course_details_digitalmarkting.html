@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>codeyla - دورات البرمجة التدريبية</title>
+  <title>Sweepicode - دورات البرمجة التدريبية</title>
   <meta name="description" content="منصة دورات برمجية متكاملة: تطوير ويب، تطبيقات موبايل، أنظمة ERP، سطح المكتب، ذكاء اصطناعي، تصميم ومونتاج وتسويق رقمي.">
   <meta name="keywords" content="كورسات, برمجة, تطوير مواقع, تطبيقات موبايل, ERP, ذكاء اصطناعي, مونتاج, تسويق رقمي">
 
@@ -39,57 +39,78 @@
   </div>
   <div id="pageContent">
     <header id="header" class="header fixed-top">
-
       <div class="topbar d-flex align-items-center dark-background">
         <div class="container d-flex justify-content-center justify-content-md-between">
           <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:codeylacompany@gmail.com">codeylacompany@gmail.com</a></i>
-            <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">+966557703987</span></i>
+            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:sweepicodecompany@gmail.com">sweepicodecompany@gmail.com</a></i>
+            <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
           </div>
           <div class="social-links d-none d-md-flex align-items-center">
-            <a href="/portfolio" class="browse-link">
-              <i class="bi bi-layers animated-layers"></i>
-              تصفح أعمالنا
-            </a>
+            <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+              <a href="/portfolio" class="browse-link">
+                <i class="bi bi-layers animated-layers"></i>
+                <span data-translate="browse">تصفح أعمالنا</span>
+              </a>
           </div>
         </div>
       </div><!-- End Top Bar -->
+      <!-- End Top Bar -->
 
       <div class="branding d-flex align-items-cente">
-
         <div class="container position-relative d-flex align-items-center justify-content-between">
           <a href="/" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="Logo">
+            <img src="assets/img/logo.png" alt="" />
           </a>
 
           <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="/">الرئيسية</a></li>
-              <li><a href="/about">من نحن</a></li>
-              <li><a href="/services">خدماتنا</a></li>
-              <li><a href="/portfolio">أعمالنا</a></li>
-              <li><a href="/blog">مقالاتنا</a></li>
-              <li><a href="/call-to-action" class="active">دورات تدريبية</a></li>
-              <li><a href="/contact">تواصل معنا</a></li>
-              <li class="d-none d-xl-block">
-                <div id="themeToggle" class="theme-switch-icon">
-                  <i class="bi bi-moon-fill"></i>
+          <ul>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about">من نحن</a></li>
+          <li><a href="/services" data-translate="services">خدماتنا</a></li>
+          <li><a href="/portfolio" data-translate="portfolio">أعمالنا</a></li>
+          <li><a href="blog" data-translate="blog">مقالاتنا</a></li>
+          <li><a href="/call-to-action" data-translate="courses" class="active">دورات تدريبية</a></li>
+          <li><a href="/contact" data-translate="contact">تواصل معنا</a></li>
+          <li class="language-switch d-none d-xl-block">
+              <button class="lang-btn">
+                <div class="lang-flag">
+                  <img id="current-lang-flag" src="assets/img/languages/ar.png" alt="AR">
                 </div>
-              </li>
-            </ul>
-            <div class="d-flex align-items-center gap-3">
-              <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+                <span id="current-lang-text">عربي</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu horizontal">
+                <li data-lang="ar">
+                  <img src="assets/img/languages/ar.png" alt="AR">
+                  <span>عربي</span>
+                </li>
+                <li data-lang="en">
+                  <img src="assets/img/languages/en.png" alt="EN">
+                  <span>English</span>
+                </li>
+              </ul>
+            </li>
+            <li class="d-none d-xl-block">
+              <div id="themeToggle" class="theme-switch-icon">
                 <i class="bi bi-moon-fill"></i>
               </div>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <button class="mobile-lang-btn d-xl-none">
+              <img id="mobile-lang-flag" src="assets/img/languages/ar.png" alt="Lang">
+            </button>
+            <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
+              <i class="bi bi-moon-fill"></i>
             </div>
-
-          </nav>
-
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </div>
+        </nav>
         </div>
-
       </div>
-
     </header>
 
     <main class="main">
@@ -97,12 +118,12 @@
 <!-- Page Title -->
 <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
   <div class="container position-relative">
-    <h1>دورة استراتيجيات التسويق الرقمي</h1>
-    <p>دورة تدريبية شاملة تشرح أهم استراتيجيات التسويق الرقمي وتطبيقاتها العملية لتطوير مهاراتك وتحقيق نتائج فعالة في السوق الرقمي.</p>
+    <h1 data-translate="course_title">دورة استراتيجيات التسويق الرقمي</h1>
+    <p data-translate="course_desc">دورة تدريبية شاملة تشرح أهم استراتيجيات التسويق الرقمي وتطبيقاتها العملية لتطوير مهاراتك وتحقيق نتائج فعالة في السوق الرقمي.</p>
     <nav class="breadcrumbs">
       <ol>
-        <li><a href="/">الرئيسية</a></li>
-        <li class="current">تفاصيل الدورة</li>
+        <li><a href="/" data-translate="breadcrumb_home">الرئيسية</a></li>
+        <li class="current" data-translate="breadcrumb_course_details">تفاصيل الدورة</li>
       </ol>
     </nav>
   </div>
@@ -120,24 +141,24 @@
         <div class="course-hero" data-aos="fade-up" data-aos-delay="200">
           <div class="hero-content">
             <div class="course-badge">
-              <span class="category">التسويق الرقمي</span>
-              <span class="level">متقدم</span>
+              <span class="category" data-translate="course_category1">التسويق الرقمي</span>
+              <span class="level" data-translate="course_level1">متقدم</span>
             </div>
-            <h1>إتقان استراتيجيات التسويق الرقمي الحديثة</h1>
-            <p class="course-subtitle">تعلم كيفية تخطيط وتنفيذ حملات تسويقية ناجحة عبر الإنترنت باستخدام الأدوات والتقنيات الحديثة</p>
+            <h1 data-translate="course_hero_title1">إتقان استراتيجيات التسويق الرقمي الحديثة</h1>
+            <p class="course-subtitle" data-translate="course_hero_subtitle1">تعلم كيفية تخطيط وتنفيذ حملات تسويقية ناجحة عبر الإنترنت باستخدام الأدوات والتقنيات الحديثة</p>
 
             <div class="instructor-card">
               <img src="assets/img/person/person-m-8.webp" alt="المدرب" class="instructor-image">
               <div class="instructor-details">
-                <h5>الأستاذ أحمد العلي</h5>
-                <span>خبير تسويق رقمي</span>
+                <h5 data-translate="instructor_name1">الأستاذ أحمد العلي</h5>
+                <span data-translate="instructor_title1">خبير تسويق رقمي</span>
                 <div class="instructor-rating">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-half"></i>
-                  <span>4.9 (850 تقييم)</span>
+                  <span data-translate="instructor_rating1">4.9 (850 تقييم)</span>
                 </div>
               </div>
             </div>
@@ -148,7 +169,7 @@
               <button class="play-btn">
                 <i class="bi bi-play-fill"></i>
               </button>
-              <span>مشاهدة المعاينة</span>
+              <span data-translate="course_preview">مشاهدة المعاينة</span>
             </div>
           </div>
         </div>
@@ -160,19 +181,19 @@
             <li class="nav-item">
               <button class="nav-link active" id="course-detailsoverview-tab" data-bs-toggle="tab" data-bs-target="#course-detailsoverview" type="button" role="tab">
                 <i class="bi bi-layout-text-window-reverse"></i>
-                نظرة عامة
+                <span data-translate="tab_overview">نظرة عامة</span>
               </button>
             </li>
             <li class="nav-item">
               <button class="nav-link" id="course-detailscurriculum-tab" data-bs-toggle="tab" data-bs-target="#course-detailscurriculum" type="button" role="tab">
                 <i class="bi bi-list-ul"></i>
-                المنهج الدراسي
+                <span data-translate="tab_curriculum">المنهج الدراسي</span>
               </button>
             </li>
             <li class="nav-item">
               <button class="nav-link" id="course-detailsreviews-tab" data-bs-toggle="tab" data-bs-target="#course-detailsreviews" type="button" role="tab">
                 <i class="bi bi-star"></i>
-                التقييمات
+                <span data-translate="tab_reviews">التقييمات</span>
               </button>
             </li>
           </ul>
@@ -183,13 +204,13 @@
             <div class="tab-pane fade show active" id="course-detailsoverview" role="tabpanel">
 
               <div class="overview-section">
-                <h3>وصف الدورة</h3>
-                <p>تتناول الدورة استراتيجيات التسويق الرقمي الأساسية والمتقدمة، بما في ذلك تحسين محركات البحث (SEO)، التسويق عبر وسائل التواصل الاجتماعي، الإعلان المدفوع، وتحليل البيانات.</p>
-                <p>سوف تتعلم كيفية تصميم حملات تسويقية فعالة لزيادة الوصول والمبيعات مع قياس النتائج وتحسين الأداء المستمر.</p>
+                <h3 data-translate="overview_title">وصف الدورة</h3>
+                <p data-translate="overview_desc11">تتناول الدورة استراتيجيات التسويق الرقمي الأساسية والمتقدمة، بما في ذلك تحسين محركات البحث (SEO)، التسويق عبر وسائل التواصل الاجتماعي، الإعلان المدفوع، وتحليل البيانات.</p>
+                <p data-translate="overview_desc22">سوف تتعلم كيفية تصميم حملات تسويقية فعالة لزيادة الوصول والمبيعات مع قياس النتائج وتحسين الأداء المستمر.</p>
               </div>
 
               <div class="skills-grid">
-                <h3>المهارات التي ستكتسبها</h3>
+                <h3 data-translate="skills_title">المهارات التي ستكتسبها</h3>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="skill-item">
@@ -197,8 +218,8 @@
                         <i class="bi bi-graph-up"></i>
                       </div>
                       <div class="skill-content">
-                        <h5>تحليل البيانات التسويقية</h5>
-                        <p>Google Analytics، أدوات قياس الأداء، تحليل الجمهور</p>
+                        <h5 data-translate="skill_data_analysis">تحليل البيانات التسويقية</h5>
+                        <p data-translate="skill_data_analysis_desc">Google Analytics، أدوات قياس الأداء، تحليل الجمهور</p>
                       </div>
                     </div>
                   </div>
@@ -208,8 +229,8 @@
                         <i class="bi bi-megaphone"></i>
                       </div>
                       <div class="skill-content">
-                        <h5>إدارة الحملات الإعلانية</h5>
-                        <p>Google Ads، فيسبوك، إنستغرام، استراتيجيات الإعلان المدفوع</p>
+                        <h5 data-translate="skill_ad_campaigns">إدارة الحملات الإعلانية</h5>
+                        <p data-translate="skill_ad_campaigns_desc">Google Ads، فيسبوك، إنستغرام، استراتيجيات الإعلان المدفوع</p>
                       </div>
                     </div>
                   </div>
@@ -219,8 +240,8 @@
                         <i class="bi bi-share"></i>
                       </div>
                       <div class="skill-content">
-                        <h5>التسويق عبر وسائل التواصل الاجتماعي</h5>
-                        <p>استراتيجيات المحتوى، التفاعل مع الجمهور، بناء العلامة التجارية</p>
+                        <h5 data-translate="skill_social_media">التسويق عبر وسائل التواصل الاجتماعي</h5>
+                        <p data-translate="skill_social_media_desc">استراتيجيات المحتوى، التفاعل مع الجمهور، بناء العلامة التجارية</p>
                       </div>
                     </div>
                   </div>
@@ -230,8 +251,8 @@
                         <i class="bi bi-search"></i>
                       </div>
                       <div class="skill-content">
-                        <h5>تحسين محركات البحث (SEO)</h5>
-                        <p>الكلمات المفتاحية، بناء الروابط، تحسين محتوى الموقع</p>
+                        <h5 data-translate="skill_seo">تحسين محركات البحث (SEO)</h5>
+                        <p data-translate="skill_seo_desc">الكلمات المفتاحية، بناء الروابط، تحسين محتوى الموقع</p>
                       </div>
                     </div>
                   </div>
@@ -239,33 +260,32 @@
               </div>
 
               <div class="requirements-section">
-                <h3>المتطلبات</h3>
+                <h3 data-translate="requirements_title">المتطلبات</h3>
                 <ul class="requirements-list">
-                  <li><i class="bi bi-check2"></i> معرفة أساسية بمبادئ التسويق</li>
-                  <li><i class="bi bi-check2"></i> اتصال بالإنترنت وأجهزة حاسوب</li>
-                  <li><i class="bi bi-check2"></i> رغبة في التعلم والتطوير المستمر</li>
+                  <li><i class="bi bi-check2"></i> <span data-translate="req_marketing_basics">معرفة أساسية بمبادئ التسويق</span></li>
+                  <li><i class="bi bi-check2"></i> <span data-translate="req_pc_internet">اتصال بالإنترنت وأجهزة حاسوب</span></li>
+                  <li><i class="bi bi-check2"></i> <span data-translate="req_learning_will">رغبة في التعلم والتطوير المستمر</span></li>
                 </ul>
               </div>
 
             </div>
             <!-- نهاية تبويب النظرة العامة -->
-
-            <!-- تبويب المنهج الدراسي -->
+             <!-- تبويب المنهج الدراسي -->
             <div class="tab-pane fade" id="course-detailscurriculum" role="tabpanel">
 
               <div class="curriculum-overview">
                 <div class="curriculum-stats">
                   <div class="stat">
                     <i class="bi bi-collection-play"></i>
-                    <span>10 أقسام</span>
+                    <span data-translate="curriculum_sections">10 أقسام</span>
                   </div>
                   <div class="stat">
                     <i class="bi bi-play-circle"></i>
-                    <span>70 محاضرة</span>
+                    <span data-translate="curriculum_lectures">70 محاضرة</span>
                   </div>
                   <div class="stat">
                     <i class="bi bi-clock"></i>
-                    <span>40 ساعة و15 دقيقة</span>
+                    <span data-translate="curriculum_duration">40 ساعة و15 دقيقة</span>
                   </div>
                 </div>
               </div>
@@ -276,8 +296,8 @@
                   <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#module1">
                       <div class="module-info">
-                        <span class="module-title">مقدمة في التسويق الرقمي</span>
-                        <span class="module-meta">6 دروس • 3 ساعات</span>
+                        <span class="module-title" data-translate="module_intro">مقدمة في التسويق الرقمي</span>
+                        <span class="module-meta" data-translate="module_intro_meta">6 دروس • 3 ساعات</span>
                       </div>
                     </button>
                   </h2>
@@ -286,18 +306,18 @@
                       <div class="lessons-list">
                         <div class="lesson">
                           <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
-                          <span class="lesson-title">مفهوم التسويق الرقمي وأهميته</span>
-                          <span class="lesson-time">30 دقيقة</span>
+                          <span class="lesson-title" data-translate="lesson_digital_marketing_concept">مفهوم التسويق الرقمي وأهميته</span>
+                          <span class="lesson-time" data-translate="lesson_30min">30 دقيقة</span>
                         </div>
                         <div class="lesson">
                           <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
-                          <span class="lesson-title">القنوات التسويقية المختلفة</span>
-                          <span class="lesson-time">25 دقيقة</span>
+                          <span class="lesson-title" data-translate="lesson_marketing_channels">القنوات التسويقية المختلفة</span>
+                          <span class="lesson-time" data-translate="lesson_25min">25 دقيقة</span>
                         </div>
                         <div class="lesson">
                           <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
-                          <span class="lesson-title">تحليل السوق والجمهور المستهدف</span>
-                          <span class="lesson-time">40 دقيقة</span>
+                          <span class="lesson-title" data-translate="lesson_market_analysis">تحليل السوق والجمهور المستهدف</span>
+                          <span class="lesson-time" data-translate="lesson_40min">40 دقيقة</span>
                         </div>
                       </div>
                     </div>
@@ -308,8 +328,8 @@
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module2">
                       <div class="module-info">
-                        <span class="module-title">استراتيجيات تحسين محركات البحث (SEO)</span>
-                        <span class="module-meta">8 دروس • 4 ساعات</span>
+                        <span class="module-title" data-translate="module_seo">استراتيجيات تحسين محركات البحث (SEO)</span>
+                        <span class="module-meta" data-translate="module_seo_meta">8 دروس • 4 ساعات</span>
                       </div>
                     </button>
                   </h2>
@@ -318,13 +338,13 @@
                       <div class="lessons-list">
                         <div class="lesson">
                           <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
-                          <span class="lesson-title">الكلمات المفتاحية وأدوات البحث</span>
-                          <span class="lesson-time">35 دقيقة</span>
+                          <span class="lesson-title" data-translate="lesson_keywords">الكلمات المفتاحية وأدوات البحث</span>
+                          <span class="lesson-time" data-translate="lesson_35min">35 دقيقة</span>
                         </div>
                         <div class="lesson">
                           <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
-                          <span class="lesson-title">تحسين المحتوى والروابط</span>
-                          <span class="lesson-time">40 دقيقة</span>
+                          <span class="lesson-title" data-translate="lesson_content_links">تحسين المحتوى والروابط</span>
+                          <span class="lesson-time" data-translate="lesson_40min">40 دقيقة</span>
                         </div>
                       </div>
                     </div>
@@ -335,8 +355,8 @@
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module3">
                       <div class="module-info">
-                        <span class="module-title">إدارة الحملات الإعلانية</span>
-                        <span class="module-meta">10 دروس • 5 ساعات</span>
+                        <span class="module-title" data-translate="module_ad_management">إدارة الحملات الإعلانية</span>
+                        <span class="module-meta" data-translate="module_ad_management_meta">10 دروس • 5 ساعات</span>
                       </div>
                     </button>
                   </h2>
@@ -345,13 +365,13 @@
                       <div class="lessons-list">
                         <div class="lesson">
                           <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
-                          <span class="lesson-title">تصميم الإعلانات الفعالة</span>
-                          <span class="lesson-time">45 دقيقة</span>
+                          <span class="lesson-title" data-translate="lesson_ad_design">تصميم الإعلانات الفعالة</span>
+                          <span class="lesson-time" data-translate="lesson_45min">45 دقيقة</span>
                         </div>
                         <div class="lesson">
                           <i style="margin-left: 5px;" class="bi bi-play-circle"></i>
-                          <span class="lesson-title">إدارة الميزانيات وتتبع الأداء</span>
-                          <span class="lesson-time">50 دقيقة</span>
+                          <span class="lesson-title" data-translate="lesson_budget_tracking">إدارة الميزانيات وتتبع الأداء</span>
+                          <span class="lesson-time" data-translate="lesson_50min">50 دقيقة</span>
                         </div>
                       </div>
                     </div>
@@ -369,7 +389,7 @@
               <div class="reviews-summary">
                 <div class="rating-overview">
                   <div class="overall-rating">
-                    <div class="rating-number">4.9</div>
+                    <div class="rating-number" data-translate="rating_number">4.9</div>
                     <div class="rating-stars">
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-fill"></i>
@@ -377,7 +397,7 @@
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-half"></i>
                     </div>
-                    <div class="rating-text">850 تقييم</div>
+                    <div class="rating-text" data-translate="rating_text">850 تقييم</div>
                   </div>
                 </div>
               </div>
@@ -387,7 +407,7 @@
                   <div class="reviewer-info">
                     <img src="assets/img/person/person-f-12.webp" alt="المراجِعة" class="reviewer-avatar">
                     <div class="reviewer-details">
-                      <h6>ليلى محمود</h6>
+                      <h6 data-translate="reviewer_1_name">ليلى محمود</h6>
                       <div class="review-rating">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -396,16 +416,16 @@
                         <i class="bi bi-star-fill"></i>
                       </div>
                     </div>
-                    <span class="review-date">منذ 3 أسابيع</span>
+                    <span class="review-date" data-translate="reviewer_1_date">منذ 3 أسابيع</span>
                   </div>
-                  <p class="review-text">الدورة تغطي جميع الجوانب الهامة في التسويق الرقمي بطريقة احترافية وسهلة الفهم.</p>
+                  <p class="review-text" data-translate="reviewer_1_text">الدورة تغطي جميع الجوانب الهامة في التسويق الرقمي بطريقة احترافية وسهلة الفهم.</p>
                 </div>
 
                 <div class="review-item">
                   <div class="reviewer-info">
                     <img src="assets/img/person/person-m-5.webp" alt="المراجع" class="reviewer-avatar">
                     <div class="reviewer-details">
-                      <h6>خالد أحمد</h6>
+                      <h6 data-translate="reviewer_2_name">خالد أحمد</h6>
                       <div class="review-rating">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -414,15 +434,16 @@
                         <i class="bi bi-star"></i>
                       </div>
                     </div>
-                    <span class="review-date">منذ شهر</span>
+                    <span class="review-date" data-translate="reviewer_2_date">منذ شهر</span>
                   </div>
-                  <p class="review-text">المحاضر يقدم أمثلة عملية تساعد على تطبيق المفاهيم في الواقع.</p>
+                  <p class="review-text" data-translate="reviewer_2_text">المحاضر يقدم أمثلة عملية تساعد على تطبيق المفاهيم في الواقع.</p>
                 </div>
 
               </div>
 
             </div>
             <!-- نهاية تبويب التقييمات -->
+
 
           </div>
         </div>
@@ -437,13 +458,13 @@
 
           <div class="card-header">
             <div class="price-display">
-              <span class="current-price">ريال 199</span>
-              <span class="original-price">ريال 299</span>
-              <span class="discount">خصم 33%</span>
+              <span class="current-price" data-translate="price_current">ريال 199</span>
+              <span class="original-price" data-translate="price_original">ريال 299</span>
+              <span class="discount" data-translate="price_discount">خصم 33%</span>
             </div>
             <div class="enrollment-count">
               <i class="bi bi-people"></i>
-              <span>4,120 طالب مسجل</span>
+              <span data-translate="enrollment_count">4,120 طالب مسجل</span>
             </div>
           </div>
 
@@ -451,71 +472,38 @@
             <div class="course-highlights">
               <div class="highlight-item">
                 <i class="bi bi-trophy"></i>
-                <span>شهادة معتمدة</span>
+                <span data-translate="highlight_cert">شهادة معتمدة</span>
               </div>
               <div class="highlight-item">
                 <i class="bi bi-clock-history"></i>
-                <span>40 ساعة محتوى</span>
+                <span data-translate="highlight_hours">40 ساعة محتوى</span>
               </div>
               <div class="highlight-item">
                 <i class="bi bi-download"></i>
-                <span>مواد قابلة للتحميل</span>
+                <span data-translate="highlight_download">مواد قابلة للتحميل</span>
               </div>
               <div class="highlight-item">
                 <i class="bi bi-infinity"></i>
-                <span>وصول مدى الحياة</span>
+                <span data-translate="highlight_lifetime">وصول مدى الحياة</span>
               </div>
               <div class="highlight-item">
                 <i class="bi bi-phone"></i>
-                <span>وصول عبر الهاتف</span>
+                <span data-translate="highlight_mobile">وصول عبر الهاتف</span>
               </div>
             </div>
 
             <div class="action-buttons">
-              <a class="btn-primary-course" style="color: #FFF;" href="enroll_course">سجل الآن</a>
+              <a class="btn-primary-course" style="color: #FFF;" href="enroll_course" data-translate="btn_enroll">سجل الآن</a>
             </div>
 
             <div class="guarantee">
               <i class="bi bi-shield-check"></i>
-              <span>ضمان استرداد الأموال خلال 30 يوم</span>
+              <span data-translate="guarantee_text">ضمان استرداد الأموال خلال 30 يوم</span>
             </div>
           </div>
 
         </div>
         <!-- نهاية بطاقة التسجيل -->
-
-        <!-- تفاصيل الدورة -->
-        <div class="course-details-card" data-aos="fade-up" data-aos-delay="300">
-          <h4>تفاصيل الدورة</h4>
-
-          <div class="detail-grid">
-            <div class="detail-row">
-              <span class="detail-label">المدة</span>
-              <span class="detail-value">16 أسبوع</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">المستوى</span>
-              <span class="detail-value">متقدم</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">اللغة</span>
-              <span class="detail-value">العربية</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">عدد الاختبارات</span>
-              <span class="detail-value">20</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">المشاريع</span>
-              <span class="detail-value">7 مشاريع</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">آخر تحديث</span>
-              <span class="detail-value">مارس 2025</span>
-            </div>
-          </div>
-        </div>
-        <!-- نهاية تفاصيل الدورة -->
 
       </div>
 
@@ -526,12 +514,10 @@
 </section>
 <!-- /قسم تفاصيل الدورة -->
 
-
-
-
     </main>
 
-<footer id="footer" class="footer position-relative dark-background">
+
+     <footer id="footer" class="footer position-relative dark-background">
 
   <div class="container footer-top">
     <div class="row gy-4">
@@ -539,52 +525,56 @@
         <a href="/" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="">
         </a>
-        <p>نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.</p>
-        <!--<div class="social-links d-flex mt-4">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>-->
+        <p data-translate="footer_about">
+          نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
+        </p>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>روابط مفيدة</h4>
+        <h4 data-translate="useful_links">روابط مفيدة</h4>
         <ul>
-          <li><a href="/">الرئيسية</a></li>
-          <li><a href="/about">من نحن</a></li>
-          <li><a href="/services">خدماتنا</a></li>
-          <li><a href="blog">مقالاتنا</a></li>
-          <li><a href="/contact">تواصل معنا</a></li>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about_us">من نحن</a></li>
+          <li><a href="/services" data-translate="our_services">خدماتنا</a></li>
+          <li><a href="blog" data-translate="our_blog">مقالاتنا</a></li>
+          <li><a href="/contact" data-translate="contact_us">تواصل معنا</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>خدماتنا</h4>
+        <h4 data-translate="services">خدماتنا</h4>
         <ul>
-          <li><a href="/services">تصميم مواقع</a></li>
-          <li><a href="/services">تطوير مواقع</a></li>
-          <li><a href="/services">تطوير تطبيقات</a></li>
-          <li><a href="/services">أنظمة محاسبه</a></li>
-          <li><a href="/services">ذكاء اصطناعي</a></li>
+          <li><a href="/services" data-translate="web_design">تصميم مواقع</a></li>
+          <li><a href="/services" data-translate="web_development">تطوير مواقع</a></li>
+          <li><a href="/services" data-translate="app_development">تطوير تطبيقات</a></li>
+          <li><a href="/services" data-translate="accounting_systems">أنظمة محاسبه</a></li>
+          <li><a href="/services" data-translate="artificial_intelligence">ذكاء اصطناعي</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-        <h4 style="text-align: right;">تواصل معنا</h4>
-        <p style="text-align: right;">حي السميري - مدينة ينبع</p>
-        <p style="text-align: right;">امارة المدينة المنورة</p>
-        <p style="text-align: right;">المملكة العربية السعودية</p>
-        <p style="text-align: right;" class="mt-4"><strong>هاتف:</strong> <span>966557703987+</span></p>
-        <p style="text-align: right;"><strong>البريد الإلكتروني:</strong> <span>codeylacompany@gmail.com</span></p>
+        <h4 style="text-align: right;" data-translate="contact_us">تواصل معنا</h4>
+        <p style="text-align: right;" data-translate="address_line1">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;" data-translate="address_line2">امارة المدينة المنورة</p>
+        <p style="text-align: right;" data-translate="address_line3">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4">
+          <strong data-translate="phone_label">هاتف:</strong> 
+          <span>966557703987+</span>
+        </p>
+        <p style="text-align: right;">
+          <strong data-translate="email_label">البريد الإلكتروني:</strong> 
+          <span>sweepicodecompany@gmail.com</span>
+        </p>
       </div>
-
     </div>
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p><span>جميع الحقوق محفوظة</span> © <span>حقوق النشر 2025</span> </p><strong class="px-1 sitename">Codeyla</strong>
-    
+    <p>
+      <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span> © 
+      <span data-translate="copyright_year">حقوق النشر 2025</span>
+    </p>
+    <strong class="px-1 sitename">Sweepicode</strong>
   </div>
 
 </footer>

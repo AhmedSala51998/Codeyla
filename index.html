@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Codeyla - الرئيسية</title>
+  <title>Sweepicode - الرئيسية</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -54,7 +54,7 @@
     <div class="topbar d-flex align-items-center dark-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:codeylacompany@gmail.com">codeylacompany@gmail.com</a></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:sweepicodecompany@gmail.com">sweepicodecompany@gmail.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
@@ -64,7 +64,7 @@
           <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
             <a href="/portfolio" class="browse-link">
               <i class="bi bi-layers animated-layers"></i>
-              تصفح أعمالنا
+              <span data-translate="browse">تصفح أعمالنا</span>
             </a>
         </div>
       </div>
@@ -81,26 +81,47 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/" class="active">الرئيسية</a></li>
-            <li><a href="/about">من نحن</a></li>
-            <li><a href="/services">خدماتنا</a></li>
-            <li><a href="/portfolio">أعمالنا</a></li>
-            <li><a href="blog">مقالاتنا</a></li>
-            <li><a href="/call-to-action">دورات تدريبية</a></li>
-            <li><a href="/contact">تواصل معنا</a></li>
+          <li><a href="/" data-translate="home" class="active">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about">من نحن</a></li>
+          <li><a href="/services" data-translate="services">خدماتنا</a></li>
+          <li><a href="/portfolio" data-translate="portfolio">أعمالنا</a></li>
+          <li><a href="blog" data-translate="blog">مقالاتنا</a></li>
+          <li><a href="/call-to-action" data-translate="courses">دورات تدريبية</a></li>
+          <li><a href="/contact" data-translate="contact">تواصل معنا</a></li>
+          <li class="language-switch d-none d-xl-block">
+              <button class="lang-btn">
+                <div class="lang-flag">
+                  <img id="current-lang-flag" src="assets/img/languages/ar.png" alt="AR">
+                </div>
+                <span id="current-lang-text">عربي</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu horizontal">
+                <li data-lang="ar">
+                  <img src="assets/img/languages/ar.png" alt="AR">
+                  <span>عربي</span>
+                </li>
+                <li data-lang="en">
+                  <img src="assets/img/languages/en.png" alt="EN">
+                  <span>English</span>
+                </li>
+              </ul>
+            </li>
             <li class="d-none d-xl-block">
               <div id="themeToggle" class="theme-switch-icon">
                 <i class="bi bi-moon-fill"></i>
               </div>
             </li>
           </ul>
-          <div class="d-flex align-items-center gap-3">
+          <div class="d-flex align-items-center gap-2">
+            <button class="mobile-lang-btn d-xl-none">
+              <img id="mobile-lang-flag" src="assets/img/languages/ar.png" alt="Lang">
+            </button>
             <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
               <i class="bi bi-moon-fill"></i>
             </div>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </div>
-
         </nav>
 
       </div>
@@ -111,150 +132,148 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+  <!-- Hero Section -->
+  <section id="hero" class="hero section dark-background">
 
-      <div class="hero-background">
-        <img src="assets/img/main_image.jpg" alt="" data-aos-duration="1000">
-        <div class="overlay"></div>
-      </div>
+    <div class="hero-background">
+      <img src="assets/img/main_image.jpg" alt="" data-aos-duration="1000">
+      <div class="overlay"></div>
+    </div>
 
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="hero-content">
-              <span class="hero-badge">الحلول المبتكرة</span>
-              <h1>حوّل أعمالك باستخدام التكنولوجيا الحديثة</h1>
-              <div class="hero-actions">
-                <a href="/services" class="btn-primary">اكتشف الخدمات</a>
-                <!--<a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn-secondary glightbox">
-                  <i class="bi bi-play-circle"></i>
-                  <span>شاهد العرض التوضيحي</span>
-                </a>-->
-                <a href="assets/videos/codeyla.mp4" 
-                  class="btn-secondary glightbox video-btn" 
-                  data-glightbox="type: video">
-                  <i class="bi bi-play-circle"></i>
-                  <span>شاهد بعض أعمالنا</span>
-                </a>
-              </div>
-              <div class="hero-stats">
-                <div class="stat-item">
-                  <span class="stat-number">100+</span>
-                  <span class="stat-label">المشاريع المنجزة</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">98%</span>
-                  <span class="stat-label">رضا العملاء</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">24/7</span>
-                  <span class="stat-label">الدعم متاح</span>
-                </div>
-              </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <span class="hero-badge" data-translate="innovative_solutions">الحلول المبتكرة</span>
+            <h1 data-translate="transform_business">حوّل أعمالك باستخدام التكنولوجيا الحديثة</h1>
+            <div class="hero-actions">
+              <a href="/services" class="btn-primary" data-translate="discover_services">اكتشف الخدمات</a>
+              <a href="assets/videos/codeyla.mp4" 
+                class="btn-secondary glightbox video-btn" 
+                data-glightbox="type: video">
+                <i class="bi bi-play-circle"></i>
+                <span data-translate="watch_our_work">شاهد بعض أعمالنا</span>
+              </a>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="hero-visual">
-              <div class="row g-3">
-                <div class="col-6">
-                  <div class="feature-card">
-                    <i class="bi bi-shield-check"></i>
-                    <span>آمن وموثوق</span>
-                  </div>
-                  <div class="feature-card">
-                    <i class="bi bi-people"></i>
-                    <span>فريق الخبراء</span>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="feature-card">
-                    <i class="bi bi-speedometer2"></i>
-                    <span>أداء عالي</span>
-                  </div>
-                  <div class="feature-card">
-                    <i class="bi bi-award"></i>
-                    <span>عمل منجز</span>
-                  </div>
-                </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-translate="projects_number">100+</span>
+                <span class="stat-label" data-translate="completed_projects">المشاريع المنجزة</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-translate="customer_satisfaction_rate">98%</span>
+                <span class="stat-label" data-translate="customer_satisfaction">رضا العملاء</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-translate="support_availability">24/7</span>
+                <span class="stat-label" data-translate="support_available">الدعم متاح</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-    </section><!-- /Hero Section -->   
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container">
-
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="content">
-              <h2>من نحن</h2>
-              <p class="lead">نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني..</p>
-              <p>في عالم أصبحت فيه التكنولوجيا هي المحرك الأساسي لكل الأعمال، ندرك تمامًا أهمية أن تكون لك واجهة رقمية قوية، فعالة، وآمنة. ولهذا السبب، نحرص على تقديم حلول برمجية مصممة خصيصًا لتناسب طبيعة كل نشاط تجاري وتحقق له أعلى درجات الكفاءة والانتشار..</p>
-              <p>نبدأ من تصميم مواقع الإنترنت بشكل احترافي يتوافق مع جميع الأجهزة ويعكس هوية علامتك التجارية بأفضل صورة، سواء كنت بحاجة إلى موقع تعريفي بسيط، أو متجر إلكتروني متكامل، أو لوحة تحكم مخصصة لإدارة المحتوى. نستخدم أحدث التقنيات وأفضل ممارسات الـ UI/UX لضمان تجربة مستخدم استثنائية.</p>
-
-              <div class="stats-container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="stat-item">
-                      <div class="number">8+</div>
-                      <div class="label">سنوات الخبرة</div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="stat-item">
-                      <div class="number">100+</div>
-                      <div class="label">المشاريع المنجزة</div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="stat-item">
-                      <div class="number">25</div>
-                      <div class="label">أعضاء الفريق</div>
-                    </div>
-                  </div>
+        <div class="col-lg-6">
+          <div class="hero-visual">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="feature-card">
+                  <i class="bi bi-shield-check"></i>
+                  <span data-translate="secure_and_reliable">آمن وموثوق</span>
+                </div>
+                <div class="feature-card">
+                  <i class="bi bi-people"></i>
+                  <span data-translate="expert_team">فريق الخبراء</span>
                 </div>
               </div>
-
-              <div class="cta-wrapper">
-                <a href="/portfolio" class="btn btn-primary">اكتشف عملنا</a>
-                <a href="/contact" class="btn btn-outline">اتصل بالدعم</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="image-wrapper">
-              <img src="assets/img/about/about.jpg" alt="About Us" class="img-fluid main-image">
-              <div class="floating-card">
-                <div class="card-content">
+              <div class="col-6">
+                <div class="feature-card">
+                  <i class="bi bi-speedometer2"></i>
+                  <span data-translate="high_performance">أداء عالي</span>
+                </div>
+                <div class="feature-card">
                   <i class="bi bi-award"></i>
-                  <div class="text">
-                    <h5>مشاريع منجزه</h5>
-                    <span>معك خطوة بخطوة بنسبة 100 %</span>
-                  </div>
+                  <span data-translate="work_done">عمل منجز</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
+  </section>
+  <!-- /Hero Section -->
+  <!-- About Section -->
+  <section id="about" class="about section">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="content">
+            <h2 data-translate="about_title">من نحن</h2>
+            <p class="lead" data-translate="about_lead">نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة...</p>
+            <p data-translate="about_p1">في عالم أصبحت فيه التكنولوجيا هي المحرك الأساسي...</p>
+            <p data-translate="about_p2">نبدأ من تصميم مواقع الإنترنت بشكل احترافي...</p>
+
+            <div class="stats-container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="stat-item">
+                    <div class="number">8+</div>
+                    <div class="label" data-translate="experience_years">سنوات الخبرة</div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="stat-item">
+                    <div class="number">100+</div>
+                    <div class="label" data-translate="completed_projects">المشاريع المنجزة</div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="stat-item">
+                    <div class="number">25</div>
+                    <div class="label" data-translate="team_members">أعضاء الفريق</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-wrapper">
+              <a href="/portfolio" class="btn btn-primary" data-translate="discover_our_work">اكتشف عملنا</a>
+              <a href="/contact" class="btn btn-outline" data-translate="contact_support">اتصل بالدعم</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="image-wrapper">
+            <img src="assets/img/about/about.png" alt="About Us" class="img-fluid main-image">
+            <div class="floating-card">
+              <div class="card-content">
+                <i class="bi bi-award"></i>
+                <div class="text">
+                  <h5 data-translate="completed_projects_card">مشاريع منجزه</h5>
+                  <span data-translate="with_you_step_by_step">معك خطوة بخطوة بنسبة 100 %</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </section><!-- /About Section -->
+    </div>
 
-    <!-- Featured Services Section -->
+  </section>
+  <!-- /About Section -->
+
+
+   <!-- Featured Services Section -->
     <section id="featured-services" class="featured-services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title">
-        <h2>الخدمات المميزة</h2>
-        <p>الخدمات المميزة</p>
+        <h2 data-translate="featured_services_title">الخدمات المميزة</h2>
+        <p data-translate="featured_services_desc">الخدمات المميزة</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -262,17 +281,17 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="services-content" data-aos-duration="900">
-              <span class="subtitle">الخدمات المهنية</span>
-              <h2>تعزيز أداء الأعمال من خلال الحلول الاستراتيجية</h2>
-              <p data-aos-duration="800">في عالم الأعمال الحديث، أصبح التميز لا يعتمد فقط على جودة المنتج أو الخدمة، بل على قدرة المؤسسة على توظيف حلول استراتيجية مبتكرة تعزز من كفاءتها وتنافسيتها. فالحلول الاستراتيجية لم تعد خيارًا ثانويًا، بل أصبحت ركيزة أساسية للنجاح والاستدامة..</p>
+              <span class="subtitle" data-translate="professional_services">الخدمات المهنية</span>
+              <h2 data-translate="business_performance_boost">تعزيز أداء الأعمال من خلال الحلول الاستراتيجية</h2>
+              <p data-aos-duration="800" data-translate="business_strategic_solutions">في عالم الأعمال الحديث، أصبح التميز لا يعتمد فقط على جودة المنتج أو الخدمة، بل على قدرة المؤسسة على توظيف حلول استراتيجية مبتكرة تعزز من كفاءتها وتنافسيتها. فالحلول الاستراتيجية لم تعد خيارًا ثانويًا، بل أصبحت ركيزة أساسية للنجاح والاستدامة..</p>
               <div id="btnConsultation" class="mt-4" data-aos-duration="1100">
-                <a href="#" class="btn-consultation"><span>طلب استشارة</span><i style="margin-right: 5px;" class="bi bi-arrow-left"></i></a>
+                <a href="#" class="btn-consultation"><span data-translate="request_consultation">طلب استشارة</span><i style="margin-right: 5px;" class="bi bi-arrow-left"></i></a>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="services-image">
-              <img src="assets/img/services/conslt.jpg" alt="Business Services" class="img-fluid">
+              <img src="assets/img/services/conslt.png" alt="Business Services" class="img-fluid">
               <div class="shape-circle"></div>
               <div class="shape-accent"></div>
             </div>
@@ -310,6 +329,7 @@
               </script>
               <div class="swiper-wrapper">
 
+                <!-- الخدمة 1 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -317,13 +337,14 @@
                     </div>
                     <a href="service-details-websites" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-websites">تطوير الأنظمة والبرمجيات</a></h4>
-                      <p>تصميم وتطوير تطبيقات ويب مخصصة عالية الجودة باستخدام أحدث التقنيات لضمان الأداء والمرونة.</p>
+                      <h4><a href="service-details-websites" data-translate="service_dev_systems">تطوير الأنظمة والبرمجيات</a></h4>
+                      <p data-translate="service_dev_systems_desc">تصميم وتطوير تطبيقات ويب مخصصة عالية الجودة باستخدام أحدث التقنيات لضمان الأداء والمرونة.</p>
                       <div class="service-number">01</div>
                     </div>
                   </div>
                 </div>
 
+                <!-- الخدمة 2 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -331,13 +352,14 @@
                     </div>
                     <a href="service-details-applications" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-applications">برمجة تطبيقات الجوال</a></h4>
-                      <p>تطوير تطبيقات Android و iOS احترافية ومتجاوبة بالكامل تلبي احتياجاتك بدقة.</p>
+                      <h4><a href="service-details-applications" data-translate="service_mobile_apps">برمجة تطبيقات الجوال</a></h4>
+                      <p data-translate="service_mobile_apps_desc">تطوير تطبيقات Android و iOS احترافية ومتجاوبة بالكامل تلبي احتياجاتك بدقة.</p>
                       <div class="service-number">02</div>
                     </div>
                   </div>
                 </div>
 
+                <!-- الخدمة 3 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -345,13 +367,14 @@
                     </div>
                     <a href="service-details-websites" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-websites">تطوير مواقع الإنترنت</a></h4>
-                      <p>بناء مواقع إلكترونية احترافية وسريعة ومتوافقة مع جميع الأجهزة، مع لوحة تحكم ديناميكية.</p>
+                      <h4><a href="service-details-websites" data-translate="service_web_dev">تطوير مواقع الإنترنت</a></h4>
+                      <p data-translate="service_web_dev_desc">بناء مواقع إلكترونية احترافية وسريعة ومتوافقة مع جميع الأجهزة، مع لوحة تحكم ديناميكية.</p>
                       <div class="service-number">03</div>
                     </div>
                   </div>
                 </div>
 
+                <!-- الخدمة 4 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -359,27 +382,29 @@
                     </div>
                     <a href="service-details-websites" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-websites">تكامل الأنظمة وواجهات API</a></h4>
-                      <p>ربط الأنظمة المختلفة عبر واجهات API آمنة ومرنة لتبادل البيانات وتحسين الكفاءة.</p>
+                      <h4><a href="service-details-websites" data-translate="service_api_integration">تكامل الأنظمة وواجهات API</a></h4>
+                      <p data-translate="service_api_integration_desc">ربط الأنظمة المختلفة عبر واجهات API آمنة ومرنة لتبادل البيانات وتحسين الكفاءة.</p>
                       <div class="service-number">04</div>
                     </div>
                   </div>
                 </div>
 
+                <!-- الخدمة 5 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
                       <i class="bi bi-bar-chart-line-fill"></i>
                     </div>
-                    <a href="service-details-websites" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
+                    <a href="service-details-adminpage" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-adminpage">تحليل البيانات ولوحات التحكم</a></h4>
-                      <p>بناء أنظمة ذكاء أعمال (BI) تساعدك على اتخاذ قرارات ذكية باستخدام البيانات.</p>
+                      <h4><a href="service-details-adminpage" data-translate="service_data_analysis">تحليل البيانات ولوحات التحكم</a></h4>
+                      <p data-translate="service_data_analysis_desc">بناء أنظمة ذكاء أعمال (BI) تساعدك على اتخاذ قرارات ذكية باستخدام البيانات.</p>
                       <div class="service-number">05</div>
                     </div>
                   </div>
                 </div>
 
+                <!-- الخدمة 6 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -387,13 +412,14 @@
                     </div>
                     <a href="service-details-websites" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-websites">دعم فني متواصل بعد انتهاء المشروع</a></h4>
-                      <p>نضمن لك استقرار النظام من خلال دعم فني شامل ومستمر بعد تسليم المشروع، لمعالجة أي مشاكل أو تحديثات.</p>
+                      <h4><a href="service-details-websites" data-translate="service_support">دعم فني متواصل بعد انتهاء المشروع</a></h4>
+                      <p data-translate="service_support_desc">نضمن لك استقرار النظام من خلال دعم فني شامل ومستمر بعد تسليم المشروع، لمعالجة أي مشاكل أو تحديثات.</p>
                       <div class="service-number">06</div>
                     </div>
                   </div>
                 </div>
 
+                <!-- الخدمة 7 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -401,13 +427,14 @@
                     </div>
                     <a href="service-details-ERP" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-ERP">برمجة أنظمة ERP</a></h4>
-                      <p>نقوم بتصميم وتطوير أنظمة ERP مخصصة بالكامل تساعد على إدارة العمليات المالية والإدارية والمخزنية والموارد البشرية بكفاءة عالية وبتقنيات حديثة.</p>
+                      <h4><a href="service-details-ERP" data-translate="service_erp_custom">برمجة أنظمة ERP</a></h4>
+                      <p data-translate="service_erp_custom_desc">نقوم بتصميم وتطوير أنظمة ERP مخصصة بالكامل تساعد على إدارة العمليات المالية والإدارية والمخزنية والموارد البشرية بكفاءة عالية وبتقنيات حديثة.</p>
                       <div class="service-number">07</div>
                     </div>
                   </div>
                 </div>
-               
+
+                <!-- الخدمة 8 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -415,14 +442,14 @@
                     </div>
                     <a href="service-details-websites" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-websites">تصميم جرافيك وتجربة المستخدم</a></h4>
-                      <p>تصاميم احترافية لهوية العلامة التجارية، مع واجهات مستخدم UX/UI جذابة وعصرية.</p>
+                      <h4><a href="service-details-websites" data-translate="service_graphic_design">تصميم جرافيك وتجربة المستخدم</a></h4>
+                      <p data-translate="service_graphic_design_desc">تصاميم احترافية لهوية العلامة التجارية، مع واجهات مستخدم UX/UI جذابة وعصرية.</p>
                       <div class="service-number">08</div>
                     </div>
                   </div>
                 </div>
 
-                <!-- الذكاء الاصطناعي والتعلم الآلي -->
+                <!-- الخدمة 9 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -430,14 +457,14 @@
                     </div>
                     <a href="service-details-ai" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-ai">حلول الذكاء الاصطناعي</a></h4>
-                      <p>تطوير تطبيقات ذكية تعتمد على الذكاء الاصطناعي لتحليل البيانات، التوصيات، والتشغيل الآلي.</p>
+                      <h4><a href="service-details-ai" data-translate="service_ai_solutions">حلول الذكاء الاصطناعي</a></h4>
+                      <p data-translate="service_ai_solutions_desc">تطوير تطبيقات ذكية تعتمد على الذكاء الاصطناعي لتحليل البيانات، التوصيات، والتشغيل الآلي.</p>
                       <div class="service-number">09</div>
                     </div>
                   </div>
                 </div>
 
-                <!-- التسويق الرقمي والإعلانات -->
+                <!-- الخدمة 10 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -445,14 +472,14 @@
                     </div>
                     <a href="service-details-digitalmarketing" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-digitalmarketing">التسويق الرقمي والإعلاني</a></h4>
-                      <p>خطط تسويق رقمي متكاملة تشمل SEO، الحملات الإعلانية، وسائل التواصل، والبريد الإلكتروني.</p>
+                      <h4><a href="service-details-digitalmarketing" data-translate="service_digital_marketing">التسويق الرقمي والإعلاني</a></h4>
+                      <p data-translate="service_digital_marketing_desc">خطط تسويق رقمي متكاملة تشمل SEO، الحملات الإعلانية، وسائل التواصل، والبريد الإلكتروني.</p>
                       <div class="service-number">10</div>
                     </div>
                   </div>
                 </div>
 
-                <!-- خدمات المونتاج والإنتاج المرئي -->
+                <!-- الخدمة 11 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -460,13 +487,14 @@
                     </div>
                     <a href="service-details-montage" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-montage">المونتاج والإنتاج المرئي</a></h4>
-                      <p>مونتاج احترافي للفيديوهات والإعلانات الترويجية باستخدام أحدث التقنيات والمؤثرات.</p>
+                      <h4><a href="service-details-montage" data-translate="service_video_editing">المونتاج والإنتاج المرئي</a></h4>
+                      <p data-translate="service_video_editing_desc">مونتاج احترافي للفيديوهات والإعلانات الترويجية باستخدام أحدث التقنيات والمؤثرات.</p>
                       <div class="service-number">11</div>
                     </div>
                   </div>
                 </div>
-                
+
+                <!-- الخدمة 12 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -474,14 +502,14 @@
                     </div>
                     <a href="service-details-ERP" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-ERP">أنظمة ERP المتكاملة</a></h4>
-                      <p>نطور لك نظام ERP مخصص بالكامل لإدارة العمليات المحاسبية، الإدارية، الموارد البشرية، والمخزون بكفاءة عالية.</p>
+                      <h4><a href="service-details-ERP" data-translate="service_erp_integrated">أنظمة ERP المتكاملة</a></h4>
+                      <p data-translate="service_erp_integrated_desc">نطور لك نظام ERP مخصص بالكامل لإدارة العمليات المحاسبية، الإدارية، الموارد البشرية، والمخزون بكفاءة عالية.</p>
                       <div class="service-number">12</div>
                     </div>
                   </div>
                 </div>
 
-                <!-- تطوير تطبيقات سطح المكتب -->
+                <!-- الخدمة 13 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -489,14 +517,14 @@
                     </div>
                     <a href="service-details-desktop" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-desktop">تطبيقات سطح المكتب</a></h4>
-                      <p>تصميم وبرمجة برامج مكتبية لأنظمة Windows وMac تلائم احتياجاتك وتعمل بكفاءة عالية دون اتصال دائم بالإنترنت.</p>
+                      <h4><a href="service-details-desktop" data-translate="service_desktop_apps">تطبيقات سطح المكتب</a></h4>
+                      <p data-translate="service_desktop_apps_desc">تصميم وبرمجة برامج مكتبية لأنظمة Windows وMac تلائم احتياجاتك وتعمل بكفاءة عالية دون اتصال دائم بالإنترنت.</p>
                       <div class="service-number">13</div>
                     </div>
                   </div>
                 </div>
 
-                <!-- أنظمة كاشير ونقاط بيع -->
+                <!-- الخدمة 14 -->
                 <div class="swiper-slide">
                   <div class="service-card">
                     <div class="icon-box">
@@ -504,15 +532,14 @@
                     </div>
                     <a href="service-details-pos" class="arrow-link"><i class="bi bi-arrow-left"></i></a>
                     <div class="content">
-                      <h4><a href="service-details-pos">أنظمة الكاشير ونقاط البيع</a></h4>
-                      <p>حلول كاشير متكاملة للمطاعم والمتاجر، تشمل الفواتير، الجرد، إدارة الصنف، وربط مع الطابعات والأجهزة الطرفية.</p>
+                      <h4><a href="service-details-pos" data-translate="service_pos_systems">أنظمة الكاشير ونقاط البيع</a></h4>
+                      <p data-translate="service_pos_systems_desc">حلول كاشير متكاملة للمطاعم والمتاجر، تشمل الفواتير، الجرد، إدارة الصنف، وربط مع الطابعات والأجهزة الطرفية.</p>
                       <div class="service-number">14</div>
                     </div>
                   </div>
                 </div>
 
               </div>
-
 
             </div>
           </div>
@@ -531,13 +558,13 @@
 
     </section><!-- /Featured Services Section -->
 
+
     <!-- How We Work Section -->
     <section id="how-we-work" class="how-we-work section">
-
       <!-- Section Title -->
       <div class="container section-title">
-        <h2>كيف نعمل</h2>
-        <p>نعمل بشغف على تحويل أفكارك إلى حلول رقمية متكاملة وفعالة</p>
+        <h2 data-translate="how_we_work_title">كيف نعمل</h2>
+        <p data-translate="how_we_work_desc">نعمل بشغف على تحويل أفكارك إلى حلول رقمية متكاملة وفعالة</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -547,9 +574,9 @@
             <div class="step-icon">
               <i class="bi bi-search"></i>
             </div>
-            <div class="step-number">الخطوة 1</div>
-            <h3>البحث والتخطيط</h3>
-            <p>نُسهّل عليك البداية من خلال دراسة احتياجاتك بعناية وتخطيط دقيق لضمان نجاح المشروع.</p>
+            <div class="step-number" data-translate="step_1">الخطوة 1</div>
+            <h3 data-translate="research_and_planning">البحث والتخطيط</h3>
+            <p data-translate="research_and_planning_desc">نُسهّل عليك البداية من خلال دراسة احتياجاتك بعناية وتخطيط دقيق لضمان نجاح المشروع.</p>
             <div class="step-arrow">
               <i class="bi bi-arrow-left"></i>
             </div>
@@ -559,9 +586,9 @@
             <div class="step-icon">
               <i class="bi bi-lightbulb"></i>
             </div>
-            <div class="step-number">الخطوة 2</div>
-            <h3>حلول إبداعية</h3>
-            <p>نقدّم أفكاراً مبتكرة مصممة خصيصاً لتلائم احتياجاتك وتحقق أهدافك بأعلى كفاءة وجودة.</p>
+            <div class="step-number" data-translate="step_2">الخطوة 2</div>
+            <h3 data-translate="creative_solutions">حلول إبداعية</h3>
+            <p data-translate="creative_solutions_desc">نقدّم أفكاراً مبتكرة مصممة خصيصاً لتلائم احتياجاتك وتحقق أهدافك بأعلى كفاءة وجودة.</p>
             <div class="step-arrow">
               <i class="bi bi-arrow-left"></i>
             </div>
@@ -571,9 +598,9 @@
             <div class="step-icon">
               <i class="bi bi-gear"></i>
             </div>
-            <div class="step-number">الخطوة 3</div>
-            <h3>مرحلة البرمجة</h3>
-            <p>نبدأ بتنفيذ الحلول البرمجية باحترافية عالية باستخدام أحدث التقنيات لضمان الأداء والاستقرار.</p>
+            <div class="step-number" data-translate="step_3">الخطوة 3</div>
+            <h3 data-translate="programming_phase">مرحلة البرمجة</h3>
+            <p data-translate="programming_phase_desc">نبدأ بتنفيذ الحلول البرمجية باحترافية عالية باستخدام أحدث التقنيات لضمان الأداء والاستقرار.</p>
             <div class="step-arrow">
               <i class="bi bi-arrow-left"></i>
             </div>
@@ -583,9 +610,9 @@
             <div class="step-icon">
               <i class="bi bi-rocket-takeoff"></i>
             </div>
-            <div class="step-number">الخطوة 4</div>
-            <h3>الإطلاق والدعم</h3>
-            <p>نقوم بإطلاق المشروع بكفاءة عالية، مع توفير دعم متواصل لضمان استقرار الأداء ورضا العملاء.</p>
+            <div class="step-number" data-translate="step_4">الخطوة 4</div>
+            <h3 data-translate="launch_and_support">الإطلاق والدعم</h3>
+            <p data-translate="launch_and_support_desc">نقوم بإطلاق المشروع بكفاءة عالية، مع توفير دعم متواصل لضمان استقرار الأداء ورضا العملاء.</p>
           </div>
 
         </div>
@@ -594,214 +621,223 @@
 
     </section><!-- /How We Work Section -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
+  <!-- Features Section -->
+  <section id="features" class="features section">
 
-      <div class="container">
+    <div class="container">
 
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <ul class="nav nav-tabs flex-column" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#features-tab-1" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box" style="margin-left:15px;">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>تطوير تطبيقات الويب</h4>
-                      <p>تصميم وبرمجة مواقع ويب متكاملة وحديثة.</p>
-                    </div>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <ul class="nav nav-tabs flex-column" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#features-tab-1" role="tab">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box" style="margin-left:15px;">
+                    <i class="bi bi-people"></i>
                   </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box" style="margin-left:15px;">
-                      <i class="bi bi-heart"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>تطوير تطبيقات الجوال</h4>
-                      <p>إنشاء تطبيقات أندرويد وiOS بأداء عالي وتجربة مستخدم ممتازة.</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box" style="margin-left:15px;">
-                      <i class="bi bi-house-heart"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>أنظمة إدارة المحتوى</h4>
-                      <p>تطوير نظم متقدمة لإدارة المحتوى بسهولة ومرونة.</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box" style="margin-left:15px;">
-                      <i class="bi bi-person-heart"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>تكامل البرمجيات</h4>
-                      <p>ربط الأنظمة والبرامج لتعمل بسلاسة وتحسين الأداء العام.</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5" role="tab">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box" style="margin-left:15px;">
-                      <i class="bi bi-briefcase"></i>
-                    </div>
-                    <div class="ms-3">
-                      <h4>تحليل البيانات والذكاء الاصطناعي</h4>
-                      <p>استخدام تقنيات الذكاء الاصطناعي لتحليل البيانات واتخاذ قرارات ذكية.</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-8">
-            <div class="tab-content">
-              <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>تطوير تطبيقات ويب مخصصة</h3>
-                      <p>نقدم خدمات تطوير مواقع إلكترونية متكاملة باستخدام أحدث التقنيات لضمان سرعة وأمان عالي.</p>
-                      <p class="highlight">تصميم واجهات مستخدم جذابة وسهلة الاستخدام تضمن تجربة مميزة للزوار.</p>
-                      <ul class="features-list">
-                        <li><i class="bi bi-check2-circle"></i>تصميم متجاوب ومتوافق مع جميع الأجهزة</li>
-                        <li><i class="bi bi-check2-circle"></i>تكامل مع قواعد البيانات وأدوات التسويق</li>
-                        <li><i class="bi bi-check2-circle"></i>دعم تقنيات SEO لتحسين ظهور الموقع</li>
-                        <li><i class="bi bi-check2-circle"></i>صيانة دورية وتحديثات مستمرة</li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc1.jpg" alt="تطوير ويب" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
+                  <div class="ms-3">
+                    <h4 data-translate="web_app_dev_title">تطوير تطبيقات الويب</h4>
+                    <p data-translate="web_app_dev_desc">تصميم وبرمجة مواقع ويب متكاملة وحديثة.</p>
                   </div>
                 </div>
-              </div>
-
-              <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>تطوير تطبيقات جوال احترافية</h3>
-                      <p>تصميم تطبيقات للهاتف الذكي تضمن أداء عالي وتجربة مستخدم سلسة.</p>
-                      <p class="highlight">نغطي جميع المنصات الشهيرة مثل أندرويد وiOS.</p>
-                      <ul class="features-list">
-                        <li><i class="bi bi-check2-circle"></i>تصميم واجهات جذابة وسهلة الاستخدام</li>
-                        <li><i class="bi bi-check2-circle"></i>تكامل مع الخدمات السحابية وقواعد البيانات</li>
-                        <li><i class="bi bi-check2-circle"></i>دعم التحديثات والتحسينات المستمرة</li>
-                        <li><i class="bi bi-check2-circle"></i>اختبار شامل لضمان الجودة والأداء</li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc2.jpg" alt="تطوير جوال" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" role="tab">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box" style="margin-left:15px;">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                  <div class="ms-3">
+                    <h4 data-translate="mobile_app_dev_title">تطوير تطبيقات الجوال</h4>
+                    <p data-translate="mobile_app_dev_desc">إنشاء تطبيقات أندرويد وiOS بأداء عالي وتجربة مستخدم ممتازة.</p>
                   </div>
                 </div>
-              </div>
-
-              <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>أنظمة إدارة المحتوى</h3>
-                      <p>نوفر حلول أنظمة إدارة محتوى سهلة الاستخدام لتحديث المحتوى وإدارته بدون تعقيد.</p>
-                      <p class="highlight">أنظمة متطورة قابلة للتخصيص لتلبية احتياجاتك الخاصة.</p>
-                      <ul class="features-list">
-                        <li><i class="bi bi-check2-circle"></i>لوحة تحكم سهلة ومرنة</li>
-                        <li><i class="bi bi-check2-circle"></i>دعم تحرير المحتوى بشكل مباشر</li>
-                        <li><i class="bi bi-check2-circle"></i>تكامل مع الأدوات التسويقية وتحليلات الموقع</li>
-                        <li><i class="bi bi-check2-circle"></i>تحديثات مستمرة للحفاظ على الأمان</li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc3.jpg" alt="نظم إدارة محتوى" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" role="tab">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box" style="margin-left:15px;">
+                    <i class="bi bi-house-heart"></i>
+                  </div>
+                  <div class="ms-3">
+                    <h4 data-translate="cms_title">أنظمة إدارة المحتوى</h4>
+                    <p data-translate="cms_desc">تطوير نظم متقدمة لإدارة المحتوى بسهولة ومرونة.</p>
                   </div>
                 </div>
-              </div>
-
-              <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>تكامل الأنظمة والبرمجيات</h3>
-                      <p>ربط أنظمتك البرمجية المختلفة لضمان تواصل سلس وتحسين الإنتاجية.</p>
-                      <p class="highlight">حلول مخصصة لتسهيل عمليات العمل وتوحيد البيانات.</p>
-                      <ul class="features-list">
-                        <li><i class="bi bi-check2-circle"></i>ربط قواعد البيانات المتعددة</li>
-                        <li><i class="bi bi-check2-circle"></i>تكامل مع خدمات الطرف الثالث</li>
-                        <li><i class="bi bi-check2-circle"></i>أتمتة العمليات والمهام المتكررة</li>
-                        <li><i class="bi bi-check2-circle"></i>دعم متواصل وتحديثات منتظمة</li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc4.jpg" alt="تكامل برمجيات" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" role="tab">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box" style="margin-left:15px;">
+                    <i class="bi bi-person-heart"></i>
+                  </div>
+                  <div class="ms-3">
+                    <h4 data-translate="software_integration_title">تكامل البرمجيات</h4>
+                    <p data-translate="software_integration_desc">ربط الأنظمة والبرامج لتعمل بسلاسة وتحسين الأداء العام.</p>
                   </div>
                 </div>
-              </div>
-
-              <div class="tab-pane fade" id="features-tab-5" role="tabpanel">
-                <div class="content-box">
-                  <div class="row g-4">
-                    <div class="col-lg-6">
-                      <h3>الذكاء الاصطناعي وتحليل البيانات</h3>
-                      <p>استخدام أحدث تقنيات الذكاء الاصطناعي لتحليل البيانات واستخلاص رؤى مفيدة.</p>
-                      <p class="highlight">تحسين اتخاذ القرار وزيادة الكفاءة التشغيلية.</p>
-                      <ul class="features-list">
-                        <li><i class="bi bi-check2-circle"></i>تطوير نماذج تعلم آلي مخصصة</li>
-                        <li><i class="bi bi-check2-circle"></i>تحليل البيانات الكبيرة (Big Data)</li>
-                        <li><i class="bi bi-check2-circle"></i>التكامل مع أنظمة الأعمال الذكية</li>
-                        <li><i class="bi bi-check2-circle"></i>تقارير تفصيلية ورسوم بيانية تفاعلية</li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="image-box">
-                        <img src="assets/img/misc/misc5.jpg" alt="ذكاء اصطناعي" class="img-fluid" loading="lazy">
-                      </div>
-                    </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5" role="tab">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box" style="margin-left:15px;">
+                    <i class="bi bi-briefcase"></i>
+                  </div>
+                  <div class="ms-3">
+                    <h4 data-translate="ai_data_title">تحليل البيانات والذكاء الاصطناعي</h4>
+                    <p data-translate="ai_data_desc">استخدام تقنيات الذكاء الاصطناعي لتحليل البيانات واتخاذ قرارات ذكية.</p>
                   </div>
                 </div>
-              </div>
-
-            </div>
-          </div>
+              </a>
+            </li>
+          </ul>
         </div>
 
+        <div class="col-lg-8">
+          <div class="tab-content">
+
+            <!-- Tab 1 -->
+            <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
+              <div class="content-box">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <h3 data-translate="custom_web_dev_title">تطوير تطبيقات ويب مخصصة</h3>
+                    <p data-translate="custom_web_dev_desc1">نقدم خدمات تطوير مواقع إلكترونية متكاملة باستخدام أحدث التقنيات لضمان سرعة وأمان عالي.</p>
+                    <p class="highlight" data-translate="custom_web_dev_desc2">تصميم واجهات مستخدم جذابة وسهلة الاستخدام تضمن تجربة مميزة للزوار.</p>
+                    <ul class="features-list">
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="custom_web_dev_point1">تصميم متجاوب ومتوافق مع جميع الأجهزة</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="custom_web_dev_point2">تكامل مع قواعد البيانات وأدوات التسويق</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="custom_web_dev_point3">دعم تقنيات SEO لتحسين ظهور الموقع</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="custom_web_dev_point4">صيانة دورية وتحديثات مستمرة</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="image-box">
+                      <img src="assets/img/misc/misc1.jpg" alt="تطوير ويب" class="img-fluid" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
+              <div class="content-box">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <h3 data-translate="pro_mobile_app_title">تطوير تطبيقات جوال احترافية</h3>
+                    <p data-translate="pro_mobile_app_desc1">تصميم تطبيقات للهاتف الذكي تضمن أداء عالي وتجربة مستخدم سلسة.</p>
+                    <p class="highlight" data-translate="pro_mobile_app_desc2">نغطي جميع المنصات الشهيرة مثل أندرويد وiOS.</p>
+                    <ul class="features-list">
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="pro_mobile_app_point1">تصميم واجهات جذابة وسهلة الاستخدام</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="pro_mobile_app_point2">تكامل مع الخدمات السحابية وقواعد البيانات</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="pro_mobile_app_point3">دعم التحديثات والتحسينات المستمرة</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="pro_mobile_app_point4">اختبار شامل لضمان الجودة والأداء</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="image-box">
+                      <img src="assets/img/misc/misc2.jpg" alt="تطوير جوال" class="img-fluid" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
+              <div class="content-box">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <h3 data-translate="cms_tab_title">أنظمة إدارة المحتوى</h3>
+                    <p data-translate="cms_tab_desc1">نوفر حلول أنظمة إدارة محتوى سهلة الاستخدام لتحديث المحتوى وإدارته بدون تعقيد.</p>
+                    <p class="highlight" data-translate="cms_tab_desc2">أنظمة متطورة قابلة للتخصيص لتلبية احتياجاتك الخاصة.</p>
+                    <ul class="features-list">
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="cms_tab_point1">لوحة تحكم سهلة ومرنة</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="cms_tab_point2">دعم تحرير المحتوى بشكل مباشر</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="cms_tab_point3">تكامل مع الأدوات التسويقية وتحليلات الموقع</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="cms_tab_point4">تحديثات مستمرة للحفاظ على الأمان</span></li>
+
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="image-box">
+                      <img src="assets/img/misc/misc3.jpg" alt="نظم إدارة محتوى" class="img-fluid" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4 -->
+            <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
+              <div class="content-box">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <h3 data-translate="systems_integration_title">تكامل الأنظمة والبرمجيات</h3>
+                    <p data-translate="systems_integration_desc1">ربط أنظمتك البرمجية المختلفة لضمان تواصل سلس وتحسين الإنتاجية.</p>
+                    <p class="highlight" data-translate="systems_integration_desc2">حلول مخصصة لتسهيل عمليات العمل وتوحيد البيانات.</p>
+                    <ul class="features-list">
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="systems_integration_point1">ربط قواعد البيانات المتعددة</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="systems_integration_point2">تكامل مع خدمات الطرف الثالث</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="systems_integration_point3">أتمتة العمليات والمهام المتكررة</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="systems_integration_point4">دعم متواصل وتحديثات منتظمة</span></li>
+
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="image-box">
+                      <img src="assets/img/misc/misc4.jpg" alt="تكامل برمجيات" class="img-fluid" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 5 -->
+            <div class="tab-pane fade" id="features-tab-5" role="tabpanel">
+              <div class="content-box">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <h3 data-translate="ai_tab_title">الذكاء الاصطناعي وتحليل البيانات</h3>
+                    <p data-translate="ai_tab_desc1">استخدام أحدث تقنيات الذكاء الاصطناعي لتحليل البيانات واستخلاص رؤى مفيدة.</p>
+                    <p class="highlight" data-translate="ai_tab_desc2">تحسين اتخاذ القرار وزيادة الكفاءة التشغيلية.</p>
+                    <ul class="features-list">
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="ai_tab_point1">تطوير نماذج تعلم آلي مخصصة</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="ai_tab_point2">تحليل البيانات الكبيرة (Big Data)</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="ai_tab_point3">التكامل مع أنظمة الأعمال الذكية</span></li>
+                      <li><i class="bi bi-check2-circle"></i><span data-translate="ai_tab_point4">تقارير تفصيلية ورسوم بيانية تفاعلية</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="image-box">
+                      <img src="assets/img/misc/misc5.jpg" alt="ذكاء اصطناعي" class="img-fluid" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- /Features Section -->
+
+    </div>
+  </section>
+  <!-- /Features Section -->
+
 
     <!-- قسم الخدمات -->
     <section id="services" class="services section light-background">
 
       <!-- عنوان القسم -->
       <div class="container section-title">
-        <h2>خدماتنا</h2>
-        <p>اطلع على خدماتنا</p>
+        <h2 data-translate="services_title">خدماتنا</h2>
+        <p data-translate="services_subtitle">اطلع على خدماتنا</p>
       </div><!-- نهاية عنوان القسم -->
 
       <div class="container">
@@ -814,13 +850,13 @@
                 <i class="bi bi-code-slash"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-websites">تطوير المواقع</a></h3>
-                <p>نحن نقدم خدمات تطوير مواقع عالية الجودة تلبي احتياجاتك وتضمن تجربة مستخدم متميزة وسهولة في الاستخدام.</p>
+                <h3><a href="service-details-websites" data-translate="service_web_title">تطوير المواقع</a></h3>
+                <p data-translate="service_web_desc">نحن نقدم خدمات تطوير مواقع عالية الجودة تلبي احتياجاتك وتضمن تجربة مستخدم متميزة وسهولة في الاستخدام.</p>
                 <div class="service-meta">
-                  <span class="badge popular">الأكثر شهرة</span>
+                  <span class="badge popular" data-translate="badge_popular">الأكثر شهرة</span>
                 </div>
                 <a href="service-details-websites" class="btn-cta">
-                  <span>ابدأ الآن</span>
+                  <span data-translate="cta_start_now">ابدأ الآن</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -834,11 +870,11 @@
                 <i class="bi bi-palette"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-websites">تصميم واجهة وتجربة المستخدم</a></h3>
-                <p>نصمم واجهات استخدام جذابة وسهلة الاستخدام تضمن تجربة مميزة للمستخدم مع تحسين أداء الموقع.</p>
-               
+                <h3><a href="service-details-websites" data-translate="service_uiux_title">تصميم واجهة وتجربة المستخدم</a></h3>
+                <p data-translate="service_uiux_desc">نصمم واجهات استخدام جذابة وسهلة الاستخدام تضمن تجربة مميزة للمستخدم مع تحسين أداء الموقع.</p>
+              
                 <a href="service-details-websites" class="btn-cta">
-                  <span>تعرف أكثر</span>
+                  <span data-translate="cta_learn_more">تعرف أكثر</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -852,10 +888,10 @@
                 <i class="bi bi-graph-up-arrow"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-digitalmarketing">التسويق الرقمي</a></h3>
-                <p>نقدم حلول تسويق رقمية مبتكرة تساعدك على الوصول إلى جمهورك المستهدف وزيادة مبيعاتك.</p>
+                <h3><a href="service-details-digitalmarketing" data-translate="service_digital_title">التسويق الرقمي</a></h3>
+                <p data-translate="service_digital_desc">نقدم حلول تسويق رقمية مبتكرة تساعدك على الوصول إلى جمهورك المستهدف وزيادة مبيعاتك.</p>
                 <a href="service-details-digitalmarketing" class="btn-cta">
-                  <span>اكتشف المزيد</span>
+                  <span data-translate="cta_discover_more">اكتشف المزيد</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -869,10 +905,10 @@
                 <i class="bi bi-shield-check"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-cybersecurity">حلول الأمن السيبراني</a></h3>
-                <p>نوفر لك حلول أمنية متكاملة لحماية بياناتك وأنظمتك من التهديدات الإلكترونية المتطورة.</p>
+                <h3><a href="service-details-cybersecurity" data-translate="service_cyber_title">حلول الأمن السيبراني</a></h3>
+                <p data-translate="service_cyber_desc">نوفر لك حلول أمنية متكاملة لحماية بياناتك وأنظمتك من التهديدات الإلكترونية المتطورة.</p>
                 <a href="service-details-cybersecurity" class="btn-cta">
-                  <span>اكتشف</span>
+                  <span data-translate="cta_discover">اكتشف</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -886,10 +922,10 @@
                 <i class="bi bi-cloud-upload"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-cloud">خدمات السحابة</a></h3>
-                <p>نوفر خدمات سحابية متطورة تتيح لك تخزين وإدارة بياناتك بكفاءة وسهولة عالية.</p>
+                <h3><a href="service-details-cloud" data-translate="service_cloud_title">خدمات السحابة</a></h3>
+                <p data-translate="service_cloud_desc">نوفر خدمات سحابية متطورة تتيح لك تخزين وإدارة بياناتك بكفاءة وسهولة عالية.</p>
                 <a href="service-details-cloud" class="btn-cta">
-                  <span>احصل على عرض سعر</span>
+                  <span data-translate="cta_get_quote">احصل على عرض سعر</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -903,10 +939,10 @@
                 <i class="bi bi-laptop-fill"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-desktop">تطبيقات سطح المكتب</a></h3>
-                <p>نصمم برامج مكتبية لأنظمة Windows وMac تعمل بكفاءة عالية وتلائم بيئات العمل المختلفة.</p>
+                <h3><a href="service-details-desktop" data-translate="service_desktop_title">تطبيقات سطح المكتب</a></h3>
+                <p data-translate="service_desktop_desc">نصمم برامج مكتبية لأنظمة Windows وMac تعمل بكفاءة عالية وتلائم بيئات العمل المختلفة.</p>
                 <a href="service-details-desktop" class="btn-cta">
-                  <span>تعرف أكثر</span>
+                  <span data-translate="cta_learn_more_2">تعرف أكثر</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -921,10 +957,10 @@
                 <i class="bi bi-diagram-3-fill"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-ERP">أنظمة ERP</a></h3>
-                <p>أنظمة ERP متكاملة تساعدك على إدارة الحسابات، الموارد البشرية، المخزون والمبيعات بكفاءة.</p>
+                <h3><a href="service-details-ERP" data-translate="service_erp_title">أنظمة ERP</a></h3>
+                <p data-translate="service_erp_desc">أنظمة ERP متكاملة تساعدك على إدارة الحسابات، الموارد البشرية، المخزون والمبيعات بكفاءة.</p>
                 <a href="service-details-ERP" class="btn-cta">
-                  <span>اطلب استشارة</span>
+                  <span data-translate="cta_request_consult">اطلب استشارة</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -939,10 +975,10 @@
                 <i class="bi bi-receipt-cutoff"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-pos">أنظمة الكاشير (POS)</a></h3>
-                <p>حلول كاشير متكاملة للمطاعم والمتاجر تشمل الجرد، الفواتير، وربط الطابعات وأجهزة الباركود.</p>
+                <h3><a href="service-details-pos" data-translate="service_pos_title">أنظمة الكاشير (POS)</a></h3>
+                <p data-translate="service_pos_desc">حلول كاشير متكاملة للمطاعم والمتاجر تشمل الجرد، الفواتير، وربط الطابعات وأجهزة الباركود.</p>
                 <a href="service-details-pos" class="btn-cta">
-                  <span>احصل على عرض</span>
+                  <span data-translate="cta_get_offer">احصل على عرض</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -957,10 +993,10 @@
                 <i class="bi-robot"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-ai">الذكاء الاصطناعي</a></h3>
-                <p>نطور حلولاً ذكية تعتمد على AI لتحسين تجربة العملاء، التوصيات، وتحليل البيانات.</p>
+                <h3><a href="service-details-ai" data-translate="service_ai_title">الذكاء الاصطناعي</a></h3>
+                <p data-translate="service_ai_desc">نطور حلولاً ذكية تعتمد على AI لتحسين تجربة العملاء، التوصيات، وتحليل البيانات.</p>
                 <a href="service-details-ai" class="btn-cta">
-                  <span>استكشف الآن</span>
+                  <span data-translate="cta_explore_now">استكشف الآن</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -975,10 +1011,10 @@
                 <i class="bi bi-camera-reels-fill"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-montage">المونتاج والإنتاج المرئي</a></h3>
-                <p>مونتاج احترافي للفيديوهات الإعلانية والتعليمية باستخدام أحدث تقنيات الجرافيك والصوت.</p>
+                <h3><a href="service-details-montage" data-translate="service_montage_title">المونتاج والإنتاج المرئي</a></h3>
+                <p data-translate="service_montage_desc">مونتاج احترافي للفيديوهات الإعلانية والتعليمية باستخدام أحدث تقنيات الجرافيك والصوت.</p>
                 <a href="service-details-montage" class="btn-cta">
-                  <span>ابدأ مشروعك</span>
+                  <span data-translate="cta_start_project">ابدأ مشروعك</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -993,10 +1029,10 @@
                 <i class="bi bi-phone-fill"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-applications">تطبيقات الجوال</a></h3>
-                <p>تطوير تطبيقات Android وiOS احترافية وسريعة، بتصميم عصري وتجربة مستخدم متميزة.</p>
+                <h3><a href="service-details-applications" data-translate="service_mobile_title">تطبيقات الجوال</a></h3>
+                <p data-translate="service_mobile_desc">تطوير تطبيقات Android وiOS احترافية وسريعة، بتصميم عصري وتجربة مستخدم متميزة.</p>
                 <a href="service-details-applications" class="btn-cta">
-                  <span>ابدأ الآن</span>
+                  <span data-translate="cta_start_now_2">ابدأ الآن</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -1010,18 +1046,16 @@
                 <i class="bi bi-bar-chart-line-fill"></i>
               </div>
               <div class="service-content">
-                <h3><a href="service-details-adminpage">لوحات التحكم وتحليل البيانات</a></h3>
-                <p>نقوم بتصميم لوحات تحكم تفاعلية وذكية تساعدك في اتخاذ قرارات سريعة ومبنية على البيانات.</p>
+                <h3><a href="service-details-adminpage" data-translate="service_admin_title">لوحات التحكم وتحليل البيانات</a></h3>
+                <p data-translate="service_admin_desc">نقوم بتصميم لوحات تحكم تفاعلية وذكية تساعدك في اتخاذ قرارات سريعة ومبنية على البيانات.</p>
                 <a href="service-details-adminpage" class="btn-cta">
-                  <span>شاهد نماذج</span>
+                  <span data-translate="cta_view_samples">شاهد نماذج</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
               <div class="service-bg"></div>
             </div>
           </div>
-
-
 
         </div>
 
@@ -1030,25 +1064,25 @@
             <div class="col-lg-3 col-md-6">
               <div class="stat-item">
                 <div class="stat-number">100+</div>
-                <div class="stat-label">مشروع مكتمل</div>
+                <div class="stat-label" data-translate="stat_completed_projects">مشروع مكتمل</div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="stat-item">
                 <div class="stat-number">98%</div>
-                <div class="stat-label">رضا العملاء</div>
+                <div class="stat-label" data-translate="stat_customer_satisfaction">رضا العملاء</div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="stat-item">
                 <div class="stat-number">24/7</div>
-                <div class="stat-label">الدعم متوفر</div>
+                <div class="stat-label" data-translate="stat_support_available">الدعم متوفر</div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="stat-item">
                 <div class="stat-number">5+</div>
-                <div class="stat-label">سنوات الخبرة</div>
+                <div class="stat-label" data-translate="stat_years_experience">سنوات الخبرة</div>
               </div>
             </div>
           </div>
@@ -1058,130 +1092,132 @@
 
     </section><!-- /قسم الخدمات -->
 
-    <!-- قسم الأسئلة الشائعة -->
-    <section id="faq" class="faq section">
 
-      <!-- عنوان القسم -->
-      <div class="container section-title text-center">
-        <h2 class="fw-bold">الأسئلة الشائعة</h2>
-        <p class="text-muted">أجبنا هنا على أكثر الأسئلة التي تصلنا من عملائنا الكرام</p>
-      </div>
+  <!-- قسم الأسئلة الشائعة -->
+<section id="faq" class="faq section">
 
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="faq-wrapper">
+  <!-- عنوان القسم -->
+  <div class="container section-title text-center">
+    <h2 class="fw-bold" data-translate="faq_title">الأسئلة الشائعة</h2>
+    <p class="text-muted" data-translate="faq_subtitle">أجبنا هنا على أكثر الأسئلة التي تصلنا من عملائنا الكرام</p>
+  </div>
 
-              <!-- سؤال 1 -->
-              <div class="faq-item faq-active">
-                <div class="faq-header">
-                  <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
-                  <h4>ما الفرق بين باقات الاستضافة المختلفة؟</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>كل باقة تختلف في مساحة التخزين، عدد قواعد البيانات، السرعة، والدعم الفني. ننصح بالباقات الأعلى للمشاريع الكبيرة أو التي تتطلب أداء عالي.</p>
-                  </div>
-                </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="faq-wrapper">
+
+          <!-- سؤال 1 -->
+          <div class="faq-item faq-active">
+            <div class="faq-header">
+              <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
+              <h4 data-translate="faq_q1">ما الفرق بين باقات الاستضافة المختلفة؟</h4>
+              <div class="faq-toggle">
+                <i class="bi bi-plus"></i>
+                <i class="bi bi-dash"></i>
               </div>
-
-              <!-- سؤال 2 -->
-              <div class="faq-item">
-                <div class="faq-header">
-                  <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
-                  <h4>هل أستطيع ترقية الباقة لاحقًا بسهولة؟</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>نعم بالتأكيد، يمكنك ترقية أو تخفيض باقتك في أي وقت من خلال لوحة التحكم أو بالتواصل مع فريق الدعم.</p>
-                  </div>
-                </div>
+            </div>
+            <div class="faq-content">
+              <div class="content-inner">
+                <p data-translate="faq_a1">كل باقة تختلف في مساحة التخزين، عدد قواعد البيانات، السرعة، والدعم الفني. ننصح بالباقات الأعلى للمشاريع الكبيرة أو التي تتطلب أداء عالي.</p>
               </div>
-
-              <!-- سؤال 3 -->
-              <div class="faq-item">
-                <div class="faq-header">
-                  <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
-                  <h4>هل الأسعار تشمل دومين (اسم النطاق)؟</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>بعض الباقات تتضمن دومين مجاني للسنة الأولى، بينما الأخرى تتطلب شراء الدومين بشكل منفصل. ستجد هذه التفاصيل في وصف كل باقة.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- سؤال 4 -->
-              <div class="faq-item">
-                <div class="faq-header">
-                  <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
-                  <h4>هل أحتاج إلى معرفة برمجية لاستخدام الاستضافة؟</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>ليس بالضرورة. نحن نوفر لوحة تحكم سهلة الاستخدام، ويمكن لفريقنا تولي المهام الفنية بالكامل إذا اخترت الباقة الاحترافية أو المتقدمة.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- سؤال 5 -->
-              <div class="faq-item">
-                <div class="faq-header">
-                  <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
-                  <h4>ما المدة التي يستغرقها تشغيل موقعي بعد الاشتراك؟</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>عادةً يتم تفعيل الاستضافة خلال أقل من 10 دقائق من الدفع. أما تصميم الموقع فيأخذ من 3 إلى 7 أيام عمل حسب تفاصيل المشروع.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- سؤال 6 -->
-              <div class="faq-item">
-                <div class="faq-header">
-                  <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
-                  <h4>هل تقدمون خدمات نسخ احتياطي وحماية للموقع؟</h4>
-                  <div class="faq-toggle">
-                    <i class="bi bi-plus"></i>
-                    <i class="bi bi-dash"></i>
-                  </div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>نعم، جميع باقاتنا تشمل نسخ احتياطي تلقائي يومي أو أسبوعي، بالإضافة إلى حماية أساسية من الهجمات السيبرانية. الباقات المتقدمة تشمل حماية إضافية.</p>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
+
+          <!-- سؤال 2 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
+              <h4 data-translate="faq_q2">هل أستطيع ترقية الباقة لاحقًا بسهولة؟</h4>
+              <div class="faq-toggle">
+                <i class="bi bi-plus"></i>
+                <i class="bi bi-dash"></i>
+              </div>
+            </div>
+            <div class="faq-content">
+              <div class="content-inner">
+                <p data-translate="faq_a2">نعم بالتأكيد، يمكنك ترقية أو تخفيض باقتك في أي وقت من خلال لوحة التحكم أو بالتواصل مع فريق الدعم.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- سؤال 3 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
+              <h4 data-translate="faq_q3">هل الأسعار تشمل دومين (اسم النطاق)؟</h4>
+              <div class="faq-toggle">
+                <i class="bi bi-plus"></i>
+                <i class="bi bi-dash"></i>
+              </div>
+            </div>
+            <div class="faq-content">
+              <div class="content-inner">
+                <p data-translate="faq_a3">بعض الباقات تتضمن دومين مجاني للسنة الأولى، بينما الأخرى تتطلب شراء الدومين بشكل منفصل. ستجد هذه التفاصيل في وصف كل باقة.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- سؤال 4 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
+              <h4 data-translate="faq_q4">هل أحتاج إلى معرفة برمجية لاستخدام الاستضافة؟</h4>
+              <div class="faq-toggle">
+                <i class="bi bi-plus"></i>
+                <i class="bi bi-dash"></i>
+              </div>
+            </div>
+            <div class="faq-content">
+              <div class="content-inner">
+                <p data-translate="faq_a4">ليس بالضرورة. نحن نوفر لوحة تحكم سهلة الاستخدام، ويمكن لفريقنا تولي المهام الفنية بالكامل إذا اخترت الباقة الاحترافية أو المتقدمة.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- سؤال 5 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
+              <h4 data-translate="faq_q5">ما المدة التي يستغرقها تشغيل موقعي بعد الاشتراك؟</h4>
+              <div class="faq-toggle">
+                <i class="bi bi-plus"></i>
+                <i class="bi bi-dash"></i>
+              </div>
+            </div>
+            <div class="faq-content">
+              <div class="content-inner">
+                <p data-translate="faq_a5">عادةً يتم تفعيل الاستضافة خلال أقل من 10 دقائق من الدفع. أما تصميم الموقع فيأخذ من 3 إلى 7 أيام عمل حسب تفاصيل المشروع.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- سؤال 6 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
+              <h4 data-translate="faq_q6">هل تقدمون خدمات نسخ احتياطي وحماية للموقع؟</h4>
+              <div class="faq-toggle">
+                <i class="bi bi-plus"></i>
+                <i class="bi bi-dash"></i>
+              </div>
+            </div>
+            <div class="faq-content">
+              <div class="content-inner">
+                <p data-translate="faq_a6">نعم، جميع باقاتنا تشمل نسخ احتياطي تلقائي يومي أو أسبوعي، بالإضافة إلى حماية أساسية من الهجمات السيبرانية. الباقات المتقدمة تشمل حماية إضافية.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </div>
+  </div>
 
-    </section>
+</section>
 
-    <!-- قسم الدعوة لاتخاذ إجراء -->
+
+<!-- Call to Action Section -->
 <section id="call-to-action" class="call-to-action section light-background">
 
   <div class="container">
@@ -1194,12 +1230,12 @@
       </div>
 
       <div class="row g-0">
-        <!-- المحتوى النصي -->
+        <!-- Text Content -->
         <div class="col-lg-7">
           <div class="cta-content p-5">
-            <span class="badge-custom">عرض مميز</span>
-            <h2 class="mt-4 mb-4">ارتقِ بمهاراتك البرمجية مع خدماتنا للطلاب الجامعيين</h2>
-            <p class="mb-4">
+            <span class="badge-custom" data-translate="cta_badge">عرض مميز</span>
+            <h2 class="mt-4 mb-4" data-translate="cta_title">ارتقِ بمهاراتك البرمجية مع خدماتنا للطلاب الجامعيين</h2>
+            <p class="mb-4" data-translate="cta_description">
               نقدم لطلاب جامعات المملكة العربية السعودية خدمات برمجية متكاملة تشمل دورات تدريبية في مختلف مجالات البرمجة، 
               تطوير الويب، تطبيقات الموبايل، الذكاء الاصطناعي، تحليل البيانات، وأحدث التقنيات العالمية، 
               مع ترجمة وتبسيط المحتوى للعربية لضمان الفهم الكامل.
@@ -1212,8 +1248,8 @@
                     <i class="bi bi-lightning-charge-fill"></i>
                   </div>
                   <div class="benefit-content">
-                    <h5>تعلم سريع وفعّال</h5>
-                    <p>ابدأ رحلتك البرمجية بخطوات عملية وبمحتوى مُبسّط للطلاب الجامعيين.</p>
+                    <h5 data-translate="cta_benefit1_title">تعلم سريع وفعّال</h5>
+                    <p data-translate="cta_benefit1_desc">ابدأ رحلتك البرمجية بخطوات عملية وبمحتوى مُبسّط للطلاب الجامعيين.</p>
                   </div>
                 </div>
               </div>
@@ -1223,35 +1259,35 @@
                     <i class="bi bi-shield-check"></i>
                   </div>
                   <div class="benefit-content">
-                    <h5>محتوى موثوق وآمن</h5>
-                    <p>نعتمد على مصادر معتمدة وضمان جودة عالية للتدريب.</p>
+                    <h5 data-translate="cta_benefit2_title">محتوى موثوق وآمن</h5>
+                    <p data-translate="cta_benefit2_desc">نعتمد على مصادر معتمدة وضمان جودة عالية للتدريب.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="action-buttons">
-              <a href="/courses" class="btn btn-primary">ابدأ الآن</a>
-              <a href="/courses" class="btn btn-outline">اعرف المزيد</a>
+              <a href="/courses" class="btn btn-primary" data-translate="cta_btn_start">ابدأ الآن</a>
+              <a href="/courses" class="btn btn-outline" data-translate="cta_btn_more">اعرف المزيد</a>
               <div class="guarantee-badge">
                 <i class="bi bi-patch-check-fill"></i>
-                <span>ضمان استرجاع الأموال خلال 30 يوم</span>
+                <span data-translate="cta_guarantee">ضمان استرجاع الأموال خلال 30 يوم</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- الصورة الجانبية -->
+        <!-- Side Image -->
         <div class="col-lg-5">
           <div class="cta-image-container">
-            <img src="assets/img/students/student.png" alt="التدريب البرمجي" class="img-fluid main-image">
+            <img src="assets/img/students/student.png" alt="التدريب البرمجي" class="img-fluid main-image" data-translate="cta_img_alt">
             <div class="floating-element element-1">
               <i class="bi bi-star-fill"></i>
-              <span>تقييم 4.9</span>
+              <span data-translate="cta_rating">تقييم 4.9</span>
             </div>
             <div class="floating-element element-2">
               <i class="bi bi-people-fill"></i>
-              <span>+10 آلاف طالب</span>
+              <span data-translate="cta_students">+10 آلاف طالب</span>
             </div>
             <div class="pattern-dots"></div>
           </div>
@@ -1262,17 +1298,20 @@
   </div>
 
 </section>
-<!-- /قسم الدعوة لاتخاذ إجراء -->
+<!-- /Call to Action Section -->
 
 
 
- <!-- قسم أعمالنا -->
+
+<!-- قسم أعمالنا -->
 <section id="portfolio" class="portfolio section">
 
   <!-- عنوان القسم -->
   <div class="container section-title">
-    <h2>أعمالنا</h2>
-    <p>مجموعة من المشاريع البرمجية التي نفخر بتنفيذها، تشمل مواقع إلكترونية، تطبيقات مخصصة، ولوحات تحكم احترافية.</p>
+    <h2 data-translate="our_works">أعمالنا</h2>
+    <p data-translate="our_works_desc">
+      مجموعة من المشاريع البرمجية التي نفخر بتنفيذها، تشمل مواقع إلكترونية، تطبيقات مخصصة، ولوحات تحكم احترافية.
+    </p>
   </div><!-- نهاية عنوان القسم -->
 
   <div class="container">
@@ -1282,11 +1321,11 @@
       <div class="row">
         <div class="col-lg-12 d-flex justify-content-center mt-4">
           <ul class="portfolio-filters isotope-filters">
-            <li data-filter="*" class="filter-active">الكل</li>
-            <li data-filter=".filter-web">مواقع إلكترونية</li>
-            <li data-filter=".filter-dashboard">لوحات تحكم</li>
-            <li data-filter=".filter-apps">تطبيقات</li>
-            <li data-filter=".filter-systems">أنظمة مخصصة</li>
+            <li data-filter="*" class="filter-active" data-translate="all">الكل</li>
+            <li data-filter=".filter-web" data-translate="websites">مواقع إلكترونية</li>
+            <li data-filter=".filter-dashboard" data-translate="dashboards">لوحات تحكم</li>
+            <li data-filter=".filter-apps" data-translate="apps">تطبيقات</li>
+            <li data-filter=".filter-systems" data-translate="custom_systems">أنظمة مخصصة</li>
           </ul>
         </div>
       </div>
@@ -1295,12 +1334,12 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/6.jpg" class="img-fluid" alt="موقع إلكتروني" loading="lazy">
+            <img src="assets/img/portfolio/6.png" class="img-fluid" alt="موقع إلكتروني" loading="lazy">
             <div class="portfolio-info">
-              <h4>موقع لادارة مطعم</h4>
-              <p>موقع لادارة منتجات مطعم</p>
+              <h4 data-translate="restaurant_site">موقع لإدارة مطعم</h4>
+              <p data-translate="restaurant_site_desc">موقع لإدارة منتجات مطعم</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/6.jpg" class="glightbox" title="موقع لادارة مطعم"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/portfolio/6.png" class="glightbox" title="موقع لإدارة مطعم"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details-restaurant" title="تفاصيل المشروع"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -1309,12 +1348,12 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/1.jpg" class="img-fluid" alt="لوحة تحكم" loading="lazy">
+            <img src="assets/img/portfolio/1.png" class="img-fluid" alt="لوحة تحكم" loading="lazy">
             <div class="portfolio-info">
-              <h4>موقع شركة استقدام</h4>
-              <p>استقدام العماله من الخارج</p>
+              <h4 data-translate="recruitment_site">موقع شركة استقدام</h4>
+              <p data-translate="recruitment_site_desc">استقدام العمالة من الخارج</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/1.jpg" class="glightbox" title="موقع شركة استقدام"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/portfolio/1.png" class="glightbox" title="موقع شركة استقدام"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details-isteqdam" title="تفاصيل المشروع"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -1323,12 +1362,12 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/5.jpg" class="img-fluid" alt="تطبيق جوال" loading="lazy">
+            <img src="assets/img/portfolio/5.png" class="img-fluid" alt="تطبيق جوال" loading="lazy">
             <div class="portfolio-info">
-              <h4>موقع تجارة الكترونيه</h4>
-              <p>موقع تجارة الكترونيه لبيع منتجات</p>
+              <h4 data-translate="ecommerce_site">موقع تجارة إلكترونية</h4>
+              <p data-translate="ecommerce_site_desc">موقع تجارة إلكترونية لبيع منتجات</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/5.jpg" class="glightbox" title="موقع تجارة الكترونيه"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/portfolio/5.png" class="glightbox" title="موقع تجارة إلكترونية"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details-ecommerce" title="تفاصيل المشروع"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -1337,12 +1376,12 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-systems">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/3.jpg" class="img-fluid" alt="نظام مخصص" loading="lazy">
+            <img src="assets/img/portfolio/3.png" class="img-fluid" alt="نظام مخصص" loading="lazy">
             <div class="portfolio-info">
-              <h4>نظام إدارة حجوزات</h4>
-              <p>مطور حسب احتياج العميل</p>
+              <h4 data-translate="reservation_system">نظام إدارة حجوزات</h4>
+              <p data-translate="reservation_system_desc">مطور حسب احتياج العميل</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/3.jpg" class="glightbox" title="نظام إدارة حجوزات"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/portfolio/3.png" class="glightbox" title="نظام إدارة حجوزات"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details-reservation" title="تفاصيل المشروع"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -1351,12 +1390,12 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="صورة عمل" loading="lazy">
+            <img src="assets/img/portfolio/2.png" class="img-fluid" alt="صورة عمل" loading="lazy">
             <div class="portfolio-info">
-              <h4>موقع شركة تقنية</h4>
-              <p>موقع شركة تقنية يقدم خدمات برمجية</p>
+              <h4 data-translate="tech_company_site">موقع شركة تقنية</h4>
+              <p data-translate="tech_company_site_desc">موقع شركة تقنية يقدم خدمات برمجية</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/2.jpg" class="glightbox" title="موقع شركة تقنية"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/portfolio/2.png" class="glightbox" title="موقع شركة تقنية"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details-programming" title="تفاصيل أكثر"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -1365,20 +1404,17 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-systems">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/4.jpg" class="img-fluid" alt="صورة عمل" loading="lazy">
+            <img src="assets/img/portfolio/4.png" class="img-fluid" alt="صورة عمل" loading="lazy">
             <div class="portfolio-info">
-              <h4>نظام لادارة نماذج اختبارات</h4>
-              <p>لوحة تحكم لادارة نماذج الاختبارات</p>
+              <h4 data-translate="test_management_system">نظام لإدارة نماذج اختبارات</h4>
+              <p data-translate="test_management_system_desc">لوحة تحكم لإدارة نماذج الاختبارات</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/4.jpg" class="glightbox" title="نظام لادارة نماذج الاختبارات"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/portfolio/4.png" class="glightbox" title="نظام لإدارة نماذج الاختبارات"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details-tests" title="تفاصيل أكثر"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div>
         </div><!-- نهاية عنصر العمل -->
-
-
-        <!-- كرر نماذج أخرى حسب المشاريع الفعلية -->
 
       </div><!-- نهاية حاوية الأعمال -->
 
@@ -1389,12 +1425,13 @@
 </section><!-- نهاية قسم أعمالنا -->
 
 
+
 <section id="blog-posts" class="blog-posts section">
 
   <!-- عنوان القسم -->
   <div class="container section-title">
-    <h2>مقالات برمجية</h2>
-    <p>مجموعة من المقالات التقنية التي تغطي أحدث المواضيع في عالم البرمجة وتطوير التطبيقات.</p>
+    <h2 data-translate="blog_title">مقالات برمجية</h2>
+    <p data-translate="blog_description">مجموعة من المقالات التقنية التي تغطي أحدث المواضيع في عالم البرمجة وتطوير التطبيقات.</p>
   </div><!-- نهاية عنوان القسم -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1404,16 +1441,14 @@
         <article>
 
           <div class="post-img">
-            <img src="assets/img/blog/blog3.jpg" alt="مقال برمجي" class="img-fluid">
+            <img src="assets/img/blog/blog3.jpg" alt="مقال برمجي" data-translate="blog_img_alt_1" class="img-fluid">
           </div>
 
-          <p class="post-category">تطوير ويب</p>
+          <p class="post-category" data-translate="category_web">تطوير ويب</p>
 
           <h2 class="title">
-            <a href="blog-details-websites">أفضل الممارسات لتطوير مواقع الويب الحديثة</a>
+            <a href="blog-details-websites" data-translate="blog_post_1_title">أفضل الممارسات لتطوير مواقع الويب الحديثة</a>
           </h2>
-
-
 
         </article>
       </div><!-- نهاية عنصر المقال -->
@@ -1422,16 +1457,14 @@
         <article>
 
           <div class="post-img">
-            <img src="assets/img/blog/blog2.jpg" alt="مقال برمجي" class="img-fluid">
+            <img src="assets/img/blog/blog2.jpg" alt="مقال برمجي" data-translate="blog_img_alt_2" class="img-fluid">
           </div>
 
-          <p class="post-category">تطبيقات الجوال</p>
+          <p class="post-category" data-translate="category_mobile">تطبيقات الجوال</p>
 
           <h2 class="title">
-            <a href="blog-details-applications">كيفية بناء تطبيق جوال باستخدام Flutter</a>
+            <a href="blog-details-applications" data-translate="blog_post_2_title">كيفية بناء تطبيق جوال باستخدام Flutter</a>
           </h2>
-
- 
 
         </article>
       </div><!-- نهاية عنصر المقال -->
@@ -1440,32 +1473,32 @@
         <article>
 
           <div class="post-img">
-            <img src="assets/img/blog/blog1.jpg" alt="مقال برمجي" class="img-fluid">
+            <img src="assets/img/blog/blog1.jpg" alt="مقال برمجي" data-translate="blog_img_alt_3" class="img-fluid">
           </div>
 
-          <p class="post-category">تقنيات حديثة</p>
+          <p class="post-category" data-translate="category_ai">تقنيات حديثة</p>
 
           <h2 class="title">
-            <a href="blog-details-ai">مستقبل الذكاء الاصطناعي في البرمجة</a>
+            <a href="blog-details-ai" data-translate="blog_post_3_title">مستقبل الذكاء الاصطناعي في البرمجة</a>
           </h2>
 
         </article>
       </div><!-- نهاية عنصر المقال -->
-
-      <!-- يمكنك إضافة المزيد من المقالات بنفس الطريقة -->
 
     </div>
   </div>
 
 </section><!-- /قسم المقالات البرمجية -->
 
+
     <!-- قسم التواصل -->
+<!-- Contact Section -->
 <section id="contact" class="contact section">
-  <!-- عنوان القسم -->
+  <!-- Section Title -->
   <div class="container section-title">
-    <h2>تواصل معنا</h2>
-    <p>نسعد بتلقي استفساراتكم وملاحظاتكم، تواصلوا معنا وسنكون سعداء بمساعدتكم.</p>
-  </div><!-- نهاية عنوان القسم -->
+    <h2 data-translate="contact_title">تواصل معنا</h2>
+    <p data-translate="contact_description">نسعد بتلقي استفساراتكم وملاحظاتكم، تواصلوا معنا وسنكون سعداء بمساعدتكم.</p>
+  </div><!-- End Section Title -->
 
   <div class="container">
     <div class="contact-main-wrapper">
@@ -1480,8 +1513,8 @@
               <i class="bi bi-geo-alt"></i>
             </div>
             <div class="contact-text">
-              <h4>الموقع</h4>
-              <p>حي السميري، مدينة ينبع، المملكة العربية السعودية</p>
+              <h4 data-translate="contact_location_title">الموقع</h4>
+              <p data-translate="contact_location_text">حي السميري، مدينة ينبع، المملكة العربية السعودية</p>
             </div>
           </div>
 
@@ -1490,7 +1523,7 @@
               <i class="bi bi-envelope"></i>
             </div>
             <div class="contact-text">
-              <h4>البريد الإلكتروني</h4>
+              <h4 data-translate="contact_email_title">البريد الإلكتروني</h4>
               <p>codeylacompany@gmail.com</p>
             </div>
           </div>
@@ -1500,8 +1533,8 @@
               <i class="bi bi-telephone"></i>
             </div>
             <div class="contact-text">
-              <h4>الهاتف</h4>
-              <p>966557703987+</p>
+              <h4 data-translate="contact_phone_title">الهاتف</h4>
+              <p>+966557703987</p>
             </div>
           </div>
 
@@ -1510,66 +1543,60 @@
               <i class="bi bi-clock"></i>
             </div>
             <div class="contact-text">
-              <h4>ساعات العمل</h4>
-              <p>السبت - الخميس: 9 صباحًا - 6 مساءً</p>
+              <h4 data-translate="contact_hours_title">ساعات العمل</h4>
+              <p data-translate="contact_hours_text">السبت - الخميس: 9 صباحًا - 6 مساءً</p>
             </div>
           </div>
+
           <a href="https://wa.me/966557703987" target="_blank" class="contact-card" style="text-decoration: none; color: inherit;">
             <div class="icon-box">
               <i class="bi bi-whatsapp"></i>
             </div>
             <div class="contact-text">
-              <h4>للتواصل واتساب</h4>
+              <h4 data-translate="contact_whatsapp_title">للتواصل عبر واتساب</h4>
               <p>+966557703987</p>
             </div>
           </a>
         </div>
 
         <div class="contact-form-container">
-          <h3>تواصل معنا</h3>
-          <p>يسعدنا استلام رسائلكم وسنرد عليكم في أقرب وقت ممكن. الرجاء ملء النموذج أدناه.</p>
+          <h3 data-translate="contact_form_title">تواصل معنا</h3>
+          <p data-translate="contact_form_description">يسعدنا استلام رسائلكم وسنرد عليكم في أقرب وقت ممكن. الرجاء ملء النموذج أدناه.</p>
 
           <form action="forms/contact.php" method="post" id="contactForm" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="اسمك" required>
+                <input type="text" name="name" class="form-control" id="name" placeholder="اسمك" data-translate="contact_form_name_placeholder" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="بريدك الإلكتروني" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="بريدك الإلكتروني" data-translate="contact_form_email_placeholder" required>
               </div>
             </div>
-             <div class="form-group mt-3">
-                <input type="tel" class="form-control" name="phone" id="phone" placeholder="رقم الجوال (مثل: 055xxxxxxx أو 9665xxxxxxxx)" 
-                      pattern="^(05\d{8}|9665\d{8})$" required>
-             </div>
             <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="الموضوع" required>
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="رقم الجوال (مثل: 055xxxxxxx أو 9665xxxxxxxx)" data-translate="contact_form_phone_placeholder" pattern="^(05\d{8}|9665\d{8})$" required>
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="رسالتك" required></textarea>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="الموضوع" data-translate="contact_form_subject_placeholder" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="رسالتك" data-translate="contact_form_message_placeholder1" required></textarea>
             </div>
 
             <div class="my-3">
-              <div class="loading">جارٍ الإرسال</div>
-              <div class="error-message"></div>
-              <div class="sent-message">تم إرسال رسالتك بنجاح. شكرًا لتواصلك معنا!</div>
+              <div class="loading" data-translate="contact_form_loading">جاري الإرسال...</div>
+              <div class="error-message" data-translate="contact_form_error"></div>
+              <div class="sent-message" data-translate="contact_form_success">تم إرسال رسالتك بنجاح. شكرًا لتواصلك معنا!</div>
             </div>
 
             <div class="form-submit">
-              <button type="submit">إرسال الرسالة</button>
-              <!--<div class="social-links">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>-->
+              <button type="submit" data-translate="contact_form_submit">إرسال الرسالة</button>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-</section><!-- نهاية قسم التواصل -->
+</section><!-- End Contact Section -->
 
 
   </main>
@@ -1581,55 +1608,60 @@
         <a href="/" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="">
         </a>
-        <p>نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.</p>
-        <!--<div class="social-links d-flex mt-4">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>-->
+        <p data-translate="footer_about">
+          نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
+        </p>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>روابط مفيدة</h4>
+        <h4 data-translate="useful_links">روابط مفيدة</h4>
         <ul>
-          <li><a href="/">الرئيسية</a></li>
-          <li><a href="/about">من نحن</a></li>
-          <li><a href="/services">خدماتنا</a></li>
-          <li><a href="blog">مقالاتنا</a></li>
-          <li><a href="/contact">تواصل معنا</a></li>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about_us">من نحن</a></li>
+          <li><a href="/services" data-translate="our_services">خدماتنا</a></li>
+          <li><a href="blog" data-translate="our_blog">مقالاتنا</a></li>
+          <li><a href="/contact" data-translate="contact_us">تواصل معنا</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>خدماتنا</h4>
+        <h4 data-translate="services">خدماتنا</h4>
         <ul>
-          <li><a href="/services">تصميم مواقع</a></li>
-          <li><a href="/services">تطوير مواقع</a></li>
-          <li><a href="/services">تطوير تطبيقات</a></li>
-          <li><a href="/services">أنظمة محاسبه</a></li>
-          <li><a href="/services">ذكاء اصطناعي</a></li>
+          <li><a href="/services" data-translate="web_design">تصميم مواقع</a></li>
+          <li><a href="/services" data-translate="web_development">تطوير مواقع</a></li>
+          <li><a href="/services" data-translate="app_development">تطوير تطبيقات</a></li>
+          <li><a href="/services" data-translate="accounting_systems">أنظمة محاسبه</a></li>
+          <li><a href="/services" data-translate="artificial_intelligence">ذكاء اصطناعي</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-        <h4 style="text-align: right;">تواصل معنا</h4>
-        <p style="text-align: right;">حي السميري - مدينة ينبع</p>
-        <p style="text-align: right;">امارة المدينة المنورة</p>
-        <p style="text-align: right;">المملكة العربية السعودية</p>
-        <p style="text-align: right;" class="mt-4"><strong>هاتف:</strong> <span>966557703987+</span></p>
-        <p style="text-align: right;"><strong>البريد الإلكتروني:</strong> <span>codeylacompany@gmail.com</span></p>
+        <h4 style="text-align: right;" data-translate="contact_us">تواصل معنا</h4>
+        <p style="text-align: right;" data-translate="address_line1">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;" data-translate="address_line2">امارة المدينة المنورة</p>
+        <p style="text-align: right;" data-translate="address_line3">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4">
+          <strong data-translate="phone_label">هاتف:</strong> 
+          <span>966557703987+</span>
+        </p>
+        <p style="text-align: right;">
+          <strong data-translate="email_label">البريد الإلكتروني:</strong> 
+          <span>sweepicodecompany@gmail.com</span>
+        </p>
       </div>
-
     </div>
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p><span>جميع الحقوق محفوظة</span> © <span>حقوق النشر 2025</span> </p><strong class="px-1 sitename">Codeyla</strong>
-    
+    <p>
+      <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span> © 
+      <span data-translate="copyright_year">حقوق النشر 2025</span>
+    </p>
+    <strong class="px-1 sitename">Sweepicode</strong>
   </div>
 
 </footer>
+
 
 
   <!-- Scroll Top -->
@@ -1666,50 +1698,53 @@
   <!-- Include Toastr -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
   <script>
-    $(document).on('submit', '#contactForm', function(e) {
-      e.preventDefault();
+    window.translations = {
+      ar: {
+        contact_form_name_placeholder: "اسمك",
+        contact_form_email_placeholder: "بريدك الإلكتروني",
+        contact_form_phone_placeholder: "رقم الجوال (مثل: 055xxxxxxx أو 9665xxxxxxxx)",
+        contact_form_subject_placeholder: "الموضوع",
+        contact_form_message_placeholder1: "رسالتك",
+        contact_form_loading: "جاري الإرسال...",
+        contact_form_error: "حدث خطأ أثناء الإرسال.",
+        contact_form_success: "تم إرسال رسالتك بنجاح. شكرًا لتواصلك معنا!",
+        contact_form_submit: "إرسال الرسالة",
+        search_placeholder: "ابحث عن دورة..."
+      },
+      en: {
+        contact_form_name_placeholder: "Your Name",
+        contact_form_email_placeholder: "Your Email",
+        contact_form_phone_placeholder: "Phone Number (e.g., 055xxxxxxx or 9665xxxxxxxx)",
+        contact_form_subject_placeholder: "Subject",
+        contact_form_message_placeholder1: "Your Message",
+        contact_form_loading: "Sending...",
+        contact_form_error: "There was an error sending your message.",
+        contact_form_success: "Your message has been sent successfully. Thank you!",
+        contact_form_submit: "Send Message",
+        search_placeholder: "Search for a course..."
+      }
+    };
+    function translateAll() {
+      const lang = localStorage.getItem("lang") || 'ar';
+      document.querySelectorAll('[data-translate]').forEach(el => {
+        const key = el.getAttribute('data-translate');
+        if (!key) return;
 
-      var form = $(this);
-      var btn = form.find('button[type="submit"]');
-      btn.prop('disabled', true).text('جاري الإرسال...');
+        const translation = translations[lang] ? translations[lang][key] : null;
+        if (!translation) return;
 
-      $.ajax({
-        url: 'forms/contact.php',
-        method: 'POST',
-        data: form.serialize(),
-        success: function(response) {
-          if (response.status === 'success') {
-            toastr.success(response.message, 'تم بنجاح', { timeOut: 5000 });
-            form[0].reset();
-          } else {
-            toastr.error(response.message, 'خطأ', { timeOut: 7000 });
-          }
-        },
-        error: function() {
-          toastr.error('حدث خطأ غير متوقع. حاول لاحقًا.', 'فشل');
-        },
-        complete: function() {
-          btn.prop('disabled', false).text('إرسال');
+        if (el.tagName.toUpperCase() === 'INPUT' || el.tagName.toUpperCase() === 'TEXTAREA') {
+          el.setAttribute('placeholder', translation);
+        } else {
+          el.textContent = translation;
         }
       });
-    });
+    }
+
+    window.addEventListener('load', translateAll);
+
   </script>
-  <script>
-  const path = window.location.pathname.replace(/^\/+|\/+$/g, '');
-  const sections = ['about', 'services', 'portfolio', 'contact' , 'call-to-action'];
-
-  if (sections.includes(path)) {
-    window.addEventListener('DOMContentLoaded', () => {
-      const el = document.getElementById(path);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  }
-</script>
-
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Codeyla - أعمالنا</title>
+  <title>Sweepicode - أعمالنا</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -50,273 +50,288 @@
   </div>
   <div id="pageContent">
   <header id="header" class="header fixed-top">
-
-    <div class="topbar d-flex align-items-center dark-background">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:codeylacompany@gmail.com">codeylacompany@gmail.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
+      <div class="topbar d-flex align-items-center dark-background">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope d-flex align-items-center"><a style="margin-right: 10px;" href="mailto:sweepicodecompany@gmail.com">sweepicodecompany@gmail.com</a></i>
+            <i class="bi bi-phone d-flex align-items-center ms-4"><span style="margin-right: 10px;">966557703987+</span></i>
+          </div>
+          <div class="social-links d-none d-md-flex align-items-center">
+            <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+              <a href="/portfolio" class="browse-link">
+                <i class="bi bi-layers animated-layers"></i>
+                <span data-translate="browse">تصفح أعمالنا</span>
+              </a>
+          </div>
         </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <!--<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
-            <a href="/portfolio" class="browse-link">
-              <i class="bi bi-layers animated-layers"></i>
-              تصفح أعمالنا
-            </a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
+      </div><!-- End Top Bar -->
+      <!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-cente">
+      <div class="branding d-flex align-items-cente">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          <a href="/" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
 
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="/" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="">
-          <!--<h1 style="margin-right: 10px;" class="sitename">رؤية جديدة</h1>-->
-        </a>
-
-        <nav id="navmenu" class="navmenu">
+          <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/">الرئيسية</a></li>
-            <li><a href="/about">من نحن</a></li>
-            <li><a href="/services">خدماتنا</a></li>
-            <li><a href="/portfolio" class="active">أعمالنا</a></li>
-            <li><a href="blog">مقالاتنا</a></li>
-            <li><a href="/call-to-action">دورات تدريبية</a></li>
-            <li><a href="/contact">تواصل معنا</a></li>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about">من نحن</a></li>
+          <li><a href="/services" data-translate="services">خدماتنا</a></li>
+          <li><a href="/portfolio" data-translate="portfolio" class="active">أعمالنا</a></li>
+          <li><a href="blog" data-translate="blog">مقالاتنا</a></li>
+          <li><a href="/call-to-action" data-translate="courses">دورات تدريبية</a></li>
+          <li><a href="/contact" data-translate="contact">تواصل معنا</a></li>
+          <li class="language-switch d-none d-xl-block">
+              <button class="lang-btn">
+                <div class="lang-flag">
+                  <img id="current-lang-flag" src="assets/img/languages/ar.png" alt="AR">
+                </div>
+                <span id="current-lang-text">عربي</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu horizontal">
+                <li data-lang="ar">
+                  <img src="assets/img/languages/ar.png" alt="AR">
+                  <span>عربي</span>
+                </li>
+                <li data-lang="en">
+                  <img src="assets/img/languages/en.png" alt="EN">
+                  <span>English</span>
+                </li>
+              </ul>
+            </li>
             <li class="d-none d-xl-block">
               <div id="themeToggle" class="theme-switch-icon">
                 <i class="bi bi-moon-fill"></i>
               </div>
             </li>
           </ul>
-          <div class="d-flex align-items-center gap-3">
+          <div class="d-flex align-items-center gap-2">
+            <button class="mobile-lang-btn d-xl-none">
+              <img id="mobile-lang-flag" src="assets/img/languages/ar.png" alt="Lang">
+            </button>
             <div id="themeToggleMobile" class="theme-switch-icon d-xl-none">
               <i class="bi bi-moon-fill"></i>
             </div>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </div>
-
         </nav>
-
+        </div>
       </div>
-
-    </div>
-
   </header>
 
-  <main class="main">
+ <main class="main">
 
-    <!-- Page Title -->
-<div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
-  <div class="container position-relative">
-    <h1>تفاصيل المشروع</h1>
-    <p>قمنا بتطوير موقع إلكتروني احترافي لشركة استقدام يتيح للعملاء استعراض الخدمات، تقديم الطلبات، والتواصل بسهولة وفعالية.</p>
-    <nav class="breadcrumbs">
-      <ol>
-        <li><a href="/">الرئيسية</a></li>
-        <li class="current">تفاصيل المشروع</li>
-      </ol>
-    </nav>
-  </div>
-</div><!-- End Page Title -->
+  <!-- Page Title -->
+  <div class="page-title dark-background" style="background-image: url(assets/img/head.jpg);">
+    <div class="container position-relative">
+      <h1><span data-translate="page_title_project_details">تفاصيل المشروع</span></h1>
+      <p><span data-translate="page_subtitle_project_details">قمنا بتطوير موقع إلكتروني احترافي لشركة استقدام يتيح للعملاء استعراض الخدمات، تقديم الطلبات، والتواصل بسهولة وفعالية.</span></p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="/"><span data-translate="breadcrumb_home">الرئيسية</span></a></li>
+          <li class="current"><span data-translate="breadcrumb_project_details">تفاصيل المشروع</span></li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
 
-<!-- Portfolio Details Section -->
-<section id="portfolio-details" class="portfolio-details section">
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="project-header">
-      <div class="row">
-        <div class="col-lg-7">
-          <h1 class="project-title">موقع إلكتروني لشركة استقدام محترفة</h1>
-          <div class="project-meta">
-            <div class="meta-item">
-              <i style="margin-left: 5px;" class="bi bi-calendar3"></i>
-              <span>أغسطس 2025</span>
+      <div class="project-header">
+        <div class="row">
+          <div class="col-lg-7">
+            <h1 class="project-title"><span data-translate="project_title">موقع إلكتروني لشركة استقدام محترفة</span></h1>
+            <div class="project-meta">
+              <div class="meta-item">
+                <i style="margin-left: 5px;" class="bi bi-calendar3"></i>
+                <span data-translate="project_date">أغسطس 2025</span>
+              </div>
+              <div class="meta-item">
+                <i style="margin-left: 5px;" class="bi bi-building"></i>
+                <span data-translate="project_company">شركة إيجاز للاستقدام</span>
+              </div>
+              <div class="meta-item">
+                <i style="margin-left: 5px;" class="bi bi-link-45deg"></i>
+                <a href="https://isteqdamejaz.com/" target="_blank">https://isteqdamejaz.com/</a>
+              </div>
             </div>
-            <div class="meta-item">
-              <i style="margin-left: 5px;" class="bi bi-building"></i>
-              <span>شركة إيجاز للاستقدام</span>
-            </div>
-            <div class="meta-item">
-              <i style="margin-left: 5px;" class="bi bi-link-45deg"></i>
-              <a href="https://isteqdamejaz.com/" target="_blank">https://isteqdamejaz.com/</a>
+            <div class="project-tags">
+              <span class="tag" data-translate="tag_recruitment_site">موقع استقدام</span>
+              <span class="tag" data-translate="tag_professional_design">تصميم احترافي</span>
+              <span class="tag" data-translate="tag_direct_contact">تواصل مباشر</span>
             </div>
           </div>
-          <div class="project-tags">
-            <span class="tag">موقع استقدام</span>
-            <span class="tag">تصميم احترافي</span>
-            <span class="tag">تواصل مباشر</span>
-          </div>
-        </div>
-        <div class="col-lg-5 d-flex align-items-center justify-content-end">
-          <div class="technologies">
-            <div class="tech-title">التقنيات المستخدمة:</div>
-            <div class="tech-badges">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-              <span>PHP</span>
-              <span>MySQL</span>
+          <div class="col-lg-5 d-flex align-items-center justify-content-end">
+            <div class="technologies">
+              <div class="tech-title" data-translate="tech_used">التقنيات المستخدمة:</div>
+              <div class="tech-badges">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="media-showcase">
+        <div class="portfolio-details-slider swiper init-swiper swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/90.png" alt="صور المشروع" class="img-fluid" data-translate="project_images">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/90.png" alt="صور المشروع" class="img-fluid" data-translate="project_images">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/90.png" alt="صور المشروع" class="img-fluid" data-translate="project_images">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <div class="row gy-4">
+          <div class="col-lg-7">
+            <div class="description-box">
+              <h3><span data-translate="overview_title">نظرة عامة</span></h3>
+              <p class="lead" data-translate="overview_text1">صممنا وطوّرنا موقع إلكتروني مميز لشركة استقدام يوفر تجربة مستخدم سهلة وواجهة حديثة لاستعراض الخدمات المتنوعة، مع نظام طلب متكامل يضمن سهولة التواصل والمتابعة.</p>
+              <p data-translate="overview_text2">الموقع يدعم الأجهزة المحمولة ويوفر سرعة عالية في الأداء، مع تكامل أنظمة الدفع الإلكتروني وخدمات الدعم المباشر للعملاء.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="project-stats">
+              <div class="stat-item">
+                <div class="stat-number">5k+</div>
+                <div class="stat-label" data-translate="stat_monthly_requests">طلبات شهرية</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label" data-translate="stat_customer_satisfaction">رضا العملاء</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">45</div>
+                <div class="stat-label" data-translate="stat_development_days">يوم تطوير</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">4.8</div>
+                <div class="stat-label" data-translate="stat_user_rating">تقييم المستخدمين</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="info-card">
+              <div class="card-icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h4 data-translate="challenge_title">التحدي</h4>
+              <p data-translate="challenge_text">إنشاء موقع يوفر نظام طلب متكامل مع إمكانية إدارة الطلبات بسهولة، وعرض الخدمات بشكل واضح وجذاب لجذب العملاء وزيادة المبيعات.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-card">
+              <div class="card-icon">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <h4 data-translate="solution_title">الحل</h4>
+              <p data-translate="solution_text">استخدمنا أحدث تقنيات الويب مع تصميم واجهة مستخدم احترافية وسهلة، ونظام إدارة محتوى مخصص لتسهيل تحديث الخدمات وإدارة الطلبات بشكل فعال.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-gallery">
+          <h3 data-translate="gallery_title">معرض المشروع</h3>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="gallery-item">
+                <img src="assets/img/portfolio/1.png" alt="صور المشروع" class="img-fluid glightbox" data-translate="project_images">
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="gallery-item">
+                <img src="assets/img/portfolio/1.png" alt="صور المشروع" class="img-fluid glightbox" data-translate="project_images">
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="gallery-item">
+                <img src="assets/img/portfolio/1.png" alt="صور المشروع" class="img-fluid glightbox" data-translate="project_images">
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="gallery-item">
+                <img src="assets/img/portfolio/1.png" alt="صور المشروع" class="img-fluid glightbox" data-translate="project_images">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="key-features">
+          <h3 data-translate="features_title">الميزات الرئيسية</h3>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="feature-item">
+                <i class="bi bi-shield-check"></i>
+                <h5 data-translate="feature_order_system">نظام طلب متكامل</h5>
+                <p data-translate="feature_order_system_text">يمكن للعملاء تقديم الطلبات ومتابعتها بسهولة عبر الموقع.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-item">
+                <i class="bi bi-graph-up-arrow"></i>
+                <h5 data-translate="feature_modern_ui">واجهة مستخدم حديثة</h5>
+                <p data-translate="feature_modern_ui_text">تصميم جذاب وسهل الاستخدام يتناسب مع جميع الأجهزة.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-item">
+                <i class="bi bi-gear-wide-connected"></i>
+                <h5 data-translate="feature_support">دعم فني مباشر</h5>
+                <p data-translate="feature_support_text">خدمة عملاء متاحة للتواصل وحل الاستفسارات بشكل سريع.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-navigation">
+          <a href="/portfolio" class="prev-project">
+            <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
+            <span data-translate="prev_project">المشروع السابق</span>
+          </a>
+          <a href="/portfolio" class="all-projects">
+            <i style="margin-left: 5px;" class="bi bi-grid"></i>
+            <span data-translate="all_projects">كل المشاريع</span>
+          </a>
+          <a href="/portfolio" class="next-project">
+            <span data-translate="next_project">المشروع التالي</span>
+            <i style="margin-right: 5px;" class="bi bi-arrow-left"></i>
+          </a>
+        </div>
+      </div>
+
     </div>
 
-    <div class="media-showcase">
-      <div class="portfolio-details-slider swiper init-swiper swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="assets/img/portfolio/90.png" alt="صور المشروع" class="img-fluid">
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/img/portfolio/90.png" alt="صور المشروع" class="img-fluid">
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/img/portfolio/90.png" alt="صور المشروع" class="img-fluid">
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
+  </section><!-- /Portfolio Details Section -->
 
-    <div class="project-content">
-      <div class="row gy-4">
-        <div class="col-lg-7">
-          <div class="description-box">
-            <h3>نظرة عامة</h3>
-            <p class="lead">صممنا وطوّرنا موقع إلكتروني مميز لشركة استقدام يوفر تجربة مستخدم سهلة وواجهة حديثة لاستعراض الخدمات المتنوعة، مع نظام طلب متكامل يضمن سهولة التواصل والمتابعة.</p>
-            <p>الموقع يدعم الأجهزة المحمولة ويوفر سرعة عالية في الأداء، مع تكامل أنظمة الدفع الإلكتروني وخدمات الدعم المباشر للعملاء.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-5">
-          <div class="project-stats">
-            <div class="stat-item">
-              <div class="stat-number">5k+</div>
-              <div class="stat-label">طلبات شهرية</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">98%</div>
-              <div class="stat-label">رضا العملاء</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">45</div>
-              <div class="stat-label">يوم تطوير</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">4.8</div>
-              <div class="stat-label">تقييم المستخدمين</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row gy-4">
-        <div class="col-md-6">
-          <div class="info-card">
-            <div class="card-icon">
-              <i class="bi bi-lightbulb"></i>
-            </div>
-            <h4>التحدي</h4>
-            <p>إنشاء موقع يوفر نظام طلب متكامل مع إمكانية إدارة الطلبات بسهولة، وعرض الخدمات بشكل واضح وجذاب لجذب العملاء وزيادة المبيعات.</p>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="info-card">
-            <div class="card-icon">
-              <i class="bi bi-trophy"></i>
-            </div>
-            <h4>الحل</h4>
-            <p>استخدمنا أحدث تقنيات الويب مع تصميم واجهة مستخدم احترافية وسهلة، ونظام إدارة محتوى مخصص لتسهيل تحديث الخدمات وإدارة الطلبات بشكل فعال.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-gallery">
-        <h3>معرض المشروع</h3>
-        <div class="row g-3">
-          <div class="col-6 col-md-3">
-            <div class="gallery-item">
-              <img src="assets/img/portfolio/1.jpg" alt="صور المشروع" class="img-fluid glightbox">
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="gallery-item">
-              <img src="assets/img/portfolio/1.jpg" alt="صور المشروع" class="img-fluid glightbox">
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="gallery-item">
-              <img src="assets/img/portfolio/1.jpg" alt="صور المشروع" class="img-fluid glightbox">
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="gallery-item">
-              <img src="assets/img/portfolio/1.jpg" alt="صور المشروع" class="img-fluid glightbox">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="key-features">
-        <h3>الميزات الرئيسية</h3>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="feature-item">
-              <i class="bi bi-shield-check"></i>
-              <h5>نظام طلب متكامل</h5>
-              <p>يمكن للعملاء تقديم الطلبات ومتابعتها بسهولة عبر الموقع.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="feature-item">
-              <i class="bi bi-graph-up-arrow"></i>
-              <h5>واجهة مستخدم حديثة</h5>
-              <p>تصميم جذاب وسهل الاستخدام يتناسب مع جميع الأجهزة.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="feature-item">
-              <i class="bi bi-gear-wide-connected"></i>
-              <h5>دعم فني مباشر</h5>
-              <p>خدمة عملاء متاحة للتواصل وحل الاستفسارات بشكل سريع.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-navigation">
-        <a href="/portfolio" class="prev-project">
-          <i style="margin-left: 5px;" class="bi bi-arrow-right"></i>
-          <span>المشروع السابق</span>
-        </a>
-        <a href="/portfolio" class="all-projects">
-          <i style="margin-left: 5px;" class="bi bi-grid"></i>
-          <span>كل المشاريع</span>
-        </a>
-        <a href="/portfolio" class="next-project">
-          <span>المشروع التالي</span>
-          <i style="margin-right: 5px;" class="bi bi-arrow-left"></i>
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-</section><!-- /Portfolio Details Section -->
+</main>
 
 
-  </main>
-
- <footer id="footer" class="footer position-relative dark-background">
+  <footer id="footer" class="footer position-relative dark-background">
 
   <div class="container footer-top">
     <div class="row gy-4">
@@ -324,52 +339,56 @@
         <a href="/" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="">
         </a>
-        <p>نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.</p>
-        <!--<div class="social-links d-flex mt-4">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>-->
+        <p data-translate="footer_about">
+          نحن شركة متخصصة في تقديم الحلول الرقمية الشاملة، نسعى إلى تمكين عملائنا من النجاح في عالم التقنية المتسارع من خلال تقديم خدمات متكاملة تشمل تصميم وتطوير مواقع الإنترنت، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، تطبيقات سطح المكتب، وخدمات التسويق الإلكتروني.
+        </p>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>روابط مفيدة</h4>
+        <h4 data-translate="useful_links">روابط مفيدة</h4>
         <ul>
-          <li><a href="/">الرئيسية</a></li>
-          <li><a href="/about">من نحن</a></li>
-          <li><a href="/services">خدماتنا</a></li>
-          <li><a href="blog">مقالاتنا</a></li>
-          <li><a href="/contact">تواصل معنا</a></li>
+          <li><a href="/" data-translate="home">الرئيسية</a></li>
+          <li><a href="/about" data-translate="about_us">من نحن</a></li>
+          <li><a href="/services" data-translate="our_services">خدماتنا</a></li>
+          <li><a href="blog" data-translate="our_blog">مقالاتنا</a></li>
+          <li><a href="/contact" data-translate="contact_us">تواصل معنا</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-6 footer-links">
-        <h4>خدماتنا</h4>
+        <h4 data-translate="services">خدماتنا</h4>
         <ul>
-          <li><a href="/services">تصميم مواقع</a></li>
-          <li><a href="/services">تطوير مواقع</a></li>
-          <li><a href="/services">تطوير تطبيقات</a></li>
-          <li><a href="/services">أنظمة محاسبه</a></li>
-          <li><a href="/services">ذكاء اصطناعي</a></li>
+          <li><a href="/services" data-translate="web_design">تصميم مواقع</a></li>
+          <li><a href="/services" data-translate="web_development">تطوير مواقع</a></li>
+          <li><a href="/services" data-translate="app_development">تطوير تطبيقات</a></li>
+          <li><a href="/services" data-translate="accounting_systems">أنظمة محاسبه</a></li>
+          <li><a href="/services" data-translate="artificial_intelligence">ذكاء اصطناعي</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-        <h4 style="text-align: right;">تواصل معنا</h4>
-        <p style="text-align: right;">حي السميري - مدينة ينبع</p>
-        <p style="text-align: right;">امارة المدينة المنورة</p>
-        <p style="text-align: right;">المملكة العربية السعودية</p>
-        <p style="text-align: right;" class="mt-4"><strong>هاتف:</strong> <span>966557703987+</span></p>
-        <p style="text-align: right;"><strong>البريد الإلكتروني:</strong> <span>codeylacompany@gmail.com</span></p>
+        <h4 style="text-align: right;" data-translate="contact_us">تواصل معنا</h4>
+        <p style="text-align: right;" data-translate="address_line1">حي السميري - مدينة ينبع</p>
+        <p style="text-align: right;" data-translate="address_line2">امارة المدينة المنورة</p>
+        <p style="text-align: right;" data-translate="address_line3">المملكة العربية السعودية</p>
+        <p style="text-align: right;" class="mt-4">
+          <strong data-translate="phone_label">هاتف:</strong> 
+          <span>966557703987+</span>
+        </p>
+        <p style="text-align: right;">
+          <strong data-translate="email_label">البريد الإلكتروني:</strong> 
+          <span>sweepicodecompany@gmail.com</span>
+        </p>
       </div>
-
     </div>
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p><span>جميع الحقوق محفوظة</span> © <span>حقوق النشر 2025</span> </p><strong class="px-1 sitename">Codeyla</strong>
-    
+    <p>
+      <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span> © 
+      <span data-translate="copyright_year">حقوق النشر 2025</span>
+    </p>
+    <strong class="px-1 sitename">Sweepicode</strong>
   </div>
 
 </footer>
