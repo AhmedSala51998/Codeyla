@@ -10,6 +10,26 @@ require 'phpmailer/Exception.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    $lang = $_POST['lang'] ?? 'ar';
+
+    // رسائل متعددة اللغات
+    $messages = [
+        'ar' => [
+            'required' => '❌ يرجى ملء الحقول المطلوبة.',
+            'success'  => '✅ تم إرسال بيانات التسجيل بنجاح',
+            'fail'     => '❌ حدث خطأ أثناء الإرسال: ',
+            'method'   => '❌ طريقة الإرسال غير صحيحة'
+        ],
+        'en' => [
+            'required' => '❌ Please fill in all required fields.',
+            'success'  => '✅ Registration data sent successfully',
+            'fail'     => '❌ Error occurred while sending: ',
+            'method'   => '❌ Invalid request method'
+        ]
+    ];
+
+    $msg = $messages[$lang] ?? $messages['ar'];
+
     // استلم المتغيرات مع تعقيم بسيط
     $firstName = htmlspecialchars(trim($_POST['firstName'] ?? ''));
     $lastName = htmlspecialchars(trim($_POST['lastName'] ?? ''));
@@ -61,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <!-- Greeting -->
             <tr>
             <td style="padding: 10px 40px 0;">
-            <p style="font-size: 16px; color: #444;">مرحبًا فريق Codeyla،</p>
+            <p style="font-size: 16px; color: #444;">مرحبًا فريق Sweepicode،</p>
             </td>
             </tr>
 
@@ -99,13 +119,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <tr>
             <td style="padding: 30px 40px; text-align: center;">
                 <p style="font-size: 15px; color: #999; line-height: 1.6;">
-                تم إرسال هذه الرسالة عبر نموذج التسجيل في موقع Codeyla. نلتزم بسياسات الخصوصية وشروط الاستخدام.
+                تم إرسال هذه الرسالة عبر نموذج التسجيل في موقع Sweepicode. نلتزم بسياسات الخصوصية وشروط الاستخدام.
                 </p>
                 <p style="font-size: 14px; color: #aaa;">
                 <a href="https://codeyla.com/privacy" style="color: #aaa; text-decoration: underline;" target="_blank">سياسة الخصوصية</a>
                 </p>
                 <p style="font-size: 13px; color: #aaa; margin-top: 15px;">
-                © ' . date('Y') . ' Codeyla. جميع الحقوق محفوظة.
+                © ' . date('Y') . ' Sweepicode. جميع الحقوق محفوظة.
                 </p>
             </td>
             </tr>
@@ -120,12 +140,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->send();
 
-        echo json_encode(['status' => 'success', 'message' => 'تم إرسال بيانات التسجيل بنجاح']);
+         echo json_encode(['status' => 'success', 'message' => $msg['success']]);
+
     } catch (Exception $e) {
-        echo json_encode(['status' => 'error', 'message' => 'حدث خطأ أثناء الإرسال: ' . $mail->ErrorInfo]);
+        echo json_encode(['status' => 'error', 'message' => $msg['fail'] . $mail->ErrorInfo]);
     }
 
 } else {
-    echo json_encode(['status' => 'error', 'message' => 'طريقة الإرسال غير صحيحة']);
+    echo json_encode(['status' => 'error', 'message' => $msg['method'] ?? '']);
 }
 ?>

@@ -1564,6 +1564,7 @@
           <p data-translate="contact_form_description">يسعدنا استلام رسائلكم وسنرد عليكم في أقرب وقت ممكن. الرجاء ملء النموذج أدناه.</p>
 
           <form action="forms/contact.php" method="post" id="contactForm" class="php-email-form">
+            <input type="hidden" name="lang" id="lang">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="اسمك" data-translate="contact_form_name_placeholder" required>
@@ -1699,6 +1700,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script>
+    document.getElementById("lang").value = localStorage.getItem("lang") || "ar";
     window.translations = {
       ar: {
         contact_form_name_placeholder: "اسمك",

@@ -10,6 +10,25 @@ require 'phpmailer/Exception.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+      // هنا تجيب اللغة من الفورم
+    $lang = $_POST['lang'] ?? 'ar';
+
+    // الرسائل حسب اللغة
+    $messages = [
+      'ar' => [
+        'success' => '✅ تم إرسال الرسالة بنجاح',
+        'fail'    => '❌ فشل في الإرسال: ',
+        'method'  => '❌ طريقة الإرسال غير صحيحة.'
+      ],
+      'en' => [
+        'success' => '✅ Message sent successfully',
+        'fail'    => '❌ Failed to send: ',
+        'method'  => '❌ Invalid request method.'
+      ]
+    ];
+
+    $msg = $messages[$lang] ?? $messages['ar'];
+
     $mail = new PHPMailer(true);
 
     try {
@@ -24,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom($_POST['email'], htmlspecialchars($_POST['name']));
         $mail->addAddress('codeylacompany@gmail.com');
 
-        $mail->Subject = 'New Codeyla Message';
+        $mail->Subject = 'New Sweepicode Message';
 
         $logoUrl = 'https://codeyla.com/assets/img/logo_email.png';
   
@@ -36,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <tr>
               <td style="padding: 40px 40px 10px; text-align: center;">
                 <a href="https://codeyla.com/" target="_blank" style="text-decoration: none;">
-                  <img src="' . $logoUrl . '" alt="Codeyla Logo" style="width: 240px; margin-bottom: 20px;">
+                  <img src="' . $logoUrl . '" alt="Sweepicode Logo" style="width: 240px; margin-bottom: 20px;">
                 </a>
                 <h1 style="margin: 0; font-size: 22px; font-weight: 700; color: #333333;">رسالة جديدة من عميل عبر الموقع</h1>
               </td>
@@ -45,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <!-- Greeting -->
             <tr>
               <td style="padding: 10px 40px 0;">
-               <p style="font-size: 16px; color: #444;">مرحبًا فريق Codeyla،</p>
+               <p style="font-size: 16px; color: #444;">مرحبًا فريق Sweepicode،</p>
               </td>
             </tr>
         
@@ -83,13 +102,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <tr>
               <td style="padding: 30px 40px; text-align: center;">
                 <p style="font-size: 15px; color: #999; line-height: 1.6;">
-                  تم إرسال هذه الرسالة عبر نموذج "تواصل معنا" على موقع Codeyla. نلتزم بسياسات الخصوصية وشروط الاستخدام.
+                  تم إرسال هذه الرسالة عبر نموذج "تواصل معنا" على موقع Sweepicode. نلتزم بسياسات الخصوصية وشروط الاستخدام.
                 </p>
                 <p style="font-size: 14px; color: #aaa;">
                   <a href="https://codeyla.com/privacy" style="color: #aaa; text-decoration: underline;" target="_blank">سياسة الخصوصية</a>
                 </p>
                 <p style="font-size: 13px; color: #aaa; margin-top: 15px;">
-                  © ' . date('Y') . ' Codeyla. جميع الحقوق محفوظة.
+                  © ' . date('Y') . ' Sweepicode. جميع الحقوق محفوظة.
                 </p>
               </td>
             </tr>
@@ -106,18 +125,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo json_encode([
           'status' => 'success',
-          'message' => '✅ تم إرسال الرسالة بنجاح'
+          'message' => $msg['success']
         ]);
+        
     } catch (Exception $e) {
+        // ❌ خطأ
         echo json_encode([
           'status' => 'error',
-          'message' => '❌ فشل في الإرسال: ' . $mail->ErrorInfo
+          'message' => $msg['fail'] . $mail->ErrorInfo
         ]);
     }
 
 } else {
     echo json_encode([
       'status' => 'error',
-      'message' => '❌ طريقة الإرسال غير صحيحة.'
+      'message' => $msg['method'] ?? '❌ طريقة الإرسال غير صحيحة.'
     ]);
 }

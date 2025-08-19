@@ -142,6 +142,7 @@
             </div>
 
             <form class="enrollment-form" method="post" data-aos="fade-up" data-aos-delay="300">
+              <input type="hidden" name="lang" id="lang">
 
               <div class="row mb-4">
                 <div class="col-md-6">
@@ -449,65 +450,98 @@
 <!-- Main JS (بعد jQuery إذا main.js يستخدم jQuery) -->
 <script src="assets/js/main.js"></script>
   <script>
-    $(document).ready(function() {
-      $('.enrollment-form').on('submit', function(e) {
-        e.preventDefault();
+   document.getElementById("lang").value = localStorage.getItem("lang") || "ar";
+  $(document).ready(function() {
 
-        var form = $(this);
-        var btn = form.find('button[type="submit"]');
-        toastr.clear();
+    // نحدد اللغة الحالية من localStorage
+    var lang = localStorage.getItem("lang") || "ar";
 
-        // validation (كما في كودك) ...
-        if (!$('#firstName').val().trim()) { toastr.error('يرجى إدخال الاسم الأول'); $('#firstName').focus(); return; }
-        if (!$('#lastName').val().trim()) { toastr.error('يرجى إدخال اسم العائلة'); $('#lastName').focus(); return; }
-        var emailVal = $('#email').val().trim();
-        var emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailVal || !emailReg.test(emailVal)) { toastr.error('يرجى إدخال بريد إلكتروني صالح'); $('#email').focus(); return; }
-        if (!$('#course').val()) { toastr.error('يرجى اختيار الدورة'); $('#course').focus(); return; }
-        if (!$('#terms').is(':checked')) { toastr.error('يجب الموافقة على شروط الخدمة وسياسة الخصوصية'); $('#terms').focus(); return; }
+    // كائن الرسائل حسب اللغة
+    var messages = {
+      ar: {
+        firstName: "يرجى إدخال الاسم الأول",
+        lastName: "يرجى إدخال اسم العائلة",
+        email: "يرجى إدخال بريد إلكتروني صالح",
+        course: "يرجى اختيار الدورة",
+        terms: "يجب الموافقة على شروط الخدمة وسياسة الخصوصية",
+        phone: "يرجى إدخال رقم هاتف سعودي صالح",
+        sending: "جاري الإرسال...",
+        success: "تم التسجيل بنجاح",
+        error: "حدث خطأ أثناء الإرسال",
+        unexpected: "حدث خطأ غير متوقع. حاول لاحقًا."
+      },
+      en: {
+        firstName: "Please enter your first name",
+        lastName: "Please enter your last name",
+        email: "Please enter a valid email address",
+        course: "Please select a course",
+        terms: "You must agree to the terms of service and privacy policy",
+        phone: "Please enter a valid Saudi phone number",
+        sending: "Sending...",
+        success: "Registration successful",
+        error: "An error occurred while submitting",
+        unexpected: "An unexpected error occurred. Please try again later."
+      }
+    };
 
-        var phoneVal = $('#phone').val().trim();
-        if (phoneVal) {
-          var saPhoneReg = /^(05\d{8}|(\+966|966)5\d{8})$/;
-          if (!saPhoneReg.test(phoneVal)) { toastr.error('يرجى إدخال رقم هاتف سعودي صالح'); $('#phone').focus(); return; }
-        }
+    $('.enrollment-form').on('submit', function(e) {
+      e.preventDefault();
 
-        var originalBtnHtml = btn.html();
-        btn.prop('disabled', true).html('<i class="bi bi-arrow-clockwise spin"></i> جاري الإرسال...');
+      var form = $(this);
+      var btn = form.find('button[type="submit"]');
+      toastr.clear();
 
-        $.ajax({
-          url: 'forms/enroll.php',
-          method: 'POST',
-          data: form.serialize(),
-          dataType: 'json',
-          success: function(response) {
-            if (response && response.status === 'success') {
-              toastr.success(response.message || 'تم التسجيل', 'تم التسجيل', { timeOut: 5000 });
-              form[0].reset();
-            } else {
-              var msg = (response && response.message) ? response.message : 'حدث خطأ أثناء الإرسال.';
-              toastr.error(msg, 'خطأ', { timeOut: 7000 });
-            }
-          },
-          error: function(xhr, status, err) {
-            console.error('AJAX Error:', status, err);
-            console.log('Response text:', xhr.responseText);
-            // حاول استخراج رسالة من رد السيرفر لو كان JSON غير صالح
-            var userMsg = 'حدث خطأ غير متوقع. حاول لاحقًا.';
-            try {
-              var json = JSON.parse(xhr.responseText);
-              if (json.message) userMsg = json.message;
-            } catch (e) { /* response not JSON */ }
-            toastr.error(userMsg, 'فشل');
-          },
-          complete: function() {
-            btn.prop('disabled', false).html(originalBtnHtml);
+      // validation حسب اللغة
+      if (!$('#firstName').val().trim()) { toastr.error(messages[lang].firstName); $('#firstName').focus(); return; }
+      if (!$('#lastName').val().trim()) { toastr.error(messages[lang].lastName); $('#lastName').focus(); return; }
+      var emailVal = $('#email').val().trim();
+      var emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailVal || !emailReg.test(emailVal)) { toastr.error(messages[lang].email); $('#email').focus(); return; }
+      if (!$('#course').val()) { toastr.error(messages[lang].course); $('#course').focus(); return; }
+      if (!$('#terms').is(':checked')) { toastr.error(messages[lang].terms); $('#terms').focus(); return; }
+
+      var phoneVal = $('#phone').val().trim();
+      if (phoneVal) {
+        var saPhoneReg = /^(05\d{8}|(\+966|966)5\d{8})$/;
+        if (!saPhoneReg.test(phoneVal)) { toastr.error(messages[lang].phone); $('#phone').focus(); return; }
+      }
+
+      var originalBtnHtml = btn.html();
+      btn.prop('disabled', true).html('<i class="bi bi-arrow-clockwise spin"></i> ' + messages[lang].sending);
+
+      $.ajax({
+        url: 'forms/enroll.php',
+        method: 'POST',
+        data: form.serialize(),
+        dataType: 'json',
+        success: function(response) {
+          if (response && response.status === 'success') {
+            toastr.success(response.message || messages[lang].success);
+            form[0].reset();
+          } else {
+            var msg = (response && response.message) ? response.message : messages[lang].error;
+            toastr.error(msg);
           }
-        });
+        },
+        error: function(xhr, status, err) {
+          console.error('AJAX Error:', status, err);
+          console.log('Response text:', xhr.responseText);
+
+          var userMsg = messages[lang].unexpected;
+          try {
+            var json = JSON.parse(xhr.responseText);
+            if (json.message) userMsg = json.message;
+          } catch (e) {}
+          toastr.error(userMsg);
+        },
+        complete: function() {
+          btn.prop('disabled', false).html(originalBtnHtml);
+        }
       });
     });
-
+  });
   </script>
+
 </body>
 
 </html>

@@ -1,8 +1,8 @@
 /**
-* Template Name: Ejaz Programming Company
-* Template URL: https://programmingejazcompany.com/
+* Template Name: Sweepicode Programming Company
+* Template URL: https://codeyla.com/
 * Updated: Jul 21 2025 with Bootstrap v5.3.7
-* Author: Ejaz Programming Team
+* Author: Sweepicode Programming Team
 */
 
 (function() {
@@ -15,9 +15,33 @@
     $(document).on("submit", "#contactForm", function (e) {
       e.preventDefault();
 
+      const lang = localStorage.getItem("lang") || 'ar';
+
+      // الترجمات
+      const translations = {
+        ar: {
+          sending: "جاري الإرسال...",
+          successTitle: "تم بنجاح",
+          errorTitle: "خطأ",
+          unexpected: "حدث خطأ غير متوقع. حاول لاحقًا.",
+          fail: "فشل",
+          send: "إرسال"
+        },
+        en: {
+          sending: "Sending...",
+          successTitle: "Success",
+          errorTitle: "Error",
+          unexpected: "An unexpected error occurred. Please try again later.",
+          fail: "Failed",
+          send: "Send"
+        }
+      };
+
+      const t = translations[lang];
+
       var form = $(this);
       var btn = form.find('button[type="submit"]');
-      btn.prop("disabled", true).text("جاري الإرسال...");
+      btn.prop("disabled", true).text(t.sending);
 
       $.ajax({
         url: "forms/contact.php",
@@ -25,17 +49,17 @@
         data: form.serialize(),
         success: function (response) {
           if (response.status === "success") {
-            toastr.success(response.message, "تم بنجاح", { timeOut: 5000 });
+            toastr.success(response.message, t.successTitle, { timeOut: 5000 });
             form[0].reset();
           } else {
-            toastr.error(response.message, "خطأ", { timeOut: 7000 });
+            toastr.error(response.message, t.errorTitle, { timeOut: 7000 });
           }
         },
         error: function () {
-          toastr.error("حدث خطأ غير متوقع. حاول لاحقًا.", "فشل");
+          toastr.error(t.unexpected, t.fail);
         },
         complete: function () {
-          btn.prop("disabled", false).text("إرسال");
+          btn.prop("disabled", false).text(t.send);
         },
       });
     });
@@ -2178,7 +2202,8 @@
         "error_code_big": "404",
         "error_title": "عذراً! الصفحة غير موجودة",
         "error_text": "الصفحة التي تحاول الوصول إليها قد تكون محذوفة، تم تغيير عنوانها، أو غير متوفرة مؤقتاً.",
-        "error_btn_home": "العودة إلى الصفحة الرئيسية"
+        "error_btn_home": "العودة إلى الصفحة الرئيسية",
+        "instructor_emily": "إميلي هاريس"
         
         
 
@@ -4212,7 +4237,8 @@
         "error_code_big": "404",
         "error_title": "Sorry! Page Not Found",
         "error_text": "The page you are trying to reach may have been removed, its address changed, or it is temporarily unavailable.",
-        "error_btn_home": "Back to Home Page"
+        "error_btn_home": "Back to Home Page",
+        "instructor_emily": "Emily Harris"
         
 
       }
@@ -4665,14 +4691,32 @@
   document.getElementById('btnConsultation').addEventListener('click', function(event) {
     event.preventDefault(); // لمنع الانتقال لأي رابط
 
+    const lang = localStorage.getItem("lang") || 'ar';
+
+    // الترجمات
+    const translations = {
+      ar: {
+        title: "قريباً جداً",
+        text: "خدمة طلب الاستشارة قيد الإعداد، جايين في المستقبل إن شاء الله!",
+        confirm: "حسنًا"
+      },
+      en: {
+        title: "Coming Soon",
+        text: "The consultation request service is under preparation, launching soon insha'Allah!",
+        confirm: "OK"
+      }
+    };
+
+    const t = translations[lang] || translations['ar'];
+
     Swal.fire({
       icon: 'info',
-      title: 'قريباً جداً',
-      text: 'خدمة طلب الاستشارة قيد الإعداد، جايين في المستقبل إن شاء الله!',
-      confirmButtonText: 'حسنًا',
-      background: '#fff',         // خلفية البوباب بيضاء نظيفة
-      color: '#333',              // لون الخط الأساسي
-      confirmButtonColor: '#f4a835', // لون زر التأكيد (البرتقالي حسب ألوان موقعك)
+      title: t.title,
+      text: t.text,
+      confirmButtonText: t.confirm,
+      background: '#fff',            // خلفية البوباب بيضاء
+      color: '#333',                 // لون الخط الأساسي
+      confirmButtonColor: '#f36c24', // لون زر التأكيد (البرتقالي)
       backdrop: `
         rgba(0,0,0,0.4)
         left top
