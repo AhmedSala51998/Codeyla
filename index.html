@@ -1688,6 +1688,27 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    let iso = new Isotope('.isotope-container', {
+      itemSelector: '.isotope-item',
+      layoutMode: 'masonry'
+    });
+
+    // الروابط الخاصة بالفلترة
+    let filters = document.querySelectorAll('.portfolio-filters li');
+    filters.forEach(f => {
+      f.addEventListener('click', function () {
+        filters.forEach(el => el.classList.remove('filter-active'));
+        this.classList.add('filter-active');
+        let filterValue = this.getAttribute('data-filter');
+        iso.arrange({ filter: filterValue });
+      });
+    });
+  });
+</script>
+
+
   <!-- SweetAlert2 JS -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
