@@ -35,17 +35,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'codeylacompany@gmail.com';
-        $mail->Password   = 'glyy cilp yhsx xwuk';
+        $mail->Username   = 'sweepicodecompany@gmail.com';
+        $mail->Password   = 'svfn wmbf gfql dgvk';
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
         $mail->setFrom($_POST['email'], htmlspecialchars($_POST['name']));
-        $mail->addAddress('codeylacompany@gmail.com');
+        $mail->addAddress('sweepicodecompany@gmail.com');
 
         $mail->Subject = 'New Sweepicode Message';
 
-        $logoUrl = 'https://codeyla.com/assets/img/logo_email.png';
+        $logoUrl = 'https://sweepicode.com/assets/img/logo_email.png';
   
        $body = '
         <div style="background-color: #f4f4f7; padding: 40px 0; font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif; direction: rtl; text-align: right;">
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <!-- Header -->
             <tr>
               <td style="padding: 40px 40px 10px; text-align: center;">
-                <a href="https://codeyla.com/" target="_blank" style="text-decoration: none;">
+                <a href="https://sweepicode.com/" target="_blank" style="text-decoration: none;">
                   <img src="' . $logoUrl . '" alt="Sweepicode Logo" style="width: 240px; margin-bottom: 20px;">
                 </a>
                 <h1 style="margin: 0; font-size: 22px; font-weight: 700; color: #333333;">رسالة جديدة من عميل عبر الموقع</h1>
@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   تم إرسال هذه الرسالة عبر نموذج "تواصل معنا" على موقع Sweepicode. نلتزم بسياسات الخصوصية وشروط الاستخدام.
                 </p>
                 <p style="font-size: 14px; color: #aaa;">
-                  <a href="https://codeyla.com/privacy" style="color: #aaa; text-decoration: underline;" target="_blank">سياسة الخصوصية</a>
+                  <a href="https://sweepicode.com/privacy" style="color: #aaa; text-decoration: underline;" target="_blank">سياسة الخصوصية</a>
                 </p>
                 <p style="font-size: 13px; color: #aaa; margin-top: 15px;">
                   © ' . date('Y') . ' Sweepicode. جميع الحقوق محفوظة.
